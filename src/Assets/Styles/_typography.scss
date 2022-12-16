@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$font-serif: Ubuntu, serif;
+$font-sans: Poppins, sans-serif;
+
+h1, h2, h3 {
+    font-family: $font-serif;
+}
+
+p, a {
+    font-family: $font-sans;
+}

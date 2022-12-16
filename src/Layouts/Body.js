@@ -7,7 +7,7 @@ let projects = [
     name: "EveryPage",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "",
+    imagePath: "https://picsum.photos/seed/123/530/300",
     alt: "",
   },
   {
@@ -15,7 +15,7 @@ let projects = [
     name: "Billy",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "",
+    imagePath: "https://picsum.photos/seed/456/530/300",
     alt: "",
   },
   {
@@ -23,14 +23,14 @@ let projects = [
     name: "Adventure BC",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "",
+    imagePath: "https://picsum.photos/seed/789/530/300",
     alt: "",
   },
 ];
 
 const Main = () => {
   return (
-    <>
+    <body>
       <section className="hero">
         <h1>Gabriel Costa Gimenes</h1>
         <p>
@@ -55,7 +55,7 @@ const Main = () => {
           />
         ))}
       </section>
-    </>
+    </body>
   );
 };
 

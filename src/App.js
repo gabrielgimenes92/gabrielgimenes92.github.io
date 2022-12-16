@@ -1,14 +1,14 @@
 //  import './App.css';
 
 import Header from "./Layouts/Header";
-import Main from "./Layouts/Main";
+import Body from "./Layouts/Body";
 import Footer from "./Layouts/Footer";
 
 function App() {
   return (
     <>
       <Header></Header>
-      <Main></Main>
+      <Body></Body>
       <Footer></Footer>
     </>
   );
