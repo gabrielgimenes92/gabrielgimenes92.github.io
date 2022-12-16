@@ -12,7 +12,7 @@ const NavMenu = () => {
           <a href="">Projects</a>
         </li>
         <li>
-          <a href="">Contact</a> me
+          <a href="">Contact me</a>
         </li>
       </ul>
     </div>
