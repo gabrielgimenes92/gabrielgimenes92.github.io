@@ -2,10 +2,12 @@ const ProjectCard = (props) => {
   let { easyName, name, description, imagePath, alt } = props;
 
   return (
-    <section className={easyName}>
+    <section className="singleProject" id={easyName}>
       <img src={imagePath} alt={alt} />
-      <h2>{name}</h2>
-      <p>{description}</p>
+      <div>
+        <h2>{name}</h2>
+        <p>{description}</p>
+      </div>
     </section>
   );
 };

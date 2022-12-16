@@ -7,7 +7,7 @@ let projects = [
     name: "EveryPage",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/123/530/300",
+    imagePath: "https://picsum.photos/seed/123/700/400",
     alt: "",
   },
   {
@@ -15,7 +15,7 @@ let projects = [
     name: "Billy",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/456/530/300",
+    imagePath: "https://picsum.photos/seed/456/700/400",
     alt: "",
   },
   {
@@ -23,7 +23,7 @@ let projects = [
     name: "Adventure BC",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/789/530/300",
+    imagePath: "https://picsum.photos/seed/789/700/400",
     alt: "",
   },
 ];

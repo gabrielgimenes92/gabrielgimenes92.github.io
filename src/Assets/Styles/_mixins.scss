@@ -1,0 +1,7 @@
+@mixin sizeTablet {
+    @media (min-width: 450px) { @content; } 
+}
+
+@mixin sizeDesktop {
+    @media (min-width: 1100px) { @content; } 
+}

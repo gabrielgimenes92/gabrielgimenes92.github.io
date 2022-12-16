@@ -4,6 +4,13 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    column-gap: 6rem;
+
+    @include sizeDesktop {
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 1rem auto;
+    }
 
     .headerMenu {
         ul {
@@ -14,8 +21,16 @@ header {
             margin: 0.5rem 0;
 
             li {
+
+                //change place?
                 font-size: 0.75rem;
+
                 list-style: none;
+
+                @include sizeTablet {
+                    font-size: 1rem;
+                }
+
             }
         }
     }

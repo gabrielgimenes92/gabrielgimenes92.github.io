@@ -8,3 +8,27 @@
         max-width: 500px;
     }
 }
+
+.projects {
+    @include sizeTablet {
+        margin: 0 auto;
+        max-width: 800px;
+
+        .singleProject {
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    @include sizeDesktop {
+        max-width: 1200px;
+
+
+        //change place!
+        img {
+        justify-self: right;
+        }
+    }
+}
