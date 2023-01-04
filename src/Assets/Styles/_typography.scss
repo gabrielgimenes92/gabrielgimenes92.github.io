@@ -9,9 +9,14 @@ h1, h2, h3 {
 
 p, a {
     font-family: $font-sans;
+    text-decoration: none;
 
     @include sizeTablet {
         font-size: 1rem;
     }
+}
+
+.hidden {
+    display: none;
 }
 

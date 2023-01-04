@@ -1,4 +1,6 @@
-.hero {
+.aboutMe {
+    padding: 3rem 0;
+
     h1 {
         text-align: center;    
     }
@@ -10,25 +12,45 @@
 }
 
 .projects {
-    @include sizeTablet {
-        margin: 0 auto;
-        max-width: 800px;
 
-        .singleProject {
-            margin: 2rem auto;
+    .projectItems {
+
+        @include sizeTablet {
+            margin: 0 auto;
+            max-width: 800px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 1rem;
+
+            .singleProject {
+                margin: 2rem auto;
+
+                .imageContainer {
+                    position: relative;
+                    
+                    .titleContainer {
+                        position: absolute;
+                        bottom: 1rem;
+                        left: 0;
+                        right: 0;
+                        background-color: rgba(12,12,12,0.7);
+                
+                        color: white;
+                        padding: 0 1rem;
+                    }
+            
+                }
+            }
         }
-    }
 
-    @include sizeDesktop {
-        max-width: 1200px;
+        @include sizeDesktop {
+            max-width: 1200px;
 
 
-        //change place!
-        img {
-        justify-self: right;
+            //change place!
+            img {
+            justify-self: right;
+            }
         }
     }
 }

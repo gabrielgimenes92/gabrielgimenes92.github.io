@@ -1,9 +1,13 @@
+@import "./reset";
 @import "./mixins";
+@import "./variables";
 @import "./typography";
 
 @import "./header";
 @import "./body";
 @import "./media";
+@import "./navigation"
+//@import "./singleProject";
 
 
 

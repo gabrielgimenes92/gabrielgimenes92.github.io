@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
+import SocialMenu from "../Components/SocialMenu";
 
 let projects = [
   {
@@ -7,7 +8,7 @@ let projects = [
     name: "EveryPage",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/123/700/400",
+    imagePath: "https://picsum.photos/seed/123/700/700",
     alt: "",
   },
   {
@@ -15,7 +16,7 @@ let projects = [
     name: "Billy",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/456/700/400",
+    imagePath: "https://picsum.photos/seed/456/700/700",
     alt: "",
   },
   {
@@ -23,7 +24,7 @@ let projects = [
     name: "Adventure BC",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
-    imagePath: "https://picsum.photos/seed/789/700/400",
+    imagePath: "https://picsum.photos/seed/789/700/700",
     alt: "",
   },
 ];
@@ -31,8 +32,8 @@ let projects = [
 const Main = () => {
   return (
     <body>
-      <section className="hero">
-        <h1>Gabriel Costa Gimenes</h1>
+      <section className="aboutMe">
+        <h1>About me</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
           facere sapiente, totam nesciunt ullam commodi.
@@ -45,15 +46,35 @@ const Main = () => {
       </section>
 
       <section className="projects">
-        {projects.map((project) => (
-          <ProjectCard
-            easyName={project.easyName}
-            name={project.name}
-            description={project.description}
-            imagePath={project.imagePath}
-            alt={project.alt}
-          />
-        ))}
+        <h1>Projects</h1>
+        <div className="projectItems">
+          {projects.map((project) => (
+            <ProjectCard
+              easyName={project.easyName}
+              name={project.name}
+              description={project.description}
+              imagePath={project.imagePath}
+              alt={project.alt}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="contact">
+        <div className="phone">
+          <icon></icon>
+          <a href="">
+            <p>236-886-7471</p>
+          </a>
+        </div>
+        <div className="mail">
+          <icon></icon>
+          <a href="">
+            <p>gabrielcgimenes@gmail.com</p>
+          </a>
+        </div>
+        <button className="curriculum">Curriculum</button>
+        <SocialMenu />
       </section>
     </body>
   );

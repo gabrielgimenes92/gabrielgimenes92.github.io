@@ -3,9 +3,17 @@ import SocialMenu from "../Components/SocialMenu";
 
 const Header = () => {
   return (
-    <header>
-      <NavMenu />
-      <SocialMenu />
+    <header className="backgroundHeader">
+      <div className="navMenuWrapper">
+        <div className="navMenus">
+          <NavMenu />
+          <SocialMenu />
+        </div>
+      </div>
+      <section className="home">
+        <h1>Gabriel Costa Gimenes</h1>
+        <p>Junior software developer</p>
+      </section>
     </header>
   );
 };
