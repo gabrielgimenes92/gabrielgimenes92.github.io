@@ -10,6 +10,7 @@ let projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
     imagePath: "https://picsum.photos/seed/123/700/700",
     alt: "",
+    link: "http://everypage.ca",
   },
   {
     easyName: "billy",
@@ -18,6 +19,7 @@ let projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
     imagePath: "https://picsum.photos/seed/456/700/700",
     alt: "",
+    link: "http://www.invoicebilly.com",
   },
   {
     easyName: "adventurebc",
@@ -26,6 +28,7 @@ let projects = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
     imagePath: "https://picsum.photos/seed/789/700/700",
     alt: "",
+    link: "",
   },
 ];
 
@@ -55,6 +58,7 @@ const Main = () => {
               description={project.description}
               imagePath={project.imagePath}
               alt={project.alt}
+              link={project.link}
             />
           ))}
         </div>

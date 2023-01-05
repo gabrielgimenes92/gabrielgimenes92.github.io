@@ -7,6 +7,16 @@ h1, h2, h3 {
     font-family: $font-serif;
 }
 
+h1 {
+    font-size: 3rem;
+    color: $color-main-dark;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: $color-secondary-dark;
+}
+
 p, a {
     font-family: $font-sans;
     text-decoration: none;

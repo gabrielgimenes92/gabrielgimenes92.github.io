@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <section className="home">
         <h1>Gabriel Costa Gimenes</h1>
-        <p>Junior software developer</p>
+        <h2>Junior software developer</h2>
       </section>
     </header>
   );
