@@ -1,55 +1,62 @@
+section {
+    padding: 3rem 0;
+}
+
 .aboutMe {
     padding: 3rem 0;
 
-    h1 {
-        text-align: center;    
-    }
-
     p {
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 800px;
     }
 }
 
-.projects {
 
-    .projectItems {
+.projectsWrapper {
+    background-color: $color-bg-lighter;
 
-        @include sizeTablet {
-            margin: 0 auto;
-            max-width: 800px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
-
-            .singleProject {
-                margin: 2rem auto;
-
-                .imageContainer {
-                    position: relative;
-                    
-                    .titleContainer {
-                        position: absolute;
-                        bottom: 1rem;
-                        left: 0;
-                        right: 0;
-                        background-color: rgba(12,12,12,0.7);
+    .projects {
+    
+        .projectItems {
+    
+            @include sizeTablet {
+                margin: 0 auto;
+                max-width: 800px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+    
+                .singleProject {
+    
+                    .imageContainer {
+                        position: relative;
+                        
+                        img {
+                            display: block;
+                        }
+                        
+                        .titleContainer {
+                            box-sizing: border-box;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            color: $color-main-light;
+                            background-color: $color-bg-dark-transparent;
+                            padding: 1rem;
+                        }
                 
-                        color: white;
-                        padding: 0 1rem;
                     }
-            
                 }
             }
-        }
-
-        @include sizeDesktop {
-            max-width: 1200px;
-
-
-            //change place!
-            img {
-            justify-self: right;
+    
+            @include sizeDesktop {
+                max-width: 1200px;
+    
+                //change place!
+                img {
+                justify-self: right;
+                }
             }
         }
     }

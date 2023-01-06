@@ -1,5 +1,14 @@
 .headerMenu {
     a, p {
         color: white;
+        transition: color 0.25s;
+    }
+
+    a:hover {
+        color: $color-accent;
+    }
+
+    .icon {
+        font-size: 1.2rem;
     }
 }

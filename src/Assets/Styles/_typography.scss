@@ -8,13 +8,22 @@ h1, h2, h3 {
 }
 
 h1 {
+    text-align: center;
+    padding-bottom: 2rem;
     font-size: 3rem;
     color: $color-main-dark;
 }
 
 h2 {
     font-size: 1.75rem;
-    color: $color-secondary-dark;
+    text-align: center;
+    padding-bottom: 2rem;
+    //color: $color-secondary-dark;
+}
+
+h3 {
+    font-size: 1.4rem;
+
 }
 
 p, a {

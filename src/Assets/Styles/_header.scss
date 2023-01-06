@@ -1,4 +1,5 @@
 header {
+    
     padding: 0;
     width: 100%;
     margin: 0;
@@ -9,12 +10,13 @@ header {
     background-blend-mode: soft-light;
 
     .navMenuWrapper {
+        z-index: 100;
         position: fixed;
         background-color: $color-bg-dark-transparent;
         width: 100%;
         margin: 0;
         height: 3.5rem;
-        border-bottom: 1px solid $color-bg-dark;
+        border-bottom: 1px solid rgba($color-accent, 0.5);
 
         .navMenus {
             margin: 1rem 2%;
@@ -64,6 +66,7 @@ header {
 
         h2 {
             margin-top: 1rem;
+            padding-bottom: 0;
             color: $color-secondary-light;
         }
     }

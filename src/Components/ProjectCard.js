@@ -2,18 +2,18 @@ const ProjectCard = (props) => {
   let { easyName, name, description, imagePath, alt, link } = props;
 
   return (
-    <section className="singleProject" id={easyName}>
-      <div className="imageContainer">
-        <a href={link}>
+    <div className="singleProject" id={easyName}>
+      <a href={link}>
+        <div className="imageContainer">
           <img src={imagePath} alt={alt} />
-        </a>
-        <div className="titleContainer">
-          <h2>{name}</h2>
+          <div className="titleContainer">
+            <h3>{name}</h3>
+          </div>
         </div>
-      </div>
+      </a>
       <p>{description}</p>
       <button href={link}>Read more</button>
-    </section>
+    </div>
   );
 };
 
