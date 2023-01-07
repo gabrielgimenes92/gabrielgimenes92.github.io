@@ -15,11 +15,6 @@ const SocialMenu = () => {
     <div className="headerMenu">
       <ul>
         <li>
-          <a className="resumeDownload" target={"blank"} href={Resume}>
-            Resume
-          </a>
-        </li>
-        <li>
           <a
             className="icon"
             href="https://www.linkedin.com/in/gabrielcgimenes/"
@@ -40,13 +35,8 @@ const SocialMenu = () => {
           </a>
         </li>
         <li>
-          <a
-            className="icon"
-            href="https://www.instagram.com/gabrielcgimenes/"
-            target={"blank"}
-          >
-            {iconInstagram}
-            <spam className="hidden">Instagram</spam>
+          <a className="resumeDownload" target={"blank"} href={Resume}>
+            Resume
           </a>
         </li>
       </ul>

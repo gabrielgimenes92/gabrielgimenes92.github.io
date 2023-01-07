@@ -35,6 +35,21 @@ p, a {
     }
 }
 
+button {
+    font-family: $font-sans;
+
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+
+    color: $color-main-light;
+
+    background-color: $color-accent;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+}
+
 .hidden {
     display: none;
 }

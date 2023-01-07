@@ -1,8 +1,12 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
 import SocialMenu from "../Components/SocialMenu";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
+
 import EverypageImage from "../Assets/Pictures/everypage-1.png";
-import BillyImage from "../Assets/Pictures/billy-1.png";
+import BillyImage from "../Assets/Pictures/billy-2.png";
 import ABCImage from "../Assets/Pictures/adventurebc-1.png";
 
 let projects = [
@@ -19,21 +23,25 @@ let projects = [
     easyName: "billy",
     name: "Billy",
     description:
-      "Save time on creating professional invoices, tracking invoice payment status, and managing business finances",
+      "Save time on creating professional invoices, tracking invoice payment status, and managing business finances.",
     imagePath: BillyImage,
     alt: "",
     link: "https://github.com/mercury-squad",
+    position: "0 -110px",
   },
   {
     easyName: "adventurebc",
     name: "Adventure BC",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, excepturi.",
+      "Search, plan and gather information about outdoor activities available in British Columbia.",
     imagePath: ABCImage,
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
   },
 ];
+
+const phone = <FontAwesomeIcon icon={faPhone} />;
+const mail = <FontAwesomeIcon icon={faMailBulk} />;
 
 const Main = () => {
   return (
@@ -66,6 +74,7 @@ const Main = () => {
                 imagePath={project.imagePath}
                 alt={project.alt}
                 link={project.link}
+                position={project.position}
               />
             ))}
           </div>
@@ -73,20 +82,23 @@ const Main = () => {
       </div>
 
       <section className="contact">
-        <div className="phone">
-          <icon></icon>
-          <a href="">
-            <p>236-886-7471</p>
-          </a>
-        </div>
-        <div className="mail">
-          <icon></icon>
-          <a href="">
-            <p>gabrielcgimenes@gmail.com</p>
-          </a>
-        </div>
-        <button className="curriculum">Curriculum</button>
-        <SocialMenu />
+        <ul className="upperList">
+          <li className="mail">
+            <a href="mailto:gabrielcgimenes@gmail.com" className="icon">
+              {mail}
+              <p>gabrielcgimenes@gmail.com</p>
+            </a>
+          </li>
+          <li className="phone">
+            <a href="tel: 236-886-7471" className="icon">
+              {phone}
+              <p>236-886-7471</p>
+            </a>
+          </li>
+          <li className="contactSocial">
+            <SocialMenu />
+          </li>
+        </ul>
       </section>
     </body>
   );
