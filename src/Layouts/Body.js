@@ -18,6 +18,7 @@ let projects = [
     imagePath: EverypageImage,
     alt: "",
     link: "https://github.com/orgs/Team-Ditto/repositories",
+    stack: ["React Native, NestJS, NativeBase, Firebase"],
   },
   {
     easyName: "billy",
@@ -28,6 +29,7 @@ let projects = [
     alt: "",
     link: "https://github.com/mercury-squad",
     position: "0 -110px",
+    stack: ["React, NodeJS, MUI, MongoDB"],
   },
   {
     easyName: "adventurebc",
@@ -37,6 +39,7 @@ let projects = [
     imagePath: ABCImage,
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
+    stack: ["Javascript, SCSS, Firebase"],
   },
 ];
 
@@ -46,23 +49,25 @@ const mail = <FontAwesomeIcon icon={faMailBulk} />;
 const Main = () => {
   return (
     <body>
-      <section className="aboutMe">
+      <section className="aboutMe" id="about">
         <h2>About me</h2>
         <p>
-          I just completed a Web & Mobile App Development Post-Degree at Langara
-          College after coming from a career as a mechanical engineer with 10+
-          years of experience. In college, I have collaborated with my peers as
-          a project manager and developer in web and mobile app projects,
-          frontend, backend and, alongside a team of designers, achieved
-          complete and mature solutions. My mechanical engineering background
+          Graduated from Langara College - Web & Mobile App Development
+          Post-Degree, awarded 3 times with the Dean's Honor Roll, and second
+          best capstone project of the semester. Langara's course is set to
+          mimic a startup environment by having designers and developers work
+          together to, in a 12-week period per semester, conceptualize and
+          develop a product. Along the semesters these projects gave me
+          experience in React Native, React, Swift, Android (using Java),
+          Javascript, SCSS, and HTML. Furthermore, I'm originally a mechanical
+          engineer with over 10 years of experience and I believe my background
           provides me with other skills like problem-solving, product
-          management, interpersonal skills such as meeting facilitator, and
-          international experiences.
+          management, and interpersonal skills.
         </p>
         <img src="" alt="" />
       </section>
 
-      <div className="projectsWrapper">
+      <div className="projectsWrapper" id="projects">
         <section className="projects">
           <h2>Projects</h2>
           <div className="projectItems">
@@ -75,13 +80,14 @@ const Main = () => {
                 alt={project.alt}
                 link={project.link}
                 position={project.position}
+                stack={project.stack}
               />
             ))}
           </div>
         </section>
       </div>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <ul className="upperList">
           <li className="mail">
             <a href="mailto:gabrielcgimenes@gmail.com" className="icon">

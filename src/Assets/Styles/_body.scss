@@ -21,7 +21,7 @@ section, .aboutMe {
                 max-width: 800px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                gap: 1.5rem;
+                gap: 2rem;
     
                 .singleProject {
                     display: flex;
@@ -51,16 +51,28 @@ section, .aboutMe {
                                 padding: 1rem;
                             }
                         }
-                    
+                        
                         p {
-                            padding: 1rem 0;
-                        }
+                            padding: 1rem 0 0.5rem 0;
+                        }   
                     }
 
-                    button {
-                        align-self: center;
-                        width: 250px;
-                    };
+                    .stack {
+                        padding-bottom: 1rem;
+                        color: $color-secondary-dark;
+                        font-size: 0.9rem;
+                    }
+                    
+                    div {
+                        display: flex;
+                        flex-flow: column nowrap;
+
+                        .readMore {
+                            align-self: center;
+                            width: 250px;
+                        };
+                    }
+
                 }
             }
     

@@ -1,5 +1,6 @@
 const ProjectCard = (props) => {
-  let { easyName, name, description, imagePath, alt, link, position } = props;
+  let { easyName, name, description, imagePath, alt, link, position, stack } =
+    props;
 
   return (
     <div className="singleProject" id={easyName}>
@@ -18,7 +19,14 @@ const ProjectCard = (props) => {
         </a>
         <p>{description}</p>
       </div>
-      <button href={link}>Read more</button>
+      <div>
+        <p className="stack">
+          <b>Stack:</b> {stack}
+        </p>
+        <a className="readMore" href={link}>
+          Learn more
+        </a>
+      </div>
     </div>
   );
 };

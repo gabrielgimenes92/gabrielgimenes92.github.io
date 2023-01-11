@@ -3,16 +3,16 @@ const NavMenu = () => {
     <div className="headerMenu">
       <ul>
         <li>
-          <a href="">Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a href="">About me</a>
+          <a href="#about">About me</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="">Contact me</a>
+          <a href="#contact">Contact me</a>
         </li>
       </ul>
     </div>
