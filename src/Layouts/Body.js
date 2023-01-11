@@ -35,7 +35,7 @@ let projects = [
     easyName: "adventurebc",
     name: "Adventure BC",
     description:
-      "Search, plan and gather information about outdoor activities available in British Columbia.",
+      "Search, plan and gather information about outdoor activities available in British Columbia with this single-page webapp",
     imagePath: ABCImage,
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
