@@ -64,7 +64,7 @@ const Main = () => {
           provides me with other skills like problem-solving, product
           management, and interpersonal skills.
         </p>
-        <img src="" alt="" />
+        //<img src="" alt="" />
       </section>
 
       <div className="projectsWrapper" id="projects">
