@@ -53,7 +53,7 @@ const Main = () => {
         <h2>About me</h2>
         <p>
           Graduated from Langara College - Web & Mobile App Development
-          Post-Degree, awarded 3 times with the Dean's Honor Roll, and second
+          Post-Degree, awarded 4 times with the Dean's Honor Roll, and second
           best capstone project of the semester. Langara's course is set to
           mimic a startup environment by having designers and developers work
           together to, in a 12-week period per semester, conceptualize and
