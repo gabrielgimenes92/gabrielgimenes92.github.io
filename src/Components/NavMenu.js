@@ -1,22 +1,27 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import SocialMenu from "./SocialMenu";
+import { useState } from "react";
 
 
 
 const NavMenu = () => {
+  const [navBarOpen, setNavBarOpen] = useState(false);
+
   const hamburger = <FontAwesomeIcon icon={faBars} />;
+  const x = <FontAwesomeIcon icon={faXmark} />;
 
   function toggleMenu() {
     const floatingMenu = document.getElementById('floatingMenu');
-    floatingMenu.classList.toggle("hidden")
+    floatingMenu.classList.toggle("hidden");
+    setNavBarOpen(!navBarOpen);
   }
 
   return (
     <div className="headerMenu">
       <div className="mobileSize">
         <a onClick={toggleMenu}>
-          {hamburger}
+          {navBarOpen ? x : hamburger}
         </a>
       </div>
 
