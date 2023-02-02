@@ -49,7 +49,8 @@ const mail = <FontAwesomeIcon icon={faMailBulk} />;
 const Main = () => {
   return (
     <body>
-      <section className="aboutMe" id="about">
+      <section className="aboutMe">
+        <spam id="about"></spam>
         <h2>About me</h2>
         <p>
           Graduated from Langara College - Web & Mobile App Development
@@ -67,7 +68,8 @@ const Main = () => {
         {/* <img src="" alt="" /> */}
       </section>
 
-      <div className="projectsWrapper" id="projects">
+      <div className="projectsWrapper">
+        <spam id="projects"></spam>
         <section className="projects">
           <h2>Projects</h2>
           <div className="projectItems">
@@ -87,7 +89,8 @@ const Main = () => {
         </section>
       </div>
 
-      <section className="contact" id="contact">
+      <section className="contact">
+        <spam id="contact"></spam>
         <ul className="upperList">
           <li className="mail">
             <a href="mailto:gabrielcgimenes@gmail.com" className="icon">

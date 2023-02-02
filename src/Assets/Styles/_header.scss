@@ -3,7 +3,7 @@ header {
     width: 100%;
     margin: 0;
     background-size: cover;
-    background-position-y: calc(50%) ;
+    background-position-y: calc(50%);
     background-image: url(../Pictures/PXL_20220829_162705195.PANO.jpg);
     background-color: $color-bg-dark;
     background-blend-mode: soft-light;
@@ -19,7 +19,9 @@ header {
 
         @include sizeDesktop {
             height: 3.5rem
-        };
+        }
+
+        ;
 
         .navMenus {
             margin: 1rem 2%;
@@ -68,15 +70,22 @@ header {
 
                     ul {
                         padding-top: 5rem;
-                        font-size: 2rem;
+                        font-size: 1.75rem;
                         text-align: center;
                         margin: 0 auto;
                         max-width: 200px;
                         justify-content: center;
                     }
 
-                    .headerMenu a {
-                        font-size: 2rem;
+                    .headerMenu {
+                 
+                        ul li:nth-child(3) {
+                            order: -1;
+                        }
+                    
+                        a {
+                            font-size: 1.75rem;
+                        }
                     }
 
                     @include sizeTablet {
@@ -88,13 +97,26 @@ header {
                         width: fit-content;
                         padding: 1rem 2rem;
 
-                        .headerMenu a {
-                            font-size: 1.5rem;
+                        .headerMenu {
+                            a {
+                                font-size: 1.5rem;
+                            }
+
+                            ul{
+                                li:nth-child(1) {
+                                    padding-left: 1rem;
+                                }
+
+                                li:nth-child(2) {
+                                    padding-right: 1rem;
+                                }
+                            }                         
                         }
+                        
 
                         ul {
                             padding-top: 0;
-                            
+
                             a {
                                 font-size: 1.2rem;
                             }
@@ -113,7 +135,7 @@ header {
                             flex-basis: 45%;
                         }
                     }
-                
+
                     ul li {
                         list-style-type: none;
                         padding: 0.2rem 0;
@@ -125,7 +147,7 @@ header {
                     visibility: hidden;
                 }
 
-                
+
 
                 @include sizeDesktop {
 
@@ -138,24 +160,24 @@ header {
                         flex-flow: row nowrap;
                         justify-content: space-between;
 
-                            ul {
-                                display: flex;
-                                flex-flow: row nowrap;
-                                gap: 2rem;
-                                padding: 0;
-                                margin: 1rem 0;
-            
-                                li {
-                                    //change place?
-                                    font-size: 0.75rem;
-            
-                                    list-style: none;
-            
-                                    @include sizeTablet {
-                                        font-size: 1rem;
-                                    }
+                        ul {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            gap: 2rem;
+                            padding: 0;
+                            margin: 1rem 0;
+
+                            li {
+                                //change place?
+                                font-size: 0.75rem;
+
+                                list-style: none;
+
+                                @include sizeTablet {
+                                    font-size: 1rem;
                                 }
                             }
+                        }
                     }
                 }
 

@@ -101,3 +101,17 @@
         }
     }
 }
+
+#about, #projects, #contact {
+    display: block;
+    position: relative;    
+    visibility: hidden;
+}
+
+#about {
+    top: -100px;
+}
+
+#projects {
+    top: -50px;
+}
