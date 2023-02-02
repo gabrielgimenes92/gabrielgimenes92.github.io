@@ -12,7 +12,6 @@ const Header = () => {
       <div className="navMenuWrapper">
         <div className="navMenus">
           <NavMenu />
-          <SocialMenu />
         </div>
       </div>
       <section className="home">

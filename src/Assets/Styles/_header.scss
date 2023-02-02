@@ -14,17 +14,21 @@ header {
         background-color: $color-bg-dark-transparent;
         width: 100%;
         margin: 0;
-        height: 3.5rem;
+        height: 4rem;
         border-bottom: 1px solid rgba($color-accent, 0.5);
+
+        @include sizeDesktop {
+            height: 3.5rem
+        };
 
         .navMenus {
             margin: 1rem 2%;
             padding: 0 1rem;
             border-radius: 8px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            column-gap: 6rem;
+            // display: flex;
+            // flex-flow: row wrap;
+            // justify-content: center;
+            // column-gap: 6rem;
 
             @include sizeDesktop {
                 justify-content: space-between;
@@ -33,31 +37,60 @@ header {
             }
 
             .headerMenu {
-                ul {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    gap: 2rem;
-                    padding: 0;
-                    margin: 1rem 0;
 
-                    li {
-                        //change place?
-                        font-size: 0.75rem;
+                .mobileSize {
+                    display: block;
+                    text-align: right;
 
-                        list-style: none;
-
-                        @include sizeTablet {
-                            font-size: 1rem;
-                        }
+                    a {
+                        font-size: 1.5rem;
                     }
                 }
+
+                .tabletSize {
+                    display: none;
+                }
+
+
+                @include sizeDesktop {
+
+                    .mobileSize {
+                        display: none;
+                    }
+
+                    .tabletSize {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+
+                            ul {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                gap: 2rem;
+                                padding: 0;
+                                margin: 1rem 0;
+            
+                                li {
+                                    //change place?
+                                    font-size: 0.75rem;
+            
+                                    list-style: none;
+            
+                                    @include sizeTablet {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                    }
+                }
+
             }
         }
     }
 
     .home {
         text-align: center;
-        padding: 14rem 0 8.5rem 0;
+        padding: 14rem 2% 8.5rem 2%;
 
         h1 {
             color: $color-main-light;

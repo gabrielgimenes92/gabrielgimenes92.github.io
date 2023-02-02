@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -52,4 +52,17 @@ a.readMore {
 .hidden {
     display: none;
 }
+
+@include sizeTablet {
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p, a {
+        font-size: 1rem;
+    }
+}
+
+
 
