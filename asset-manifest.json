@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2a8d583.css",
-    "main.js": "/static/js/main.aaf9e8a0.js",
+    "main.css": "/static/css/main.3db4fd85.css",
+    "main.js": "/static/js/main.4c8e3d4e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/PXL_20220829_162705195.PANO.jpg": "/static/media/PXL_20220829_162705195.PANO.15ea50f19074bbffcd73.jpg",
+    "static/media/DSCF9483.jpg": "/static/media/DSCF9483.49f5fff3630c03d113a4.jpg",
     "static/media/adventurebc-1.png": "/static/media/adventurebc-1.cc29d3556a3bd33bb912.png",
+    "static/media/pesadaum-pesadao.gif": "/static/media/pesadaum-pesadao.7489f682f52a05f851f7.gif",
     "static/media/everypage-1.png": "/static/media/everypage-1.4f8fe50d31e316ab9823.png",
     "static/media/billy-2.png": "/static/media/billy-2.7827102ef5b443d8620f.png",
     "static/media/Resume.pdf": "/static/media/Resume.8b1bb69b799b4ca670df.pdf",
     "index.html": "/index.html",
-    "main.b2a8d583.css.map": "/static/css/main.b2a8d583.css.map",
-    "main.aaf9e8a0.js.map": "/static/js/main.aaf9e8a0.js.map",
+    "main.3db4fd85.css.map": "/static/css/main.3db4fd85.css.map",
+    "main.4c8e3d4e.js.map": "/static/js/main.4c8e3d4e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2a8d583.css",
-    "static/js/main.aaf9e8a0.js"
+    "static/css/main.3db4fd85.css",
+    "static/js/main.4c8e3d4e.js"
   ]
 }
