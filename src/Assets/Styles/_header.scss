@@ -176,13 +176,107 @@ header {
     width: 100%;
     margin: 0;
     background-size: cover;
-    background-position-y: calc(50%);
-    background-image: url(../Pictures/PXL_20220829_162705195.PANO.jpg);
     background-color: $color-bg-dark;
-    background-blend-mode: soft-light;
     
     text-align: center;
     padding: 14rem 2% 8.5rem 2%;
+
+    position: relative;
+
+    .ball {
+        position: absolute;
+        bottom: -250px;
+        left: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+        clip-path: polygon(0% -100%, 200% -100%, 200% 58%, -100% 58%);
+    }
+
+    .ball2 {
+        position: absolute;
+        top: -250px;
+        right: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+    }
+
+    .ball3 {
+        position: absolute;
+        top: -400px;
+        right: 700px;
+        background-color: rgb(200, 200, 200);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+    }
+
+
+    .introduction {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 1200px;
+        gap: 2rem;
+
+        .profileText {
+            text-align: left;
+            line-height: 3rem;
+
+            p {
+                display: block;
+                align-items: baseline;
+                color: white;
+            }
+    
+            .bigger {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            
+            .light {
+                color: rgb(50, 144, 199)
+            }
+        }
+
+    }
+
+    .profilePicture {
+        background-image: url(../Pictures/DSCF9483.jpg) ;
+        z-index: 100;
+        object-position: center;
+        background-position-x: 43%;
+        background-position-y: 40%;
+        background-size: 215%;
+        width: 350px;
+        height: 350px;
+        border-radius: 2rem;
+    }
+
+    .profilePicture:hover {
+        background-image: url(../Pictures/pesadaum-pesadao.gif);
+        transition: background-image 0.1s linear 5s, background-size 0.1s linear 5s, background-position-x 0.1s linear 5s, background-position-y 0.1s linear 5s;
+        object-fit: cover;
+        background-position-x: center;
+        background-position-y: center;
+    }
 
     h1 {
         color: $color-main-light;
