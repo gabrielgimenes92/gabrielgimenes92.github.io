@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import SocialMenu from "../Components/SocialMenu";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +7,7 @@ import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
 import EverypageImage from "../Assets/Pictures/everypage-1.png";
 import BillyImage from "../Assets/Pictures/billy-2.png";
 import ABCImage from "../Assets/Pictures/adventurebc-1.png";
+import Footer from "./Footer";
 
 let projects = [
   {
@@ -19,6 +19,7 @@ let projects = [
     alt: "",
     link: "https://github.com/orgs/Team-Ditto/repositories",
     stack: ["React Native, NestJS, NativeBase, Firebase"],
+    projectLink: "/project/EveryPage",
   },
   {
     easyName: "billy",
@@ -30,6 +31,7 @@ let projects = [
     link: "https://github.com/mercury-squad",
     position: "0 -110px",
     stack: ["React, NodeJS, MUI, MongoDB"],
+    projectLink: "/project/Billy",
   },
   {
     easyName: "adventurebc",
@@ -40,6 +42,7 @@ let projects = [
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
     stack: ["Javascript, SCSS, Firebase"],
+    projectLink: "/project/AdventureBC",
   },
 ];
 
@@ -83,13 +86,14 @@ const Main = () => {
                 link={project.link}
                 position={project.position}
                 stack={project.stack}
+                projectLink={project.projectLink}
               />
             ))}
           </div>
         </section>
       </div>
 
-      <section className="contact">
+      {/* <section className="contact">
         <spam id="contact"></spam>
         <ul className="upperList">
           <li className="mail">
@@ -108,7 +112,7 @@ const Main = () => {
             <SocialMenu />
           </li>
         </ul>
-      </section>
+      </section> */}
     </body>
   );
 };

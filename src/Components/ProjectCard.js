@@ -1,5 +1,8 @@
+import { Link, Outlet } from "react-router-dom";
+import Project from "../pages/Project"
+
 const ProjectCard = (props) => {
-  let { easyName, name, description, imagePath, alt, link, position, stack } =
+  let { easyName, name, description, imagePath, alt, link, position, stack, projectLink } =
     props;
 
   return (
@@ -23,9 +26,7 @@ const ProjectCard = (props) => {
         <p className="stack">
           <b>Stack:</b> {stack}
         </p>
-        <a className="readMore" href={link}>
-          Learn more
-        </a>
+        <Link className="customButton" to={projectLink} element={<Project />} state={{ description: description }}>Learn more</Link>
       </div>
     </div>
   );

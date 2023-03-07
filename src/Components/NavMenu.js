@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import SocialMenu from "./SocialMenu";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -27,7 +28,7 @@ const NavMenu = () => {
 
       <div className="floatingMenu hidden" id="floatingMenu">
         <ul>
-          <li><a href="#" onClick={toggleMenu}>Home</a></li>
+        <li><Link to="/">Home</Link></li>
           <li><a href="#about" onClick={toggleMenu}>About me</a></li>
           <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
           <li><a href="#contact" onClick={toggleMenu}>Contact me</a></li>
@@ -38,7 +39,7 @@ const NavMenu = () => {
       <div className="tabletSize">
         <ul>
           <li>
-            <a href="#">Home</a>
+          <Link to="/">Home</Link>
           </li>
           <li>
             <a href="#about">About me</a>
