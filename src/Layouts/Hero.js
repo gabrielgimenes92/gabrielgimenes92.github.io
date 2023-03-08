@@ -29,10 +29,6 @@ const Hero = () => {
                 <p>{reactLogo}</p>
                 <p>React & React Native</p>
               </div>
-              <div>
-                <p>{reactLogo}</p>
-                <p>React & React Native</p>
-              </div>
             </div>
           </div>
         </div>

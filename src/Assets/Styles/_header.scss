@@ -165,7 +165,6 @@ header {
                         }
                     }
                 }
-
             }
         }
     }
@@ -234,7 +233,7 @@ header {
         align-items: center;
         margin: auto;
         max-width: 1200px;
-        gap: 2rem;
+        gap: 6rem;
 
         .profileText {
             text-align: left;
@@ -260,7 +259,7 @@ header {
 
     .profilePicture {
         background-image: url(../Pictures/DSCF9483.jpg) ;
-        z-index: 100;
+        z-index: 10;
         object-position: center;
         background-position-x: 43%;
         background-position-y: 40%;
@@ -270,13 +269,13 @@ header {
         border-radius: 2rem;
     }
 
-    .profilePicture:hover {
-        background-image: url(../Pictures/pesadaum-pesadao.gif);
-        transition: background-image 0.1s linear 5s, background-size 0.1s linear 5s, background-position-x 0.1s linear 5s, background-position-y 0.1s linear 5s;
-        object-fit: cover;
-        background-position-x: center;
-        background-position-y: center;
-    }
+    // .profilePicture:hover {
+    //     background-image: url(../Pictures/pesadaum-pesadao.gif);
+    //     transition: background-image 0.1s linear 5s, background-size 0.1s linear 5s, background-position-x 0.1s linear 5s, background-position-y 0.1s linear 5s;
+    //     object-fit: cover;
+    //     background-position-x: center;
+    //     background-position-y: center;
+    // }
 
     h1 {
         color: $color-main-light;

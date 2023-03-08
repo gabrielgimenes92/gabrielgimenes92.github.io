@@ -3,11 +3,11 @@ import ProjectCard from "../Components/ProjectCard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faReact, faSquareJs, faNodeJs, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import EverypageImage from "../Assets/Pictures/everypage-1.png";
 import BillyImage from "../Assets/Pictures/billy-2.png";
 import ABCImage from "../Assets/Pictures/adventurebc-1.png";
-import Footer from "./Footer";
 
 let projects = [
   {
@@ -48,8 +48,18 @@ let projects = [
 
 const phone = <FontAwesomeIcon icon={faPhone} />;
 const mail = <FontAwesomeIcon icon={faMailBulk} />;
+const reactLogo = <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="React Logo"/>;
+const javascriptLogo = <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Javascript Logo"/>;
+const nodeJSLogo = <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="NodeJS Logo"/>;
+const githubLogo = <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Typescript Logo"/>
+const typescriptLogo = <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript Logo"/>
+
+
 
 const Main = () => {
+
+
+
   return (
     <body>
       <section className="aboutMe">
@@ -69,6 +79,74 @@ const Main = () => {
           management, and interpersonal skills.
         </p>
         {/* <img src="" alt="" /> */}
+      </section>
+      <section className="skills">
+        <h2>Skills</h2>
+        <ul className="skillsList">
+          <li>
+              <p>{javascriptLogo}</p>
+              <p className="name">JavaScript</p>
+          </li>
+          <li>
+              <p>{typescriptLogo}</p>
+              <p className="name">Typescript</p>
+          </li>
+          <li>
+              <p>{reactLogo}</p>
+              <p className="name">React </p>
+          </li>
+          <li>
+              <p>{nodeJSLogo}</p>
+              <p className="name">NodeJs</p>
+          </li>
+          <li>
+              <p>{reactLogo}</p>
+              <p className="name">React Native</p>
+          </li>
+          <li>
+              <p>{githubLogo}</p>
+              <p className="name">GitHub</p>
+          </li>
+          <li>
+              <p>{javascriptLogo}</p>
+              <p className="name">JavaScript</p>
+          </li>
+          <li>
+              <p>{typescriptLogo}</p>
+              <p className="name">Typescript</p>
+          </li>
+          <li>
+              <p>{reactLogo}</p>
+              <p className="name">React </p>
+          </li>
+          <li>
+              <p>{nodeJSLogo}</p>
+              <p className="name">NodeJs</p>
+          </li>
+          <li>
+              <p>{reactLogo}</p>
+              <p className="name">React Native</p>
+          </li>
+          <li>
+              <p>{githubLogo}</p>
+              <p className="name">GitHub</p>
+          </li>          <li>
+              <p>{javascriptLogo}</p>
+              <p className="name">JavaScript</p>
+          </li>
+          <li>
+              <p>{typescriptLogo}</p>
+              <p className="name">Typescript</p>
+          </li>
+          <li>
+              <p>{reactLogo}</p>
+              <p className="name">React </p>
+          </li>
+          <li>
+              <p>{nodeJSLogo}</p>
+              <p className="name">NodeJs</p>
+          </li>
+        </ul>
       </section>
 
       <div className="projectsWrapper">
@@ -92,27 +170,6 @@ const Main = () => {
           </div>
         </section>
       </div>
-
-      {/* <section className="contact">
-        <spam id="contact"></spam>
-        <ul className="upperList">
-          <li className="mail">
-            <a href="mailto:gabrielcgimenes@gmail.com" className="icon">
-              {mail}
-              <p>gabrielcgimenes@gmail.com</p>
-            </a>
-          </li>
-          <li className="phone">
-            <a href="tel: 236-886-7471" className="icon">
-              {phone}
-              <p>236-886-7471</p>
-            </a>
-          </li>
-          <li className="contactSocial">
-            <SocialMenu />
-          </li>
-        </ul>
-      </section> */}
     </body>
   );
 };
