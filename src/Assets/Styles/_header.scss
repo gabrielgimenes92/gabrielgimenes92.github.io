@@ -182,7 +182,9 @@ header {
 
     position: relative;
 
-    .ball {
+    overflow: hidden;
+
+    .ball1 {
         position: absolute;
         bottom: -250px;
         left: -250px;
@@ -194,7 +196,13 @@ header {
         overflow: hidden;
         border-radius: 50%;
         filter: blur(150px);
-        clip-path: polygon(0% -100%, 200% -100%, 200% 58%, -100% 58%);
+        animation: 60s ball1 infinite;
+    }
+
+    @keyframes ball1 {
+        0% {left: -250px; bottom: -250px}
+        50% {left: 650px; bottom: -500px}
+        100% {left: -250px; bottom: -250px}
     }
 
     .ball2 {
@@ -203,12 +211,19 @@ header {
         right: -250px;
         background-color: rgb(50, 144, 199);
         mix-blend-mode: overlay;
-        display: inline-block;
+        display: block;
         height: 600px;
         width: 600px;
         overflow: hidden;
         border-radius: 50%;
         filter: blur(150px);
+        animation: 60s ball2 infinite;
+    }
+
+    @keyframes ball2 {
+        0% {right: -250px; top: -250px}
+        50% {right: 900px; top: -700px}
+        100% {right: -250px; top: -250px}
     }
 
     .ball3 {
@@ -269,6 +284,8 @@ header {
         border-radius: 2rem;
     }
 
+    // Inhegas foi pra praia:
+    //
     // .profilePicture:hover {
     //     background-image: url(../Pictures/pesadaum-pesadao.gif);
     //     transition: background-image 0.1s linear 5s, background-size 0.1s linear 5s, background-position-x 0.1s linear 5s, background-position-y 0.1s linear 5s;
@@ -289,7 +306,7 @@ header {
 
     .skills {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 2rem;
         margin: 0 auto;
         margin-top: 1.5rem;

@@ -10,14 +10,14 @@ const Hero = () => {
 
   return (
     <section className="home">
-      <div className="ball" />
+      <div className="ball1" />
       <div className="ball2" />
       <div className="ball3" />
 
         <div className="introduction">
           <div className="profilePicture"/>
           <div className="profileText">
-            <p>Hi I'm</p>
+            <p>Hi, my name is</p>
             <p className="bigger"><spam className="light">&#123;</spam> Gabriel Gimenes <spam className="light">&#125;</spam></p>
             <p className="bigger">Junior frontend <spam className="light">/</spam> mobile developer</p>
             <div className="skills">
