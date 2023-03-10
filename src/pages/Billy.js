@@ -3,6 +3,13 @@ import Header from '../Layouts/Header'
 import { useLocation, useParams } from 'react-router-dom';
 import Footer from '../Layouts/Footer';
 
+import SS1 from "../Assets/Pictures/BillyGallery/SS1.png"
+import SS2 from "../Assets/Pictures/BillyGallery/SS2.png"
+import SS3 from "../Assets/Pictures/BillyGallery/SS3.png"
+import SS4 from "../Assets/Pictures/BillyGallery/SS4.png"
+import SS5 from "../Assets/Pictures/BillyGallery/SS5.png"
+import SS6 from "../Assets/Pictures/BillyGallery/SS6.png"
+
 const Billy = (props) => {
   const { id } = useParams();
   let { state } = useLocation();
@@ -25,12 +32,12 @@ const Billy = (props) => {
         </div>
         <div className="gallery">
           <h2>Gallery</h2>
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-23-41.png" alt="" />
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-32-31.png" alt="" />
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-33-10.png" alt="" />
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-38-55.png" alt="" />
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-39-20.png" alt="" />
-          <img src="src/Assets/Pictures/BillyGallery/Screenshot from 2023-03-10 15-39-28.png" alt="" />
+          <img src={SS1} alt="" />
+          <img src={SS2} alt="" />
+          <img src={SS3} alt="" />
+          <img src={SS4} alt="" />
+          <img src={SS5} alt="" />
+          <img src={SS6} alt="" />
         </div>
         <Footer />
     </div>
