@@ -178,11 +178,15 @@ header {
     background-color: $color-bg-dark;
     
     text-align: center;
-    padding: 14rem 2% 8.5rem 2%;
+    padding: 9rem 5% 5rem 5%;
 
     position: relative;
 
     overflow: hidden;
+
+    @include sizeDesktop {
+        padding: 11rem 2% 7.5rem 2%;
+    }
 
     .ball1 {
         position: absolute;
@@ -229,7 +233,7 @@ header {
     .ball3 {
         position: absolute;
         top: -400px;
-        right: 700px;
+        right: 900px;
         background-color: rgb(200, 200, 200);
         mix-blend-mode: overlay;
         display: inline-block;
@@ -243,12 +247,24 @@ header {
 
     .introduction {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         margin: auto;
         max-width: 1200px;
-        gap: 6rem;
+        gap: 3rem;
+
+        .profilePicture {
+            background-image: url(../Pictures/DSCF9483.jpg) ;
+            z-index: 10;
+            object-position: center;
+            background-position-x: 43%;
+            background-position-y: 40%;
+            background-size: 220%;
+            width: 250px;
+            height: 250px;
+            border-radius: 2rem;
+        }
 
         .profileText {
             text-align: left;
@@ -270,18 +286,19 @@ header {
             }
         }
 
-    }
+        @include sizeTablet {
+            flex-flow: row nowrap;
+            gap: 3rem;
+        }
 
-    .profilePicture {
-        background-image: url(../Pictures/DSCF9483.jpg) ;
-        z-index: 10;
-        object-position: center;
-        background-position-x: 43%;
-        background-position-y: 40%;
-        background-size: 215%;
-        width: 350px;
-        height: 350px;
-        border-radius: 2rem;
+        @include sizeDesktop {
+            gap: 6rem;
+
+            .profilePicture {
+                width: 350px;
+                height: 350px;
+            }
+        }
     }
 
     // Inhegas foi pra praia:
