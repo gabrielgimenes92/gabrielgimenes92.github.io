@@ -28,7 +28,8 @@ const NavMenu = () => {
 
       <div className="floatingMenu hidden" id="floatingMenu">
         <ul>
-        <li><Link to="/">Home</Link></li>
+          {/* <li><Link to="/">Home</Link></li> */}
+          <li><a href="#" onClick={toggleMenu}>Home</a></li>
           <li><a href="#about" onClick={toggleMenu}>About me</a></li>
           <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
           <li><a href="#contact" onClick={toggleMenu}>Contact me</a></li>
@@ -38,8 +39,11 @@ const NavMenu = () => {
 
       <div className="tabletSize">
         <ul>
-          <li>
+          {/* <li>
           <Link to="/">Home</Link>
+          </li> */}
+          <li>
+          <a href="#">Home</a>
           </li>
           <li>
             <a href="#about">About me</a>

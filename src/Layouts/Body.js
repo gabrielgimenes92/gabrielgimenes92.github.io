@@ -20,6 +20,7 @@ let projects = [
     link: "https://github.com/orgs/Team-Ditto/repositories",
     stack: ["React Native, NestJS, NativeBase, Firebase"],
     projectLink: "/project/EveryPage",
+    webpage: "https://everypage.ca/",
   },
   {
     easyName: "billy",
@@ -32,6 +33,7 @@ let projects = [
     position: "0 -110px",
     stack: ["React, NodeJS, MUI, MongoDB"],
     projectLink: "/project/Billy",
+    webpage: "http://invoicebilly.com",
   },
   {
     easyName: "adventurebc",
@@ -43,6 +45,7 @@ let projects = [
     link: "https://github.com/luferupa/adventurebc",
     stack: ["Javascript, SCSS, Firebase"],
     projectLink: "/project/AdventureBC",
+    webpage: "",
   },
 ];
 
@@ -78,7 +81,6 @@ const Main = () => {
           provides me with other skills like problem-solving, product
           management, and interpersonal skills.
         </p>
-        {/* <img src="" alt="" /> */}
       </section>
       <section className="skills">
         <h2>Skills</h2>
@@ -107,45 +109,6 @@ const Main = () => {
               <p>{githubLogo}</p>
               <p className="name">GitHub</p>
           </li>
-          <li>
-              <p>{javascriptLogo}</p>
-              <p className="name">JavaScript</p>
-          </li>
-          <li>
-              <p>{typescriptLogo}</p>
-              <p className="name">Typescript</p>
-          </li>
-          <li>
-              <p>{reactLogo}</p>
-              <p className="name">React </p>
-          </li>
-          <li>
-              <p>{nodeJSLogo}</p>
-              <p className="name">NodeJs</p>
-          </li>
-          <li>
-              <p>{reactLogo}</p>
-              <p className="name">React Native</p>
-          </li>
-          <li>
-              <p>{githubLogo}</p>
-              <p className="name">GitHub</p>
-          </li>          <li>
-              <p>{javascriptLogo}</p>
-              <p className="name">JavaScript</p>
-          </li>
-          <li>
-              <p>{typescriptLogo}</p>
-              <p className="name">Typescript</p>
-          </li>
-          <li>
-              <p>{reactLogo}</p>
-              <p className="name">React </p>
-          </li>
-          <li>
-              <p>{nodeJSLogo}</p>
-              <p className="name">NodeJs</p>
-          </li>
         </ul>
       </section>
 
@@ -165,6 +128,7 @@ const Main = () => {
                 position={project.position}
                 stack={project.stack}
                 projectLink={project.projectLink}
+                webpage={project.webpage}
               />
             ))}
           </div>

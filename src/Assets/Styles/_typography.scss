@@ -59,15 +59,16 @@ a.disabledButtom {
     font-family: $font-sans;
 
     text-align: center;
-    padding: 0.25rem 0.5rem;
-    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
     border: none;
+    align-self: center;
+    width: 100%;
 
     color: $color-main-light;
 
     background-color: rgba($color-accent, 0.5);
     border-radius: 6px;
-    padding: 0.25rem 0.6rem;
     pointer-events: none;
 }
 
