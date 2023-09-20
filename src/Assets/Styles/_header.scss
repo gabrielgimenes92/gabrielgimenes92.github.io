@@ -289,6 +289,20 @@ header {
             .light {
                 color: rgb(50, 144, 199)
             }
+
+            .hero-skills {
+                display: flex;
+                justify-content: start;
+                max-width: 1200px;
+                margin: 1.5rem 0 0 0;
+                gap: 2rem;
+
+                div {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap: 0.5rem;
+                }
+            }
         }
 
         @include sizeTablet {

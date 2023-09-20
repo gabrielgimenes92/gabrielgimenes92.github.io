@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="bigger">
             Junior frontend <spam className="light">/</spam> mobile developer
           </p>
-          <div className="skills">
+          <div className="hero-skills">
             <div>
               <p>{javascriptLogo}</p>
               <p>JavaScript</p>
