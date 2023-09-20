@@ -1,9 +1,19 @@
 import { Link, Outlet } from "react-router-dom";
-import Project from "../pages/Project"
+import Project from "../pages/Project";
 
 const ProjectCard = (props) => {
-  let { easyName, name, description, imagePath, alt, link, position, stack, projectLink, webpage } =
-    props;
+  let {
+    easyName,
+    name,
+    description,
+    imagePath,
+    alt,
+    link,
+    position,
+    stack,
+    projectLink,
+    webpage,
+  } = props;
 
   return (
     <div className="singleProject" id={easyName}>
@@ -26,9 +36,22 @@ const ProjectCard = (props) => {
         <p className="stack">
           <b>Stack:</b> {stack}
         </p>
-        <div className="tempWrapper" style={{ display:"flex", flexFlow:"row nowrap", gap: "1rem" }}>
-          { webpage=="" ? <a className="disabledButtom" href={webpage} target="_blank">Webpage</a> : <a className="customButton" href={webpage} target="_blank">Webpage</a> }
-          <a className="customButton" href={link} target="_blank">GitHub Repo</a>
+        <div
+          className="tempWrapper"
+          style={{ display: "flex", flexFlow: "row nowrap", gap: "1rem" }}
+        >
+          {webpage == "" ? (
+            <a className="disabledButtom" href={webpage} target="_blank">
+              Webpage
+            </a>
+          ) : (
+            <a className="customButton" href={webpage} target="_blank">
+              Webpage
+            </a>
+          )}
+          <a className="customButton" href={link} target="_blank">
+            GitHub Repo
+          </a>
         </div>
 
         {/* <Link className="customButton" to={projectLink} element={<Project />} state={{ description: description }}>Learn more</Link> */}
