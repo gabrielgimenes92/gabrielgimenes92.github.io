@@ -4,8 +4,6 @@ import SocialMenu from "./SocialMenu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
 const NavMenu = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
 
@@ -13,7 +11,7 @@ const NavMenu = () => {
   const x = <FontAwesomeIcon icon={faXmark} />;
 
   function toggleMenu() {
-    const floatingMenu = document.getElementById('floatingMenu');
+    const floatingMenu = document.getElementById("floatingMenu");
     floatingMenu.classList.toggle("hidden");
     setNavBarOpen(!navBarOpen);
   }
@@ -21,30 +19,48 @@ const NavMenu = () => {
   return (
     <div className="headerMenu">
       <div className="mobileSize">
-        <a onClick={toggleMenu}>
-          {navBarOpen ? x : hamburger}
-        </a>
+        <a onClick={toggleMenu}>{navBarOpen ? x : hamburger}</a>
       </div>
 
       <div className="floatingMenu hidden" id="floatingMenu">
         <ul>
-          {/* <li><Link to="/">Home</Link></li> */}
-          <li><a href="#" onClick={toggleMenu}>Home</a></li>
-          <li><a href="#about" onClick={toggleMenu}>About me</a></li>
-          <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-          <li><a href="#contact" onClick={toggleMenu}>Contact me</a></li>
-          <li><SocialMenu /></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <a href="#" onClick={toggleMenu}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={toggleMenu}>
+              About me
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={toggleMenu}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={toggleMenu}>
+              Contact me
+            </a>
+          </li>
+          <li>
+            <SocialMenu />
+          </li>
         </ul>
       </div>
 
       <div className="tabletSize">
         <ul>
-          {/* <li>
-          <Link to="/">Home</Link>
-          </li> */}
           <li>
-          <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
+          {/* <li>
+            <a href="#">Home</a>
+          </li> */}
           <li>
             <a href="#about">About me</a>
           </li>

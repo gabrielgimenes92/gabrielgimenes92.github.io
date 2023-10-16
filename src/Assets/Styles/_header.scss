@@ -16,7 +16,6 @@ header {
 
         .navMenus {
             margin: 1rem 2%;
-            padding: 0 1rem;
             border-radius: 8px;
 
             @include sizeDesktop {
@@ -248,11 +247,10 @@ header {
     .introduction {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin: auto;
-        max-width: 1200px;
-        gap: 3rem;
+        max-width: 896px;
 
         .profilePicture {
             background-image: url(../Pictures/DSCF9483.jpg) ;

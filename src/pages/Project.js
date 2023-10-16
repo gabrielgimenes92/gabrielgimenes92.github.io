@@ -1,25 +1,129 @@
-import React from 'react'
-import Header from '../Layouts/Header'
-import { useLocation, useParams } from 'react-router-dom';
-import Footer from '../Layouts/Footer';
+import React from "react";
+import Header from "../Layouts/Header";
+import { useLocation, useParams } from "react-router-dom";
+import Footer from "../Layouts/Footer";
+import {
+  underConstructionContents,
+  everypageContents,
+  billyContents,
+  abcContents,
+} from "../Assets/Content/projectContents";
 
 const ProjectPage = (props) => {
   const { id } = useParams();
   let { state } = useLocation();
 
-  return (
-    <div className='projectPage'>
-        <Header />
-        <div className="title">
-          <h1>Project {id}</h1>
-          <h2>This page is under construction</h2>
-        </div>
-        <div className="content">
-        </div>
-        <div className="gallery"></div>
-        <Footer />
-    </div>
-  )
-}
+  let project;
+  if (id === "everypage") {
+    project = everypageContents;
+  } else if (id === "billy") {
+    project = billyContents;
+  } else if (id === "adventurebc") {
+    project = abcContents;
+  } else {
+    project = underConstructionContents;
+  }
 
-export default ProjectPage
+  return (
+    <div className="projectPage">
+      <Header />
+
+      <div className="projectHeaderWrapper home">
+        <div className="ball1" />
+        <div className="ball2" />
+        <div className="ball3" />
+        <div className="projectHeader">
+          <h1>{project.title}</h1>
+          {project.subtitle ? <h2>{project.subtitle}</h2> : <></>}
+        </div>
+      </div>
+      <div className="projectLinks"></div>
+      <div className="projectContent">
+        {project.theProblem && project.theProblem.length > 0 ? (
+          <div>
+            <h2>The Problem</h2>
+            <div>
+              {project.theProblem.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+        <div>
+          {project.techStack && project.techStack.length > 0 ? (
+            <div className="techStack">
+              <h2>Tech Stack</h2>
+              <ul className="techStackList">
+                {project.techStack.map((tech) => (
+                  <li>
+                    {tech.logo}
+                    <p className="name">{tech.name}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
+
+        {project.mainContent && project.mainContent.length > 0 ? (
+          <div className="projectMainContent">
+            {project.mainContent.map((content) => {
+              if (content.type === "title") {
+                return <h2>{content.content}</h2>;
+              } else if (content.type === "paragraph") {
+                return <p>{content.content}</p>;
+              } else if (content.type === "image") {
+                return <img src={content.content} alt={content.alt} />;
+              } else if (content.type === "imgage+text") {
+                return (
+                  <div className="projectTextImage">
+                    <img src={content.content[0]} alt={content.alt} />
+                    <p>{content.content[1]}</p>
+                  </div>
+                );
+              } else if (content.type === "text+image") {
+                return (
+                  <div className="projectTextImage">
+                    <p>{content.content[0]}</p>
+                    <img src={content.content[1]} alt={content.alt} />
+                  </div>
+                );
+              } else if (content.type === "custom") {
+                return <div className="projectCustom">{content.content}</div>;
+              } else {
+                return (
+                  <div>
+                    <h1>!!ERROR!!</h1>
+                    <h2>Type not recognized</h2>
+                  </div>
+                );
+              }
+            })}
+          </div>
+        ) : (
+          <></>
+        )}
+
+        {project.gallery && project.gallery.length > 0 ? (
+          <div className="projectGallery">
+            <h2>Gallery</h2>
+            <div className="projectGalleryGrid">
+              {project.gallery.map((img) => (
+                <img src={img.link} alt={img.alt} />
+              ))}
+            </div>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default ProjectPage;

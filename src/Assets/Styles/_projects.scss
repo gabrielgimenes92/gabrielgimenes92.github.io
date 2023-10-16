@@ -1,8 +1,26 @@
 .projectPage {
 
-    .title  {
+    h1 {
+        text-align: center;
+        margin: 3rem auto 2rem auto;
+    }
+
+    h2, h3 {
+        text-align: center;
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    .projectHeaderWrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .projectHeader  {
         padding-top: 6rem;
         padding-bottom: 2rem;
+        margin: auto;
+        max-width: 1200px;
     }
 
     .links {
@@ -15,56 +33,124 @@
         padding: 2rem 0;
     }
 
-    .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin: auto;
-        max-width: 1200px;
-        align-items: center;
-        justify-content: center;
-
-        * {
+    .techStack {
+        padding: 3rem 0;
+    
+        .techStackList {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            max-width: 896px;
             margin: auto;
-            text-align: left;
-            max-width: 500px;
+            gap: 1rem;
+    
+            @include sizeDesktop {
+                gap: 2rem;
+            }
+    
+            li {
+                width: 120px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-end;
+                justify-content: center;
+                list-style-type: none;
+                gap: 0.5rem;
+                
+                
+                @include sizeDesktop {
+                    
+                }
+                
+                p {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 3rem;
+                    
+                    img {
+                        border-radius: 0.5rem;
+                    }
+                }
+    
+                .name {
+                    font-size: 0.6rem;
+                    align-self: flex-end;
+                }
+            }
+        }
+        }
+
+    .projectContent {
+        margin: auto;
+        max-width: 896px;
+
+        .projectTextImage {
+            margin: 2rem auto;
+            max-width: 896px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .projectCustom {
+            max-width: 896px;
+            margin: auto;
+
+            * {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin: 0 0 2rem 0;
+            max-width: 896px;
+        }
+
+        img {
+            margin: 0 auto;
         }
     }
 
-    .gallery {
+    
+
+    .projectGallery {
         h2 {
             padding: 2rem 0 1rem 0;
             grid-column: -1 / 1;
         }
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        margin: auto;
-        max-width: 1200px;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 6rem;
-
-        img {
-            transition: scale 0.5s;
-            border-radius: 1rem;
-            transition: scale 0.5s, filter 0.5s;
-            filter: brightness(0.8);
-        }
-
-        img:hover {
-            scale: 1.01;
-            transition: scale 0.5s, filter 0.5s;
-            filter: brightness(1);
-        }
-
-        * {
+        .projectGalleryGrid {
+    
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
             margin: auto;
-            text-align: center;
-            max-width: 400px;
+            max-width: 1200px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 6rem;
+    
+            img {
+                transition: scale 0.5s;
+                border-radius: 1rem;
+                transition: scale 0.5s, filter 0.5s;
+                filter: brightness(0.8);
+            }
+    
+            img:hover {
+                scale: 1.01;
+                transition: scale 0.5s, filter 0.5s;
+                filter: brightness(1);
+            }
+    
+            * {
+                margin: auto;
+                text-align: center;
+                max-width: 400px;
+            }
         }
     }
+
 
     .expandedGallery {
         top: 0;

@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
   return (
     <div className="singleProject" id={easyName}>
       <div className="imageDescriptionWrapper">
-        <a href={link}>
+        <Link to={projectLink}>
           <div className="imageContainer">
             <img
               src={imagePath}
@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
               <h3>{name}</h3>
             </div>
           </div>
-        </a>
+        </Link>
         <p>{description}</p>
       </div>
       <div>
@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
           className="tempWrapper"
           style={{ display: "flex", flexFlow: "row nowrap", gap: "1rem" }}
         >
-          {webpage == "" ? (
+          {/* {webpage == "" ? (
             <a className="disabledButtom" href={webpage} target="_blank">
               Webpage
             </a>
@@ -48,8 +48,16 @@ const ProjectCard = (props) => {
             <a className="customButton" href={webpage} target="_blank">
               Webpage
             </a>
-          )}
-          <a className="customButton" href={link} target="_blank">
+          )} */}
+          <Link className="customButton" to={projectLink}>
+            Learn More
+          </Link>
+          <a
+            className="customButton"
+            rel="noreferrer"
+            href={link}
+            target="_blank"
+          >
             GitHub Repo
           </a>
         </div>

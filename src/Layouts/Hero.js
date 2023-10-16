@@ -12,7 +12,6 @@ const Hero = () => {
       <div className="ball1" />
       <div className="ball2" />
       <div className="ball3" />
-
       <div className="introduction">
         <div className="profilePicture" />
         <div className="profileText">

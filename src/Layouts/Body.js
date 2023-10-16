@@ -24,7 +24,7 @@ let projects = [
     alt: "",
     link: "https://github.com/orgs/Team-Ditto/repositories",
     stack: ["React Native, NestJS, NativeBase, Firebase"],
-    projectLink: "/project/EveryPage",
+    projectLink: "/project/everypage",
     webpage: "https://everypage.ca/",
   },
   {
@@ -37,7 +37,7 @@ let projects = [
     link: "https://github.com/mercury-squad",
     position: "0 -110px",
     stack: ["React, NodeJS, MUI, MongoDB"],
-    projectLink: "/project/Billy",
+    projectLink: "/project/billy",
     webpage: "",
   },
   {
@@ -49,7 +49,7 @@ let projects = [
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
     stack: ["Javascript, SCSS, Firebase"],
-    projectLink: "/project/AdventureBC",
+    projectLink: "/project/adventurebc",
     webpage: "",
   },
 ];
@@ -120,7 +120,7 @@ const Main = () => {
           </li>
           <li>
             <p>{reactLogo}</p>
-            <p className="name">React </p>
+            <p className="name">React</p>
           </li>
           <li>
             <p>{nodeJSLogo}</p>

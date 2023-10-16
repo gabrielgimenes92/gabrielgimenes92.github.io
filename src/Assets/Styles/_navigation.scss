@@ -43,10 +43,14 @@
         }
 
         .phone, .mail, .contactSocial, .address {
-            flex-basis: 45%;
+            // flex-basis: 20%;
             list-style-type: none;
-            min-width: 100px;
+            // min-width: 100px;
             margin: 0.75rem 0 0 0;
+
+            @include sizeDesktop {
+                margin: 0;
+            }
 
             a {
                 display: flex;
