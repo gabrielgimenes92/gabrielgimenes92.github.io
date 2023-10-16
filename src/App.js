@@ -10,8 +10,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
         <Route path="/project/:id" element={<Project />} />
-        {/* <Route path="/project/billy" element={<Billy />} />
-        <Route path="/project/everypage" element={<Everypage />} /> */}
       </Routes>
       <ScrollToTop />
     </>

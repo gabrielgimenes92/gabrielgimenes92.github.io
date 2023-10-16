@@ -1,67 +1,16 @@
 import placeHolderImage from "../Pictures/Rubber_duckies_So_many_ducks.jpg";
 import everypage01 from "../Pictures/EveryPage-01.png";
-
-const reactLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
-    alt="React Logo"
-  />
-);
-const javascriptLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-    alt="Javascript Logo"
-  />
-);
-const nodeJSLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-    alt="NodeJS Logo"
-  />
-);
-// const githubLogo = (
-//   <img
-//     src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-//     alt="Typescript Logo"
-//   />
-// );
-const typescriptLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-    alt="Typescript Logo"
-  />
-);
-const nestJSLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
-    alt="NestJS"
-  />
-);
-const nativeBaseLogo = (
-  <img
-    src="https://nativebase.io/img/nativebase-logo-light.svg"
-    alt="Native Base"
-  />
-);
-const mongoDBLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-    alt="MongoDB"
-  />
-);
-const muiLogo = <img src="https://mui.com/static/logo.png" alt="MUI" />;
-const scssLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
-    alt="SCSS"
-  />
-);
-const firebaseLogo = (
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
-    alt="Firebase"
-  />
-);
+import {
+  reactLogo,
+  javascriptLogo,
+  nodeJSLogo,
+  nestJSLogo,
+  nativeBaseLogo,
+  mongoDBLogo,
+  muiLogo,
+  scssLogo,
+  firebaseLogo,
+} from "./logos";
 
 export const emptyContents = {
   title: "",

@@ -39,6 +39,18 @@ header {
                     display: none;
                 }
 
+                .sameForMobile {
+                    display: block;
+
+                    li {
+                        list-style-type: none;
+                        
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
                 .floatingMenu {
                     display: block;
                     position: fixed;
@@ -96,7 +108,6 @@ header {
                                 }
                             }                         
                         }
-                        
 
                         ul {
                             padding-top: 0;
@@ -106,7 +117,6 @@ header {
                             }
                         }
                     }
-
 
                     .headerMenu ul {
                         padding-top: 1rem;
@@ -130,8 +140,6 @@ header {
                     opacity: 0;
                     visibility: hidden;
                 }
-
-
 
                 @include sizeDesktop {
 
@@ -158,7 +166,10 @@ header {
                                 list-style: none;
 
                                 @include sizeTablet {
-                                    font-size: 1rem;
+                                    
+                                    a {
+                                        font-size: 1rem;
+                                    }
                                 }
                             }
                         }

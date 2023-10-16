@@ -1,7 +1,9 @@
+import { useLocation } from "react-router-dom";
 import NavMenu from "../Components/NavMenu";
-import SocialMenu from "../Components/SocialMenu";
 
 const Header = () => {
+  console.log(useLocation());
+
   return (
     <header className="backgroundHeader">
       <div className="navMenuWrapper">
