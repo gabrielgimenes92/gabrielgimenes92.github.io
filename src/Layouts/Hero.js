@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
 
-import profile from "../Assets/Pictures/pesadaum-pesadao.gif";
+// import profile from "../Assets/Pictures/pesadaum-pesadao.gif";
 
 const Hero = () => {
   const reactLogo = <FontAwesomeIcon icon={faReact} />;

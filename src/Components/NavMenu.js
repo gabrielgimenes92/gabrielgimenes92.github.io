@@ -4,6 +4,7 @@ import SocialMenu from "./SocialMenu";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavMenu = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -25,9 +26,6 @@ const NavMenu = () => {
         </div>
         <div className="floatingMenu hidden" id="floatingMenu">
           <ul>
-            {/* <li>
-            <Link to="/">Home</Link>
-          </li> */}
             <li>
               <a href="#" onClick={toggleMenu}>
                 Home
@@ -76,12 +74,45 @@ const NavMenu = () => {
   } else {
     return (
       <div className="headerMenu">
-        <div className="tabletSize sameForMobile">
+        <div className="mobileSize">
+          <a onClick={toggleMenu}>{navBarOpen ? x : hamburger}</a>
+        </div>
+        <div className="floatingMenu hidden" id="floatingMenu">
           <ul>
             <li>
-              <Link to="/">&#60; Back</Link>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <HashLink to="/#about" onClick={toggleMenu}>
+                About me
+              </HashLink>
+            </li>
+            <li>
+              <HashLink to="/#projects" onClick={toggleMenu}>
+                Projects
+              </HashLink>
+            </li>
+            <li>
+              <HashLink to="/#contact" onClick={toggleMenu}>
+                Contact me
+              </HashLink>
+            </li>
+            <li>
+              <SocialMenu />
             </li>
           </ul>
+        </div>
+
+        <div className="tabletSize">
+          <ul>
+            <Link to="/">Home</Link>
+            <HashLink to="/#about">About me</HashLink>
+            <HashLink to="/#projects">Projects</HashLink>
+            <HashLink to="/#contact">Contact me</HashLink>
+          </ul>
+          <SocialMenu />
         </div>
       </div>
     );

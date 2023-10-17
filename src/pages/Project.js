@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Layouts/Header";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Footer from "../Layouts/Footer";
 import {
   underConstructionContents,
@@ -11,7 +11,6 @@ import {
 
 const ProjectPage = (props) => {
   const { id } = useParams();
-  let { state } = useLocation();
 
   let project;
   if (id === "everypage") {
@@ -94,6 +93,15 @@ const ProjectPage = (props) => {
                 );
               } else if (content.type === "custom") {
                 return <div className="projectCustom">{content.content}</div>;
+              } else if (content.type === "paragraph+link") {
+                return (
+                  <div>
+                    <p>
+                      {content.content}
+                      {content.link}
+                    </p>
+                  </div>
+                );
               } else {
                 return (
                   <div>

@@ -42,6 +42,8 @@ let everyPageVideo = (
   ></iframe>
 );
 
+const everypageLink01 = <a href="http://www.google.com">this link</a>;
+
 export const everypageContents = {
   title: "everypage",
   //subtitle: "Never stop reading",
@@ -100,6 +102,11 @@ export const everypageContents = {
       type: "paragraph",
       content:
         "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    },
+    {
+      type: "paragraph+link",
+      content: "To learn more go to: ",
+      link: everypageLink01,
     },
   ],
   gallery: [

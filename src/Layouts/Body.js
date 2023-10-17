@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faMailBulk, faPhone } from "@fortawesome/free-solid-svg-icons";
 // import {
 //   faReact,
 //   faSquareJs,
@@ -61,8 +61,8 @@ let projects = [
   },
 ];
 
-const phone = <FontAwesomeIcon icon={faPhone} />;
-const mail = <FontAwesomeIcon icon={faMailBulk} />;
+// const phone = <FontAwesomeIcon icon={faPhone} />;
+// const mail = <FontAwesomeIcon icon={faMailBulk} />;
 
 const Main = () => {
   return (
