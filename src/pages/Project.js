@@ -50,34 +50,19 @@ const ProjectPage = (props) => {
         ) : (
           <></>
         )}
-        <div>
-          {project.techStack && project.techStack.length > 0 ? (
-            <div className="techStack">
-              <h2>Tech Stack</h2>
-              <ul className="techStackList">
-                {project.techStack.map((tech) => (
-                  <li>
-                    {tech.logo}
-                    <p className="name">{tech.name}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : (
-            <></>
-          )}
-        </div>
 
         {project.mainContent && project.mainContent.length > 0 ? (
           <div className="projectMainContent">
             {project.mainContent.map((content) => {
               if (content.type === "title") {
                 return <h2>{content.content}</h2>;
+              } else if (content.type === "subtitle") {
+                return <h3>{content.content}</h3>;
               } else if (content.type === "paragraph") {
                 return <p>{content.content}</p>;
               } else if (content.type === "image") {
                 return <img src={content.content} alt={content.alt} />;
-              } else if (content.type === "imgage+text") {
+              } else if (content.type === "image+text") {
                 return (
                   <div className="projectTextImage">
                     <img src={content.content[0]} alt={content.alt} />
@@ -92,7 +77,7 @@ const ProjectPage = (props) => {
                   </div>
                 );
               } else if (content.type === "custom") {
-                return <div className="projectCustom">{content.content}</div>;
+                return <div className={content.class}>{content.content}</div>;
               } else if (content.type === "paragraph+link") {
                 return (
                   <div>
@@ -102,6 +87,18 @@ const ProjectPage = (props) => {
                     </p>
                   </div>
                 );
+              } else if (content.type === "techStack") {
+                <div className="techStack">
+                  <h2>Tech Stack</h2>
+                  <ul className="techStackList">
+                    {content.content.map((tech) => (
+                      <li>
+                        {tech.logo}
+                        <p className="name">{tech.name}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>;
               } else {
                 return (
                   <div>
