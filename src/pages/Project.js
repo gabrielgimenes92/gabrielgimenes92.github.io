@@ -88,17 +88,19 @@ const ProjectPage = (props) => {
                   </div>
                 );
               } else if (content.type === "techStack") {
-                <div className="techStack">
-                  <h2>Tech Stack</h2>
-                  <ul className="techStackList">
-                    {content.content.map((tech) => (
-                      <li>
-                        {tech.logo}
-                        <p className="name">{tech.name}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>;
+                return (
+                  <div className="techStack">
+                    <h2>Tech Stack</h2>
+                    <ul className="techStackList">
+                      {content.content.map((tech) => (
+                        <li>
+                          {tech.logo}
+                          <p className="name">{tech.name}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
               } else {
                 return (
                   <div>

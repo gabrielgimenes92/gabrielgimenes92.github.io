@@ -195,10 +195,6 @@ export const everypageContents = {
 export const billyContents = {
   title: "Billy",
   headerPicture: "",
-  theProblem: [
-    "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-  ],
   techStack: [
     {
       name: "React",
@@ -218,62 +214,59 @@ export const billyContents = {
     },
   ],
   mainContent: [
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
-    {
-      type: "image",
-      content: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
+    { type: "title", content: "page under construction" },
+    //   {
+    //     type: "paragraph",
+    //     content:
+    //       "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    //   },
+    //   {
+    //     type: "image",
+    //     content: placeHolderImage,
+    //     alt: "Place holder text",
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     content:
+    //       "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    //   },
+    //   {
+    //     type: "paragraph",
+    //     content:
+    //       "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    //   },
   ],
-  gallery: [
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-  ],
+  // gallery: [
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  // ],
 };
 
 export const abcContents = {
   title: "Adventure BC",
   headerPicture: "",
-  theProblem: [
-    "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-  ],
   techStack: [
     {
       name: "JavaScript",
@@ -289,51 +282,53 @@ export const abcContents = {
     },
   ],
   mainContent: [
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
-    {
-      type: "image",
-      content: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
-    },
+    { type: "title", content: "page under construction" },
+
+    // {
+    //   type: "paragraph",
+    //   content:
+    //     "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    // },
+    // {
+    //   type: "image",
+    //   content: placeHolderImage,
+    //   alt: "Place holder text",
+    // },
+    // {
+    //   type: "paragraph",
+    //   content:
+    //     "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    // },
+    // {
+    //   type: "paragraph",
+    //   content:
+    //     "Every Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores exercitationem sequi veniam nesciunt totam quisquam accusamus repudiandae? Quo quisquam, ducimus voluptatibus praesentium illo sit reprehenderit aut iusto vel aspernatur!",
+    // },
   ],
-  gallery: [
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-    {
-      link: placeHolderImage,
-      alt: "Place holder text",
-    },
-  ],
+  // gallery: [
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  //   {
+  //     link: placeHolderImage,
+  //     alt: "Place holder text",
+  //   },
+  // ],
 };
