@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Layouts/Header";
 import { useParams } from "react-router-dom";
 import Footer from "../Layouts/Footer";
@@ -10,6 +10,11 @@ import {
 } from "../Assets/Content/projectContents";
 
 const ProjectPage = (props) => {
+  let [fullscreenGallery, setFullscreenGallery] = useState(false);
+  let [currentImageForGallery, setCurrentImageForGallery] = useState({
+    link: "",
+    alt: "",
+  });
   const { id } = useParams();
 
   let project;
@@ -23,10 +28,38 @@ const ProjectPage = (props) => {
     project = underConstructionContents;
   }
 
+  const handleOpenGallery = (event, key) => {
+    console.log("The key is: " + key);
+    let image = project.gallery[key];
+    setCurrentImageForGallery(image);
+    setFullscreenGallery(true);
+  };
+
+  const handleCloseGallery = () => {
+    setFullscreenGallery(false);
+  };
+
   return (
     <div className="projectPage">
+      {fullscreenGallery ? (
+        <div className="fullscreenGalleryWrapper">
+          <div className="fullscreenGallery" onClick={handleCloseGallery}>
+            <div className="imageBlock">
+              {/* <div className="imageScroll"> */}
+              <img
+                src={currentImageForGallery.link}
+                alt={currentImageForGallery.alt}
+              />
+              {/* </div> */}
+              <p>{currentImageForGallery.alt}</p>
+            </div>
+            <p className="info">Click anywhere to close</p>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
       <Header />
-
       <div className="projectHeaderWrapper home">
         <div className="ball1" />
         <div className="ball2" />
@@ -119,8 +152,13 @@ const ProjectPage = (props) => {
           <div className="projectGallery">
             <h2>Gallery</h2>
             <div className="projectGalleryGrid">
-              {project.gallery.map((img) => (
-                <img src={img.link} alt={img.alt} />
+              {project.gallery.map((img, key) => (
+                <img
+                  src={img.link}
+                  alt={img.alt}
+                  onClick={(event) => handleOpenGallery(event, key)}
+                  key={key}
+                />
               ))}
             </div>
           </div>

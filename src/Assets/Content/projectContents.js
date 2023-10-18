@@ -12,6 +12,7 @@ import everypageGallery07 from "../Pictures/everypageGallery07 - Community.png";
 import everypageGallery08 from "../Pictures/everypageGallery08 - Profile.png";
 import everypageGallery09 from "../Pictures/everypageGallery09 - Notification.png";
 import everypageGallery10 from "../Pictures/everypageGallery10 - Notifications - Borrowing Book Confirmation.png";
+import everypageGallery11 from "../Pictures/everypageGallery11 - Website.png";
 
 import {
   reactLogo,
@@ -151,43 +152,47 @@ export const everypageContents = {
   gallery: [
     {
       link: everypageGallery01,
-      alt: "Place holder text",
+      alt: "Everypage - Splash screen",
     },
     {
       link: everypageGallery02,
-      alt: "Place holder text",
+      alt: "Everypage - Login screen",
     },
     {
       link: everypageGallery03,
-      alt: "Place holder text",
+      alt: "Everypage - My library tab",
     },
     {
       link: everypageGallery04,
-      alt: "Place holder text",
+      alt: "Everypage - Selected book single page",
     },
     {
       link: everypageGallery05,
-      alt: "Place holder text",
+      alt: "Everypage - Wishlist tab",
     },
     {
       link: everypageGallery06,
-      alt: "Place holder text",
+      alt: "Everypage - Discover tab",
     },
     {
       link: everypageGallery07,
-      alt: "Place holder text",
+      alt: "Everypage - Community tab",
     },
     {
       link: everypageGallery08,
-      alt: "Place holder text",
+      alt: "Everypage - Profile tab",
     },
     {
       link: everypageGallery09,
-      alt: "Place holder text",
+      alt: "Everypage - Notifications page",
     },
     {
       link: everypageGallery10,
-      alt: "Place holder text",
+      alt: "Everypage - Conversation with another user",
+    },
+    {
+      link: everypageGallery11,
+      alt: "Everypage - Website",
     },
   ],
 };
