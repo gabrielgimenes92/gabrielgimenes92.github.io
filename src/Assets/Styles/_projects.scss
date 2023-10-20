@@ -99,7 +99,14 @@
         padding: 2rem 0;
     }
 
-    
+    .projectLinkList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
     .projectContent {
         margin: auto;
         max-width: 896px;

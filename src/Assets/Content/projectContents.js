@@ -13,6 +13,7 @@ import everypageGallery08 from "../Pictures/everypageGallery08 - Profile.png";
 import everypageGallery09 from "../Pictures/everypageGallery09 - Notification.png";
 import everypageGallery10 from "../Pictures/everypageGallery10 - Notifications - Borrowing Book Confirmation.png";
 import everypageGallery11 from "../Pictures/everypageGallery11 - Website.png";
+import everypageProposalPDF from "../PDF/EveryPageProposal_Fin.pdf";
 
 import {
   reactLogo,
@@ -64,22 +65,39 @@ export const everypageContents = {
   headerPicture: "",
   mainContent: [
     {
+      type: "links",
+      content: [
+        {
+          link: "https://github.com/orgs/Team-Ditto/repositories",
+          label: "GitHub",
+        },
+        {
+          link: everypageProposalPDF,
+          label: "App Proposal",
+        },
+      ],
+    },
+    { type: "title", content: "" },
+    {
+      type: "paragraph",
+      content:
+        "EveryPage is a mobile application created during post degree diploma at Langara College, serving as our final project. This endeavor replicates a professional work environment, encompassing a collaborative effort with designers, developers, and a project manager. It strictly adheres to agile methodology and its associated practices.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "In my dual role as a project manager and a developer within the team, I actively participated in critical aspects of the project, including design decision-making, data model creation, and the selection of the technological stack, among other responsibilities. My primary focus as a developer was on front-end, utilizing React Native, integrating the Native Base library, and conducting testing through Expo.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "While the project is no longer available online, the source code is still accessible on the project's GitHub repository. My substantial contributions were concentrated in the 'wishlist' and 'notifications' screens, as well as the development of the promotional website.",
+    },
+    {
       type: "custom",
       class: "video",
       content: everyPageVideo,
     },
-    { type: "title", content: "The Problem" },
-    {
-      type: "paragraph",
-      content:
-        "EveryPage is a mobile app for book lovers who wish to keep track of their book collections at home as well as meeting other people in the nearby community to exchange books.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "The app provides an easy-to-use book inventory system allowing users to create their own virtual library where they can add custom information to help them remember the books. In addition, they can share their book collection with other nearby users and create a community where they can borrow and exchange books.",
-    },
-
     {
       type: "techStack",
       content: [
@@ -100,6 +118,17 @@ export const everypageContents = {
           logo: firebaseLogo,
         },
       ],
+    },
+    { type: "title", content: "The Application" },
+    {
+      type: "paragraph",
+      content:
+        "EveryPage is a mobile app for book lovers who wish to keep track of their book collections at home as well as meeting other people in the nearby community to exchange books.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The app provides an easy-to-use book inventory system allowing users to create their own virtual library where they can add custom information to help them remember the books. In addition, they can share their book collection with other nearby users and create a community where they can borrow and exchange books.",
     },
 
     { type: "title", content: "Main features" },

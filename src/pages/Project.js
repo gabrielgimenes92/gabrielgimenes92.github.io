@@ -69,7 +69,6 @@ const ProjectPage = (props) => {
           {project.subtitle ? <h2>{project.subtitle}</h2> : <></>}
         </div>
       </div>
-      <div className="projectLinks"></div>
       <div className="projectContent">
         {project.theProblem && project.theProblem.length > 0 ? (
           <div>
@@ -132,6 +131,20 @@ const ProjectPage = (props) => {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                );
+              } else if (content.type === "links") {
+                return (
+                  <div className="projectLinkList">
+                    {content.content.map((link) => (
+                      <a
+                        href={link.link}
+                        target={"blank"}
+                        className="customButton"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
                   </div>
                 );
               } else {
