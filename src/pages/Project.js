@@ -98,14 +98,21 @@ const ProjectPage = (props) => {
                 return (
                   <div className="projectTextImage">
                     <img src={content.content[0]} alt={content.alt} />
-                    <p>{content.content[1]}</p>
+
+                    <div className="projectTextImageTitle">
+                      <h3>{content.content[1]}</h3>
+                      <p>{content.content[2]}</p>
+                    </div>
                   </div>
                 );
               } else if (content.type === "text+image") {
                 return (
                   <div className="projectTextImage">
-                    <p>{content.content[0]}</p>
-                    <img src={content.content[1]} alt={content.alt} />
+                    <div className="projectTextImageTitle">
+                      <h3>{content.content[0]}</h3>
+                      <p>{content.content[1]}</p>
+                    </div>
+                    <img src={content.content[2]} alt={content.alt} />
                   </div>
                 );
               } else if (content.type === "custom") {

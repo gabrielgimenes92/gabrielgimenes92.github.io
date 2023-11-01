@@ -60,7 +60,7 @@ let everyPageVideo = (
 const everypageLink01 = <a href="http://www.google.com">this link</a>;
 
 export const everypageContents = {
-  title: "everypage",
+  title: "EveryPage",
   //subtitle: "Never stop reading",
   headerPicture: "",
   mainContent: [
@@ -77,7 +77,6 @@ export const everypageContents = {
         },
       ],
     },
-    { type: "title", content: "" },
     {
       type: "paragraph",
       content:
@@ -132,27 +131,30 @@ export const everypageContents = {
     },
 
     { type: "title", content: "Main features" },
-    { type: "subtitle", content: "ISBN Scanner" },
+    // { type: "subtitle", content: "ISBN Scanner" },
 
     {
       type: "text+image",
       content: [
+        "ISBN Scanner",
         "Users can easily add books to their collection by scanning the ISBN barcode and adding manually. Once the book is added, users can personalise the book information, such as personal notes, photos and additional information to help them to organise the books.",
         everypage01,
       ],
     },
-    { type: "subtitle", content: "Virtual Bookshelf On-The-Go" },
+    // { type: "subtitle", content: "Virtual Bookshelf On-The-Go" },
     {
       type: "image+text",
       content: [
         everypage02,
+        "Virtual Bookshelf On-The-Go",
         "Users can access their virtual bookshelf anytime and anywhere. They can also keep track of the reading status, who borrow their books, or where they keep them. Users won’t need to worry if they buy duplicate copies or lose the books.",
       ],
     },
-    { type: "subtitle", content: "Discover Books" },
+    // { type: "subtitle", content: "Discover Books" },
     {
       type: "text+image",
       content: [
+        "Discover Books",
         "Users can share their books with other users by selecting the books they’re willing to share and tagging them as shareable. They can search for available books on the Discover page by book title or author, and nearby location. Users can check on the details of the book, add to their wishlist, and request to borrow the book.",
         everypage03,
       ],
