@@ -131,7 +131,6 @@ export const everypageContents = {
     },
 
     { type: "title", content: "Main features" },
-    // { type: "subtitle", content: "ISBN Scanner" },
 
     {
       type: "text+image",
@@ -141,7 +140,7 @@ export const everypageContents = {
         everypage01,
       ],
     },
-    // { type: "subtitle", content: "Virtual Bookshelf On-The-Go" },
+
     {
       type: "image+text",
       content: [

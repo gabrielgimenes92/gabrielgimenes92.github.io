@@ -96,7 +96,7 @@ const ProjectPage = (props) => {
                 return <img src={content.content} alt={content.alt} />;
               } else if (content.type === "image+text") {
                 return (
-                  <div className="projectTextImage">
+                  <div className="projectImageText">
                     <img src={content.content[0]} alt={content.alt} />
 
                     <div className="projectTextImageTitle">

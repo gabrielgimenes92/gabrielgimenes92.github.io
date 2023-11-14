@@ -1,5 +1,4 @@
 .projectPage {
-
     .fullscreenGalleryWrapper {
         position: fixed;
         z-index: 1000;
@@ -89,6 +88,14 @@
         }
     }
 
+    .projectMainContent {
+        padding: 0 4%;
+
+        @include sizeTablet {
+            padding: 0;
+        }
+    }
+
     .links {
         display: flex;
         justify-content: center;
@@ -170,15 +177,31 @@
             }
         }
 
-        .projectTextImage {
-            margin: 0 auto 5rem auto;
-            max-width: 896px;
+        .projectTextImage, .projectImageText {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            justify-content: center;
-            align-items: center;
-            text-align: justify;
+
+            @include sizeDesktop {
+                margin: 0 auto 5rem auto;
+                max-width: 896px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+            }
+        }
+
+        .projectImageText {
+            :nth-child(1) {
+                order: 2
+            }
+
+            @include sizeTablet {
+                :nth-child(1) {
+                    order: unset
+                }
+            }
         }
 
         .video {
@@ -207,23 +230,36 @@
         }
         .projectGalleryGrid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 1rem;
             margin: auto;
             max-width: 1200px;
             align-items: center;
             justify-content: center;
             margin-bottom: 6rem;
+            
+            @include sizeTablet {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            @include sizeDesktop {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
     
             img {
-                width: 300px;
-                max-height: 300px;
                 object-position: 0% 0%;
                 object-fit: cover;
                 transition: scale 0.5s;
                 border-radius: 1rem;
                 transition: scale 0.5s, filter 0.5s;
                 filter: brightness(0.8);
+                width: 96%;
+                max-height: 400px;
+
+                @include sizeDesktop {
+                    width: 300px;
+                    max-height: 300px;
+                }
             }
     
             img:hover {
