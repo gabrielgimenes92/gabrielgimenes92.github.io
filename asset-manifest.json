@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2097bf75.css",
-    "main.js": "/static/js/main.51d0c48a.js",
+    "main.js": "/static/js/main.9e5e40e6.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/EveryPageProposal_Fin.pdf": "/static/media/EveryPageProposal_Fin.6edc407525bae87f6caa.pdf",
     "static/media/Proposal Billy.pdf": "/static/media/Proposal Billy.4fcbc018d2639d7bc35c.pdf",
@@ -36,11 +36,11 @@
     "static/media/Billy-Desktop-Login.png": "/static/media/Billy-Desktop-Login.b27ded507e1745476ef1.png",
     "index.html": "/index.html",
     "main.2097bf75.css.map": "/static/css/main.2097bf75.css.map",
-    "main.51d0c48a.js.map": "/static/js/main.51d0c48a.js.map",
+    "main.9e5e40e6.js.map": "/static/js/main.9e5e40e6.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2097bf75.css",
-    "static/js/main.51d0c48a.js"
+    "static/js/main.9e5e40e6.js"
   ]
 }
