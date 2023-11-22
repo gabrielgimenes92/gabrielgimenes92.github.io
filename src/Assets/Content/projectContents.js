@@ -171,47 +171,47 @@ export const everypageContents = {
   gallery: [
     {
       link: everypageGallery01,
-      alt: "Everypage - Splash screen",
+      alt: "Splash screen",
     },
     {
       link: everypageGallery02,
-      alt: "Everypage - Login screen",
+      alt: "Login screen",
     },
     {
       link: everypageGallery03,
-      alt: "Everypage - My library tab",
+      alt: "My library tab",
     },
     {
       link: everypageGallery04,
-      alt: "Everypage - Selected book single page",
+      alt: "Selected book single page",
     },
     {
       link: everypageGallery05,
-      alt: "Everypage - Wishlist tab",
+      alt: "Wishlist tab",
     },
     {
       link: everypageGallery06,
-      alt: "Everypage - Discover tab",
+      alt: "Discover tab",
     },
     {
       link: everypageGallery07,
-      alt: "Everypage - Community tab",
+      alt: "Community tab",
     },
     {
       link: everypageGallery08,
-      alt: "Everypage - Profile tab",
+      alt: "Profile tab",
     },
     {
       link: everypageGallery09,
-      alt: "Everypage - Notifications page",
+      alt: "Notifications page",
     },
     {
       link: everypageGallery10,
-      alt: "Everypage - Conversation with another user",
+      alt: "Conversation with another user",
     },
     {
       link: everypageGallery11,
-      alt: "Everypage - Website",
+      alt: "Website",
     },
   ],
 };
