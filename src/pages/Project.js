@@ -3,11 +3,13 @@ import Header from "../Layouts/Header";
 import { useParams } from "react-router-dom";
 import Footer from "../Layouts/Footer";
 import {
-  underConstructionContents,
-  everypageContents,
-  billyContents,
   abcContents,
+  underConstructionContents,
 } from "../Assets/Content/projectContents";
+import { everypageContents } from "../Assets/Content/everyPageContents";
+import { billyContents } from "../Assets/Content/billyContents";
+import { pyGameContents } from "../Assets/Content/pyGameContents";
+import { financeTrackerContents } from "../Assets/Content/financeTrackerContents";
 
 const ProjectPage = (props) => {
   let [fullscreenGallery, setFullscreenGallery] = useState(false);
@@ -25,9 +27,9 @@ const ProjectPage = (props) => {
   } else if (id === "adventurebc") {
     project = abcContents;
   } else if (id === "pygame") {
-    project = billyContents;
+    project = pyGameContents;
   } else if (id === "financetracker") {
-    project = billyContents;
+    project = financeTrackerContents;
   } else {
     project = underConstructionContents;
   }
