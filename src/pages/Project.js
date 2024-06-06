@@ -24,6 +24,10 @@ const ProjectPage = (props) => {
     project = billyContents;
   } else if (id === "adventurebc") {
     project = abcContents;
+  } else if (id === "pygame") {
+    project = billyContents;
+  } else if (id === "financetracker") {
+    project = billyContents;
   } else {
     project = underConstructionContents;
   }

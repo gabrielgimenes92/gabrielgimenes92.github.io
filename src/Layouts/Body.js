@@ -48,6 +48,30 @@ let projects = [
     webpage: "",
   },
   {
+    easyName: "financetracker",
+    name: "Finance Tracker",
+    description:
+      "Search, plan and gather information about outdoor activities available in British Columbia with this single-page webapp",
+    imagePath: ABCImage,
+    alt: "",
+    link: "https://github.com/luferupa/adventurebc",
+    stack: ["NextJS, SCSS"],
+    projectLink: "/project/financetracker",
+    webpage: "",
+  },
+  {
+    easyName: "pygame",
+    name: "PyGame",
+    description:
+      "Search, plan and gather information about outdoor activities available in British Columbia with this single-page webapp",
+    imagePath: ABCImage,
+    alt: "",
+    link: "https://github.com/luferupa/adventurebc",
+    stack: ["Python, PyGame"],
+    projectLink: "/project/pygame",
+    webpage: "",
+  },
+  {
     easyName: "adventurebc",
     name: "Adventure BC",
     description:
