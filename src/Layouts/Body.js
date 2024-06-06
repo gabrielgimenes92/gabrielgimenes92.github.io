@@ -13,6 +13,9 @@ import ProjectCard from "../Components/ProjectCard";
 import EverypageImage from "../Assets/Pictures/everypage-1.png";
 import BillyImage from "../Assets/Pictures/billy-2.png";
 import ABCImage from "../Assets/Pictures/adventurebc-1.png";
+import PyGameImage from "../Assets/Pictures/pyGame-1.png"
+import FinanceTrackerImage from "../Assets/Pictures/financeTracker-1.png"
+
 import {
   javascriptLogo,
   typescriptLogo,
@@ -51,8 +54,9 @@ let projects = [
     easyName: "financetracker",
     name: "Finance Tracker",
     description:
-      "Search, plan and gather information about outdoor activities available in British Columbia with this single-page webapp",
-    imagePath: ABCImage,
+      "Finance Tracker is an app that helps users track and categorize their income and expenses. It provides insights into spending habits, enabling better financial planning.",
+      //"Introducing Finance Tracker: a testament to my development expertise. Designed for everyday users, this app empowers you to effortlessly track your income and expenses. By categorizing and filtering transactions, you gain clear insights into your spending habits, enabling you to make informed financial decisions and plan for a secure future.",
+    imagePath: FinanceTrackerImage,
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
     stack: ["NextJS, SCSS"],
@@ -63,8 +67,8 @@ let projects = [
     easyName: "pygame",
     name: "PyGame",
     description:
-      "Search, plan and gather information about outdoor activities available in British Columbia with this single-page webapp",
-    imagePath: ABCImage,
+      "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
+    imagePath: PyGameImage,
     alt: "",
     link: "https://github.com/luferupa/adventurebc",
     stack: ["Python, PyGame"],

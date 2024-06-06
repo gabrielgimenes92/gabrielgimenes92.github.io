@@ -46,7 +46,7 @@ export const pyGameContents = {
         type: "links",
         content: [
           {
-            link: "https://github.com/orgs/Team-Ditto/repositories",
+            link: "https://github.com/gabrielgimenes92/planet_survivor",
             label: "GitHub",
           },
           {
