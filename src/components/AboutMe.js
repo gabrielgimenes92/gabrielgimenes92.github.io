@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './AboutMe.module.scss';
 
 const AboutMe = () => {
   return (
-    <section className="aboutMe">
+    <section className={styles.aboutMe}>
       <spam id="about"></spam>
       <h2>About me</h2>
       <p>
