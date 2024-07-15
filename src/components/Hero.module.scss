@@ -1,0 +1,90 @@
+@import './mixins';
+
+.home {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    // background-color: $color-bg-dark;
+    
+    text-align: center;
+    padding: 9rem 5% 5rem 5%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.introduction {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 896px;
+
+    .profilePicture {
+        // background-image: url(../Pictures/DSCF9483.jpg) ;
+        z-index: 10;
+        object-position: center;
+        background-position-x: 43%;
+        background-position-y: 40%;
+        background-size: 220%;
+        width: 250px;
+        height: 250px;
+        border-radius: 2rem;
+    }
+
+    .profileText {
+        text-align: left;
+        line-height: 3rem;
+
+        p {
+            display: block;
+            align-items: baseline;
+            color: white;
+        }
+
+        .biggest {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .bigger {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .light {
+            color: rgb(50, 144, 199)
+        }
+
+        .heroSkills {
+            display: flex;
+            justify-content: start;
+            max-width: 1200px;
+            margin: 1.5rem 0 0 0;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 0.5rem;
+            }
+        }
+    }
+
+    @include sizeTablet {
+        flex-flow: row nowrap;
+        gap: 3rem;
+    }
+
+    @include sizeDesktop {
+        gap: 6rem;
+
+        .profilePicture {
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
