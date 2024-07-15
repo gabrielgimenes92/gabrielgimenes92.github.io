@@ -1,5 +1,6 @@
 import React from 'react';
 import Skill from './Skill';
+import styles from './Skills.module.scss';
 
 import {
   javascriptLogo,
@@ -11,32 +12,32 @@ import {
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className={styles.skills}>
       <h2>Skills</h2>
-      <ul className="skillsList">
+      <ul className={styles.skillsList}>
         <li>
           <p>{javascriptLogo}</p>
-          <p className="name">JavaScript</p>
+          <p className={styles.name}>JavaScript</p>
         </li>
         <li>
           <p>{typescriptLogo}</p>
-          <p className="name">Typescript</p>
+          <p className={styles.name}>Typescript</p>
         </li>
         <li>
           <p>{reactLogo}</p>
-          <p className="name">React</p>
+          <p className={styles.name}>React</p>
         </li>
         <li>
           <p>{nodeJSLogo}</p>
-          <p className="name">NodeJs</p>
+          <p className={styles.name}>NodeJs</p>
         </li>
         <li>
           <p>{reactLogo}</p>
-          <p className="name">React Native</p>
+          <p className={styles.name}>React Native</p>
         </li>
         <li>
           <p>{githubLogo}</p>
-          <p className="name">GitHub</p>
+          <p className={styles.name}>GitHub</p>
         </li>
       </ul>
     </section>
