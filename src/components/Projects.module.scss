@@ -10,8 +10,6 @@
         .projectItems {
             display: block;            
 
-            
-    
             @include sizeTablet {
                 margin: 0 auto;
                 max-width: 800px;
@@ -23,6 +21,7 @@
             @include sizeDesktop {
                 max-width: 1200px;
                 grid-template-columns: 1fr 1fr 1fr;
+                // overflow: hidden;
 
                 img {
                 justify-self: right;
