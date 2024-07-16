@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+import styles from './Projects.module.scss';
 
 const Projects = () => {
   let projects = [
@@ -68,11 +69,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projectsWrapper">
-      <spam id="projects"></spam>
-      <section className="projects">
+    <div className={styles.projectsWrapper}>
+      <spam id={styles.projects}></spam>
+      <section className={styles.projects}>
         <h2>Projects</h2>
-        <div className="projectItems">
+        <div className={styles.projectItems}>
           {projects.map((project) => (
             <Project
               easyName={project.easyName}

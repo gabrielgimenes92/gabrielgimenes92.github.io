@@ -1,0 +1,56 @@
+@import './mixins';
+
+.singleProject {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .imageDescriptionWrapper {
+        padding-bottom: 1rem;
+
+        .imageContainer {
+            position: relative;
+            overflow: hidden;
+            max-height: 300px;
+            
+            img {
+                display: block;
+            }
+            
+            .titleContainer {
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                // color: $color-main-light;
+                // background-color: $color-bg-dark-transparent;
+                padding: 1rem;
+            }
+        }
+        
+        p {
+            padding: 1rem 0 0.5rem 0;
+        }   
+    }
+
+    .stack {
+        padding-bottom: 1rem;
+        // color: $color-secondary-dark;
+        font-size: 0.9rem;
+    }
+    
+    div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .customButton {
+            align-self: center;
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        };
+    }
+
+}

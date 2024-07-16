@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
+import styles from './Project.module.scss';
 
 const Project = ({
   easyName,
@@ -15,10 +16,10 @@ const Project = ({
   webpage,
 }) => {
   return (
-    <div className="singleProject" id={easyName}>
-      <div className="imageDescriptionWrapper">
+    <div className={styles.singleProject} id={easyName}>
+      <div className={styles.imageDescriptionWrapper}>
         <Link href={projectLink}>
-          <div className="imageContainer">
+          <div className={styles.imageContainer}>
             <Image
               src={imagePath}
               alt={alt}
@@ -26,7 +27,7 @@ const Project = ({
               height={500}
               style={{ objectPosition: position }}
             />
-            <div className="titleContainer">
+            <div className={styles.titleContainer}>
               <h3>{name}</h3>
             </div>
           </div>
@@ -34,18 +35,18 @@ const Project = ({
         <p>{description}</p>
       </div>
       <div>
-        <p className="stack">
+        <p className={styles.stack}>
           <b>Stack:</b> {stack}
         </p>
         <div
           className="tempWrapper"
           style={{ display: 'flex', flexFlow: 'row nowrap', gap: '1rem' }}
         >
-          <Link className="customButton" href={projectLink}>
+          <Link className={styles.customButton} href={projectLink}>
             Learn More
           </Link>
           <a
-            className="customButton"
+            className={styles.customButton}
             rel="noreferrer"
             href={link}
             target="_blank"
