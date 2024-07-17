@@ -5,13 +5,10 @@
     width: 100%;
     margin: 0;
     background-size: cover;
-    // background-color: $color-bg-dark;
-    
+    background-color: $color-bg-dark;
     text-align: center;
     padding: 9rem 5% 5rem 5%;
-
     position: relative;
-
     overflow: hidden;
 }
 
@@ -56,7 +53,7 @@
         }
         
         .light {
-            color: rgb(50, 144, 199)
+            color: $color-accent
         }
 
         .heroSkills {
