@@ -5,6 +5,54 @@ import styles from './Projects.module.scss';
 const Projects = () => {
   let projects = [
     {
+      easyName: 'bullet-journal',
+      name: 'Bullet Journal',
+      description: 'Bullet Journal description',
+      imagePath: '/pictures/EverypageThumb.png',
+      alt: '',
+      link: 'https://github.com/orgs/Team-Ditto/repositories',
+      stack: ['NextJS, CSS'],
+      projectLink: '/projects/bullet-journal',
+      webpage: 'https://everypage.ca/',
+    },
+    {
+      easyName: 'list-app',
+      name: 'List App',
+      description: 'List App description',
+      //"Introducing Finance Tracker: a testament to my development expertise. Designed for everyday users, this app empowers you to effortlessly track your income and expenses. By categorizing and filtering transactions, you gain clear insights into your spending habits, enabling you to make informed financial decisions and plan for a secure future.",
+      imagePath: '/pictures/FinanceTrackerThumb.png',
+      alt: '',
+      link: 'https://github.com/luferupa/adventurebc',
+      stack: ['NextJS, NodeJS, MongoDB'],
+      projectLink: '/projects/finance-tracker',
+      webpage: '',
+    },
+    {
+      easyName: 'finance-tracker',
+      name: 'Finance Tracker',
+      description:
+        'Finance Tracker is an app that helps users track and categorize their income and expenses. It provides insights into spending habits, enabling better financial planning.',
+      //"Introducing Finance Tracker: a testament to my development expertise. Designed for everyday users, this app empowers you to effortlessly track your income and expenses. By categorizing and filtering transactions, you gain clear insights into your spending habits, enabling you to make informed financial decisions and plan for a secure future.",
+      imagePath: '/pictures/FinanceTrackerThumb.png',
+      alt: '',
+      link: 'https://github.com/luferupa/adventurebc',
+      stack: ['NextJS, SCSS'],
+      projectLink: '/projects/finance-tracker',
+      webpage: '',
+    },
+    {
+      easyName: 'py-game',
+      name: 'PyGame',
+      description:
+        "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
+      imagePath: '/pictures/PyGameThumb.png',
+      alt: '',
+      link: 'https://github.com/luferupa/adventurebc',
+      stack: ['Python, PyGame'],
+      projectLink: '/projects/py-game',
+      webpage: '',
+    },
+    {
       easyName: 'everypage',
       name: 'EveryPage',
       description:
@@ -13,7 +61,7 @@ const Projects = () => {
       alt: '',
       link: 'https://github.com/orgs/Team-Ditto/repositories',
       stack: ['React Native, NestJS, NativeBase, Firebase'],
-      projectLink: '/project/everypage',
+      projectLink: '/projects/everypage',
       webpage: 'https://everypage.ca/',
     },
     {
@@ -25,32 +73,7 @@ const Projects = () => {
       alt: '',
       link: 'https://github.com/mercury-squad',
       stack: ['React, NodeJS, MUI, MongoDB'],
-      projectLink: '/project/billy',
-      webpage: '',
-    },
-    {
-      easyName: 'financetracker',
-      name: 'Finance Tracker',
-      description:
-        'Finance Tracker is an app that helps users track and categorize their income and expenses. It provides insights into spending habits, enabling better financial planning.',
-      //"Introducing Finance Tracker: a testament to my development expertise. Designed for everyday users, this app empowers you to effortlessly track your income and expenses. By categorizing and filtering transactions, you gain clear insights into your spending habits, enabling you to make informed financial decisions and plan for a secure future.",
-      imagePath: '/pictures/FinanceTrackerThumb.png',
-      alt: '',
-      link: 'https://github.com/luferupa/adventurebc',
-      stack: ['NextJS, SCSS'],
-      projectLink: '/project/financetracker',
-      webpage: '',
-    },
-    {
-      easyName: 'pygame',
-      name: 'PyGame',
-      description:
-        "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
-      imagePath: '/pictures/PyGameThumb.png',
-      alt: '',
-      link: 'https://github.com/luferupa/adventurebc',
-      stack: ['Python, PyGame'],
-      projectLink: '/project/pygame',
+      projectLink: '/projects/billy',
       webpage: '',
     },
     {
@@ -62,7 +85,7 @@ const Projects = () => {
       alt: '',
       link: 'https://github.com/luferupa/adventurebc',
       stack: ['Javascript, SCSS, Firebase'],
-      projectLink: '/project/adventurebc',
+      projectLink: '/projects/adventurebc',
       webpage: '',
     },
   ];
