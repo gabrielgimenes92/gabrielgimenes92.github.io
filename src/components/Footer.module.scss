@@ -1,6 +1,28 @@
 .contact {
     padding: 4rem 0;
-    // background-color: $color-bg-dark;
+    background-color: $color-bg-dark;
+
+    a, p {
+        color: $color-main-light;
+        transition: color 0.25s;
+    }
+    
+    a:hover {
+        color: rgb(152, 201, 230);
+    
+        p {
+            color: $color-accent;
+        }
+    }
+    
+    .icon {
+        font-size: 1rem;
+    
+        @include sizeTablet {
+            font-size: 1.2rem;
+        }
+    }
+
 }
 
 .phone, .mail, .contactSocial, .address {
@@ -45,6 +67,9 @@
 
 
 .contact {
+    li {
+        list-style-type: none;
+    }
 
     .upperList {
         display: block;

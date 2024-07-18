@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import styles from './Hero.module.scss';
 import React from 'react';
-import Image from 'next/image';
+import bg from '../../public/pictures/DSCF9483.jpg';
+import { nextJSLogo } from '@/assets/logos';
 
 const Hero = () => {
   const reactLogo = <FontAwesomeIcon icon={faReact} />;
@@ -14,11 +15,10 @@ const Hero = () => {
       <div className="ball2" />
       <div className="ball3" />
       <div className={styles.introduction}>
-        <Image
-          src="/pictures/DSCF9483.jpg"
-          width={500}
-          height={500}
-          alt="hi"
+        <div
+          style={{
+            backgroundImage: `url(${bg.src})`,
+          }}
           className={styles.profilePicture}
         />
         <div className={styles.profileText}>
@@ -38,7 +38,13 @@ const Hero = () => {
             </div>
             <div>
               <p>{reactLogo}</p>
-              <p>React & React Native</p>
+              <p>React</p>
+            </div>
+            <div>
+              <p>{nextJSLogo}</p>
+              <p>
+                NEXT.<spam className={styles.smaller}>JS</spam>
+              </p>
             </div>
           </div>
         </div>
