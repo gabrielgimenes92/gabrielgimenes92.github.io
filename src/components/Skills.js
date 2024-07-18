@@ -4,7 +4,7 @@ import styles from './Skills.module.scss';
 
 import {
   javascriptLogo,
-  typescriptLogo,
+  nextJSLogo,
   reactLogo,
   nodeJSLogo,
   githubLogo,
@@ -20,8 +20,8 @@ const Skills = () => {
           <p className={styles.name}>JavaScript</p>
         </li>
         <li>
-          <p>{typescriptLogo}</p>
-          <p className={styles.name}>Typescript</p>
+          <p>{nextJSLogo}</p>
+          <p className={styles.name}>NEXT.JS</p>
         </li>
         <li>
           <p>{reactLogo}</p>
@@ -29,7 +29,7 @@ const Skills = () => {
         </li>
         <li>
           <p>{nodeJSLogo}</p>
-          <p className={styles.name}>NodeJs</p>
+          <p className={styles.name}>Node.JS</p>
         </li>
         <li>
           <p>{reactLogo}</p>

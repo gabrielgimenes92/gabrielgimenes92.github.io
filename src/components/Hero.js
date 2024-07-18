@@ -3,7 +3,7 @@ import { faReact, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import styles from './Hero.module.scss';
 import React from 'react';
 import bg from '../../public/pictures/DSCF9483.jpg';
-import { nextJSLogo } from '@/assets/logos';
+import { nextJSLogoSmall } from '@/assets/logos';
 
 const Hero = () => {
   const reactLogo = <FontAwesomeIcon icon={faReact} />;
@@ -41,7 +41,7 @@ const Hero = () => {
               <p>React</p>
             </div>
             <div>
-              <p>{nextJSLogo}</p>
+              <p>{nextJSLogoSmall}</p>
               <p>
                 NEXT.<spam className={styles.smaller}>JS</spam>
               </p>

@@ -88,7 +88,14 @@ export const firebaseLogo = (
     alt="Firebase"
   />
 );
-
 export const nextJSLogo = (
-  <Image src="/pictures/nextjs.png" width={20} height={20} alt="NextJS" />
+  <Image src="/pictures/nextjsLogo.png" width={112} height={500} alt="NextJS" />
+);
+export const nextJSLogoSmall = (
+  <Image
+    src="/pictures/nextjsLogoSmall.png"
+    width={18}
+    height={18}
+    alt="NextJS"
+  />
 );
