@@ -28,13 +28,29 @@ const Footer = () => {
         <li className={styles.contactSocial}>
           <ul>
             <li>
-              <a href="">{iconLinkedin}</a>
+              <a
+                className={styles.icon}
+                href="https://www.linkedin.com/in/gabrielcgimenes/"
+                target={'blank'}
+              >
+                {iconLinkedin}
+                <spam className="hidden">LinkedIn</spam>
+              </a>{' '}
             </li>
             <li>
-              <a href="">{iconGithub}</a>
+              <a
+                className={styles.icon}
+                href="https://github.com/gabrielgimenes92"
+                target={'blank'}
+              >
+                {iconGithub}
+                <spam className="hidden">GitHub</spam>
+              </a>
             </li>
             <li>
-              <a href="">Resume</a>
+              <a className={styles.resumeDownload} target={'blank'} href="">
+                Resume
+              </a>
             </li>
           </ul>
         </li>

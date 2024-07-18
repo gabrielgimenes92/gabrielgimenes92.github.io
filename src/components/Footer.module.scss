@@ -21,11 +21,15 @@
         @include sizeTablet {
             font-size: 1.2rem;
         }
+
+        @include sizeDesktop {
+            font-size: 1.5rem;
+        }
     }
 
 }
 
-.phone, .mail, .contactSocial, .address {
+.phone, .mail, .contactSocial, .addressIcon {
     // flex-basis: 20%;
     list-style-type: none;
     // min-width: 100px;
@@ -74,6 +78,12 @@
     .upperList {
         display: block;
 
+        .resumeDownload {
+            background-color: $color-accent;
+            border-radius: 6px;
+            padding: 0.25rem 0.6rem;
+        }
+
         @include sizeDesktop {
             max-width: 1200px;
             margin: 0 auto;
@@ -83,7 +93,7 @@
             align-items: center;
         }
 
-        .phone, .mail, .contactSocial, .address {
+        .phone, .mail, .contactSocial, .addressIcon {
             // flex-basis: 20%;
             list-style-type: none;
             // min-width: 100px;
@@ -129,6 +139,7 @@
                 margin: 0;
                 display: flex;
                 flex-flow: row nowrap;
+                align-items: center;
                 gap: 1.5rem;
     
                 li {
