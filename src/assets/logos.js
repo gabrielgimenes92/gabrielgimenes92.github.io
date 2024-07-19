@@ -94,8 +94,8 @@ export const nextJSLogo = (
 export const nextJSLogoSmall = (
   <Image
     src="/pictures/nextjsLogoSmall.png"
-    width={18}
-    height={18}
+    width={16}
+    height={16}
     alt="NextJS"
   />
 );

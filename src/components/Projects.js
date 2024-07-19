@@ -92,7 +92,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsWrapper}>
-      <spam id={styles.projects}></spam>
+      <spam id="projects"></spam>
       <section className={styles.projects}>
         <h2>Projects</h2>
         <div className={styles.projectItems}>
