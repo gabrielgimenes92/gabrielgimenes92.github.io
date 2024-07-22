@@ -1,11 +1,50 @@
 //Component that renders an image, a paragraph or more and a title, can be reversed (image on the left and text on the right).
 
+import Image from 'next/image';
 import React from 'react';
+import styles from './TextAndImage.module.scss';
 
-const TextAndImage = () => {
+const TextAndImage = ({ title, paragraphs, image, invertSide }) => {
+  if (invertSide) {
+    return (
+      <div className={styles.textAndImageWrapper}>
+        <div className={styles.textAndImage}>
+          <div>
+            <Image
+              src={image.source}
+              width={500}
+              height={500}
+              alt={image.alt}
+            />
+          </div>
+          <div>
+            {title ? <h2>{title}</h2> : <></>}
+            {paragraphs ? (
+              paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
+            ) : (
+              <></>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <h1>Text and image</h1>
+    <div className={styles.textAndImageWrapper}>
+      <div className={styles.textAndImage}>
+        <div>
+          {title ? <h2>{title}</h2> : <></>}
+          {paragraphs ? (
+            paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
+          ) : (
+            <></>
+          )}
+        </div>
+        <div>
+          <Image src={image.source} width={500} height={500} alt={image.alt} />
+        </div>
+      </div>
     </div>
   );
 };

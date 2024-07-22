@@ -2,12 +2,12 @@
 
 import React from 'react';
 
-const Paragraph = ({ title, content }) => {
+const Paragraph = ({ title, paragraphs }) => {
   return (
     <div>
       {title ? <h1>{title}</h1> : <></>}
-      {content ? (
-        content.map((item) => <p id={item.id}>{item.content}</p>)
+      {paragraphs ? (
+        paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
       ) : (
         <></>
       )}
