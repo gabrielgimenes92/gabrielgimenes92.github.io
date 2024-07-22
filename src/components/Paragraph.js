@@ -2,10 +2,15 @@
 
 import React from 'react';
 
-const Paragraph = (props) => {
+const Paragraph = ({ title, content }) => {
   return (
     <div>
-      <h1>Paragraph component</h1>
+      {title ? <h1>{title}</h1> : <></>}
+      {content ? (
+        content.map((item) => <p id={item.id}>{item.content}</p>)
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
