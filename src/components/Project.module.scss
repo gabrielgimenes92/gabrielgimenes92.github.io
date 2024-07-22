@@ -50,7 +50,29 @@
             width: 100%;
             font-size: 1rem;
             padding: 0.5rem 0;
+            
         };
     }
 
+}
+
+a.customButton {
+    font-family: $font-sans;
+
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+
+    color: $color-main-light;
+
+    background-color: $color-accent;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    transition: color 0.25s;
+
+    &:hover {
+        color: rgb(152, 201, 230);
+        transition: color 0.25s;
+    }
 }

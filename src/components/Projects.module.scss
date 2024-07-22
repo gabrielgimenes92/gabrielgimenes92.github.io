@@ -5,7 +5,9 @@
     .projects {
     
         .projectItems {
-            display: block;            
+            display: block;     
+            
+            
 
             @include sizeTablet {
                 margin: 0 auto;
