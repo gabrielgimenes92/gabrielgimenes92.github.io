@@ -1,4 +1,82 @@
 .singlePageHero {
-    background-color: blue;
-    padding: 5rem 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-color: $color-bg-dark;
+    text-align: center;
+    padding: 9rem 5% 5rem 5%;
+    position: relative;
+    overflow: hidden;
+
+    @include sizeDesktop {
+        padding: 11rem 2% 7.5rem 2%;
+    }
+
+    .ball1 {
+        position: absolute;
+        bottom: -250px;
+        left: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+        animation: 60s ball1 infinite;
+    }
+
+    @keyframes ball1 {
+        0% {left: -250px; bottom: -250px}
+        50% {left: 650px; bottom: -500px}
+        100% {left: -250px; bottom: -250px}
+    }
+
+    .ball2 {
+        position: absolute;
+        top: -250px;
+        right: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+        animation: 60s ball2 infinite;
+    }
+
+    @keyframes ball2 {
+        0% {right: -250px; top: -250px}
+        50% {right: 900px; top: -700px}
+        100% {right: -250px; top: -250px}
+    }
+
+    .ball3 {
+        position: absolute;
+        top: -400px;
+        right: 900px;
+        background-color: rgb(200, 200, 200);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+    }
+
+    h1 {
+        color: $color-main-light;
+        margin: 0 0 64px 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: $color-secondary-light;
+        font-size: 28px;
+    }
 }
