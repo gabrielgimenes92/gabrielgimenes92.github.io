@@ -12,9 +12,9 @@ import {
 } from '../../../assets/logos';
 
 const page = () => {
-  let everypageFeaturedImage1 = '/pictures/EveryPage-Feature01.png';
-  let everypageFeaturedImage2 = '/pictures/EveryPage-Feature02.png';
-  let everypageFeaturedImage3 = '/pictures/EveryPage-Feature03.png';
+  let featuredImage1 = '/pictures/EveryPage-Feature01.png';
+  let featuredImage2 = '/pictures/EveryPage-Feature02.png';
+  let featuredImage3 = '/pictures/EveryPage-Feature03.png';
 
   let introContent = [
     {
@@ -79,7 +79,7 @@ const page = () => {
       },
     ],
     image: {
-      source: everypageFeaturedImage1,
+      source: featuredImage1,
       alt: 'An alt description',
     },
   };
@@ -94,7 +94,7 @@ const page = () => {
       },
     ],
     image: {
-      source: everypageFeaturedImage2,
+      source: featuredImage2,
       alt: 'An alt description',
     },
   };
@@ -109,7 +109,7 @@ const page = () => {
       },
     ],
     image: {
-      source: everypageFeaturedImage3,
+      source: featuredImage3,
       alt: 'An alt description',
     },
   };
