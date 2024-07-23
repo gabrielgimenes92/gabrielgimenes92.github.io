@@ -1,0 +1,31 @@
+.techStackWrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    // background-color: #aaa;
+
+    .techStack {
+        max-width: 896px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .singleTech {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 0.5rem;
+
+            p {
+                font-size: 0.75rem;
+            }
+
+            img {
+                max-width: 160px;
+                height: 100px
+            }
+        }
+
+    }
+}

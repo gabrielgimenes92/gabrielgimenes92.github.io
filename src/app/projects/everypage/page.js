@@ -1,13 +1,21 @@
+import React from 'react';
 import Paragraph from '@/components/Paragraph';
 import SinglePageHero from '@/components/SinglePageHero';
 import TechStack from '@/components/TechStack';
 import TextAndImage from '@/components/TextAndImage';
-import React from 'react';
+
+import {
+  reactLogo,
+  nestJSLogo,
+  nativeBaseLogo,
+  firebaseLogo,
+} from '../../../assets/logos';
 
 const page = () => {
   let everypageFeaturedImage1 = '/pictures/EveryPage-Feature01.png';
   let everypageFeaturedImage2 = '/pictures/EveryPage-Feature02.png';
   let everypageFeaturedImage3 = '/pictures/EveryPage-Feature03.png';
+
   let introContent = [
     {
       id: '01',
@@ -23,6 +31,25 @@ const page = () => {
       id: '03',
       content:
         "While the project is no longer available online, the source code is still accessible on the project's GitHub repository. My substantial contributions were concentrated in the 'wishlist' and 'notifications' screens, as well as the development of the promotional website.",
+    },
+  ];
+
+  let techStack = [
+    {
+      name: 'React Native',
+      logo: reactLogo,
+    },
+    {
+      name: 'NestJS',
+      logo: nestJSLogo,
+    },
+    {
+      name: 'NativeBase',
+      logo: nativeBaseLogo,
+    },
+    {
+      name: 'Firebase',
+      logo: firebaseLogo,
     },
   ];
 
@@ -91,7 +118,7 @@ const page = () => {
     <div>
       <SinglePageHero title="Everypage" />
       <Paragraph paragraphs={introContent} />
-      <TechStack />
+      <TechStack techStack={techStack} />
       <Paragraph
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}
