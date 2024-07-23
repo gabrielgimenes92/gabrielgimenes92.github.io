@@ -3,6 +3,7 @@ import Paragraph from '@/components/Paragraph';
 import SinglePageHero from '@/components/SinglePageHero';
 import TechStack from '@/components/TechStack';
 import TextAndImage from '@/components/TextAndImage';
+import Buttons from '@/components/Buttons';
 
 import {
   reactLogo,
@@ -15,6 +16,17 @@ const page = () => {
   let featuredImage1 = '/pictures/EveryPage-Feature01.png';
   let featuredImage2 = '/pictures/EveryPage-Feature02.png';
   let featuredImage3 = '/pictures/EveryPage-Feature03.png';
+
+  let buttons = [
+    {
+      text: 'GitHub',
+      href: 'https://github.com/orgs/Team-Ditto/repositories',
+    },
+    {
+      text: 'App Proposal',
+      href: '/pdfs/EveryPageProposal_Fin.pdf',
+    },
+  ];
 
   let introContent = [
     {
@@ -117,6 +129,7 @@ const page = () => {
   return (
     <div>
       <SinglePageHero title="Everypage" />
+      <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
       <Paragraph

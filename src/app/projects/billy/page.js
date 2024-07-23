@@ -3,6 +3,7 @@ import Paragraph from '@/components/Paragraph';
 import SinglePageHero from '@/components/SinglePageHero';
 import TechStack from '@/components/TechStack';
 import TextAndImage from '@/components/TextAndImage';
+import Buttons from '@/components/Buttons';
 
 import {
   reactLogo,
@@ -15,6 +16,17 @@ const page = () => {
   let featuredImage1 = '/pictures/Billy-Feature01.png';
   let featuredImage2 = '/pictures/Billy-Feature02.png';
   let featuredImage3 = '/pictures/Billy-Feature03.png';
+
+  let buttons = [
+    {
+      text: 'GitHub',
+      href: 'https://github.com/mercury-squad',
+    },
+    {
+      text: 'App Proposal',
+      href: '/pdfs/Proposal Billy.pdf',
+    },
+  ];
 
   let introContent = [
     {
@@ -112,6 +124,7 @@ const page = () => {
   return (
     <div>
       <SinglePageHero title="Billy" subtitle="Your Smart Invoicing Friend" />
+      <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
       <Paragraph
