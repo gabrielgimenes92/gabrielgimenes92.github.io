@@ -9,7 +9,7 @@ const Projects = () => {
       name: 'Bullet Journal',
       description:
         'Organize your life with Bullet Journal, a versatile platform for tracking daily tasks, setting goals, and journaling',
-      imagePath: '/pictures/EverypageThumb.png',
+      imagePath: '/pictures/BlankThumb.png',
       alt: '',
       link: 'https://github.com/orgs/Team-Ditto/repositories',
       stack: ['NEXT.JS, SASS'],
@@ -21,7 +21,7 @@ const Projects = () => {
       name: 'Task List',
       description:
         'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
-      imagePath: '/pictures/FinanceTrackerThumb.png',
+      imagePath: '/pictures/TaskListThumb.png',
       alt: '',
       link: 'https://github.com/luferupa/adventurebc',
       stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
@@ -46,7 +46,7 @@ const Projects = () => {
       name: 'PyGame',
       description:
         "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
-      imagePath: '/pictures/PyGameThumb.png',
+      imagePath: '/pictures/PlanetSurvivalThumb.png',
       alt: '',
       link: 'https://github.com/luferupa/adventurebc',
       stack: ['Python, PyGame'],
@@ -70,12 +70,13 @@ const Projects = () => {
       name: 'Billy',
       description:
         'Save time on creating professional invoices, tracking invoice payment status, and managing business finances.',
-      imagePath: '/pictures/BillyThumb.png',
+      imagePath: '/pictures/billy-2.png',
       alt: '',
       link: 'https://github.com/mercury-squad',
       stack: ['React, Node.JS, MUI, MongoDB'],
       projectLink: '/projects/billy',
       webpage: '',
+      position: '0 -100px',
     },
     // {
     //   easyName: 'adventurebc',
