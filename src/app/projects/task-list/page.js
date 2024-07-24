@@ -19,8 +19,12 @@ const page = () => {
 
   let buttons = [
     {
-      text: 'GitHub',
-      href: 'https://github.com/gabrielgimenes92/planner_frontend',
+      text: 'GitHub - Frontend',
+      href: 'https://github.com/gabrielgimenes92/list_frontend',
+    },
+    {
+      text: 'GitHub - Backend',
+      href: 'https://github.com/gabrielgimenes92/list_backend',
     },
   ];
 
@@ -28,18 +32,18 @@ const page = () => {
     {
       id: '01',
       content:
-        'Bullet Journal is an online platform designed to help users keep track of their daily tasks, set and manage recurring goals through a habit tracker, and maintain a space for personal journaling. This digital bullet journal brings the traditional bullet journaling experience to the web, providing a comprehensive tool for staying organized and productive.',
+        'Task List is a web application designed to help users manage their daily tasks efficiently. It provides an intuitive interface for adding, editing, completing, and deleting tasks, making it an ideal tool for individuals looking to stay organized and on top of their to-dos.',
     },
-    {
-      id: '02',
-      content:
-        'As the sole developer of this project, I was responsible for all aspects of its development. This included making design decisions, creating data models, and selecting the technology stack. My primary contributions were on the front-end, where I utilized NextJS and SASS to build a responsive and visually appealing user interface.',
-    },
-    {
-      id: '03',
-      content:
-        'The project is currently online and hosted on GitHub Pages. My main focus was on developing the task and habit management functionalities, as well as the user interface design and the promotional website.',
-    },
+    // {
+    //   id: '02',
+    //   content:
+    //     'As both the project manager and a developer in the team, I was actively involved in various crucial aspects of the project, including design decisions, data model creation, and technology stack selection. My primary focus was on the back-end, where I utilized NodeJS and Express to create robust and efficient APIs, while also working on the front-end with NextJS and CSS to ensure a seamless user experience.',
+    // },
+    // {
+    //   id: '03',
+    //   content:
+    //     "Even though the project is no longer online, you can still access the source code in the project's GitHub repository. I primarily focused on making significant contributions to the 'dashboard' and invoice generation screens, alongside developing the promotional website.",
+    // },
   ];
 
   let techStack = [
@@ -67,18 +71,18 @@ const page = () => {
       {
         id: '01',
         content:
-          'Bullet Journal is a web application that offers a structured and flexible approach to managing daily tasks, tracking habits, and journaling. Users can create, complete, edit, and push tasks to the next day, as well as set up and track habits over time.',
+          'Task List is a web application that simplifies the process of managing daily tasks. Users can easily add new tasks, mark them as complete, edit details, or delete them when they are no longer needed.',
       },
     ],
   };
 
   let textAndImage01 = {
-    title: 'Task Management:',
+    title: 'Add New Tasks',
     paragraphs: [
       {
         id: '01',
         content:
-          'Easily add, complete, edit, and push tasks to the next day, ensuring that users stay on top of their daily to-dos.',
+          'Easily add new tasks with a simple form, ensuring that no important to-do is forgotten.',
       },
     ],
     image: {
@@ -88,12 +92,12 @@ const page = () => {
   };
 
   let textAndImage02 = {
-    title: 'Habit Tracker',
+    title: 'Complete Tasks',
     paragraphs: [
       {
         id: '01',
         content:
-          'Create, edit, and delete habits, and track progress through a visual calendar, helping users establish and maintain good habits.',
+          'Mark tasks as complete with a single click, helping users keep track of what has been accomplished.',
       },
     ],
     image: {
@@ -103,12 +107,26 @@ const page = () => {
   };
 
   let textAndImage03 = {
-    title: 'Journaling Space',
+    title: 'Edit Tasks',
     paragraphs: [
       {
         id: '01',
         content:
-          'Maintain a personal journal to document thoughts, reflections, and daily experiences.',
+          'Edit the details of any task to keep information up-to-date and accurate.',
+      },
+    ],
+    image: {
+      source: featuredImage3,
+      alt: 'An alt description',
+    },
+  };
+  let textAndImage04 = {
+    title: 'Delete Tasks',
+    paragraphs: [
+      {
+        id: '01',
+        content:
+          'Remove tasks that are no longer relevant, keeping the task list clutter-free and organized.',
       },
     ],
     image: {
@@ -121,13 +139,13 @@ const page = () => {
     {
       id: '01',
       content:
-        'Bullet Journal provides a seamless and user-friendly interface that combines task management, habit tracking, and journaling into one cohesive platform. Its clean design and intuitive features help users stay organized, set and achieve their goals, and reflect on their daily lives.',
+        'Task List provides a straightforward and user-friendly interface that makes managing tasks simple and efficient. Its clean design and intuitive functionalities help users stay productive and organized, ensuring that nothing falls through the cracks.',
     },
   ];
 
   return (
     <div>
-      <SinglePageHero title="Bullet Journal" subtitle="" />
+      <SinglePageHero title="Task List" subtitle="" />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
