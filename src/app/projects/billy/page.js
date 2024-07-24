@@ -131,6 +131,7 @@ const page = () => {
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}
       />
+      <h2>Main Features</h2>
       <TextAndImage
         title={textAndImage01.title}
         paragraphs={textAndImage01.paragraphs}

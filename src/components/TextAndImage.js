@@ -18,7 +18,7 @@ const TextAndImage = ({ title, paragraphs, image, invertSide }) => {
             />
           </div>
           <div>
-            {title ? <h2>{title}</h2> : <></>}
+            {title ? <h3>{title}</h3> : <></>}
             {paragraphs ? (
               paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
             ) : (
@@ -34,7 +34,7 @@ const TextAndImage = ({ title, paragraphs, image, invertSide }) => {
     <div className={styles.textAndImageWrapper}>
       <div className={styles.textAndImage}>
         <div>
-          {title ? <h2>{title}</h2> : <></>}
+          {title ? <h3>{title}</h3> : <></>}
           {paragraphs ? (
             paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
           ) : (

@@ -1,9 +1,20 @@
 import React from 'react';
+import Paragraph from '@/components/Paragraph';
+import SinglePageHero from '@/components/SinglePageHero';
+import TechStack from '@/components/TechStack';
+import TextAndImage from '@/components/TextAndImage';
+
+import {
+  reactLogo,
+  nestJSLogo,
+  nativeBaseLogo,
+  firebaseLogo,
+} from '../../../assets/logos';
 
 const page = () => {
   return (
     <div>
-      <h1>This is PyGame</h1>
+      <SinglePageHero title="Py Games" subtitle="" />
     </div>
   );
 };

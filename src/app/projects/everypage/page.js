@@ -132,6 +132,7 @@ const page = () => {
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
+      <h2>Main Features</h2>
       <Paragraph
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}

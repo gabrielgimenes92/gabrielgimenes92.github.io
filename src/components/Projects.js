@@ -24,7 +24,7 @@ const Projects = () => {
       alt: '',
       link: 'https://github.com/luferupa/adventurebc',
       stack: ['NEXT.JS, Node.JS, MongoDB'],
-      projectLink: '/projects/finance-tracker',
+      projectLink: '/projects/list-app',
       webpage: '',
     },
     {

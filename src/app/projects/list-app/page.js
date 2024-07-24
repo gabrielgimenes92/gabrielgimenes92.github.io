@@ -14,7 +14,7 @@ import {
 const page = () => {
   return (
     <div>
-      <SinglePageHero title="Adventure BC" subtitle="" />
+      <SinglePageHero title="List App" subtitle="" />
     </div>
   );
 };

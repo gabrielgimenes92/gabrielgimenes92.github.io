@@ -3,6 +3,7 @@
     
     .textAndImage {
         margin: 0 auto;
+        margin-bottom: 80px;
         max-width: 896px;
         display: flex;
         flex-flow: row nowrap;
@@ -11,6 +12,9 @@
             margin-top: 2rem;
         }
 
-
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
