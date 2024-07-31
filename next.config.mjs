@@ -6,6 +6,9 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 
 const nextConfig = {
+  output: 'export',
+  reactStrictMode: true,
+
   images: {
     remotePatterns: [
       {
