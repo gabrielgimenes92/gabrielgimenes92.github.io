@@ -1,0 +1,78 @@
+.singleProject {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    .imageDescriptionWrapper {
+        padding-bottom: 1rem;
+
+        .imageContainer {
+            position: relative;
+            overflow: hidden;
+            max-height: 300px;
+            
+            img {
+                display: block;
+                max-width: 100%;
+                object-fit: contain;
+            }
+            
+            .titleContainer {
+                box-sizing: border-box;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                color: $color-main-light;
+                background-color: $color-bg-dark-transparent;
+                padding: 1rem;
+            }
+        }
+        
+        p {
+            padding: 1rem 0 0.5rem 0;
+        }   
+    }
+
+    .stack {
+        padding-bottom: 1rem;
+        color: $color-secondary-dark;
+        font-size: 0.9rem;
+    }
+    
+    div {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .customButton {
+            align-self: center;
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            
+        };
+    }
+
+}
+
+a.customButton {
+    font-family: $font-sans;
+
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+
+    color: $color-main-light;
+
+    background-color: $color-accent;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    transition: color 0.25s;
+
+    &:hover {
+        color: rgb(152, 201, 230);
+        transition: color 0.25s;
+    }
+}

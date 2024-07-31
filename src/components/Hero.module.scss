@@ -1,0 +1,159 @@
+.home {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-color: $color-bg-dark;
+    text-align: center;
+    padding: 9rem 5% 5rem 5%;
+    position: relative;
+    overflow: hidden;
+
+    @include sizeDesktop {
+        padding: 11rem 2% 7.5rem 2%;
+    }
+
+    .ball1 {
+        position: absolute;
+        bottom: -250px;
+        left: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+        animation: 60s ball1 infinite;
+    }
+
+    @keyframes ball1 {
+        0% {left: -250px; bottom: -250px}
+        50% {left: 650px; bottom: -500px}
+        100% {left: -250px; bottom: -250px}
+    }
+
+    .ball2 {
+        position: absolute;
+        top: -250px;
+        right: -250px;
+        background-color: rgb(50, 144, 199);
+        mix-blend-mode: overlay;
+        display: block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+        animation: 60s ball2 infinite;
+    }
+
+    @keyframes ball2 {
+        0% {right: -250px; top: -250px}
+        50% {right: 900px; top: -700px}
+        100% {right: -250px; top: -250px}
+    }
+
+    .ball3 {
+        position: absolute;
+        top: -400px;
+        right: 900px;
+        background-color: rgb(200, 200, 200);
+        mix-blend-mode: overlay;
+        display: inline-block;
+        height: 600px;
+        width: 600px;
+        overflow: hidden;
+        border-radius: 50%;
+        filter: blur(150px);
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 896px;
+
+        .profilePicture {
+            z-index: 10;
+            object-position: center;
+            background-position-x: 43%;
+            background-position-y: 40%;
+            background-size: 220%;
+            width: 250px;
+            height: 250px;
+            border-radius: 2rem;
+        }
+
+    .profileText {
+        text-align: left;
+        line-height: 3rem;
+        flex-grow: 1;
+
+        p {
+            display: block;
+            align-items: baseline;
+            color: white;
+        }
+
+        .biggest {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .bigger {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .light {
+            color: $color-accent
+        }
+
+        .heroSkills {
+            display: flex;
+            justify-content: start;
+            max-width: 1200px;
+            margin: 1.5rem 0 0 0;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 0.5rem;
+                align-items: center;
+
+                p {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    
+                }
+            }
+
+            .smaller {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    @include sizeTablet {
+        flex-flow: row nowrap;
+        gap: 3rem;
+    }
+
+    @include sizeDesktop {
+        gap: 6rem;
+
+        .profilePicture {
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
