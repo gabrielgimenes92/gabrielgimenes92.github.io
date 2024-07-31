@@ -9,7 +9,11 @@ const Paragraph = ({ title, paragraphs }) => {
       <div className={styles.paragraph}>
         {title ? <h1>{title}</h1> : <></>}
         {paragraphs ? (
-          paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
+          paragraphs.map((item) => (
+            <p id={item.id} key={item.id}>
+              {item.content}
+            </p>
+          ))
         ) : (
           <></>
         )}

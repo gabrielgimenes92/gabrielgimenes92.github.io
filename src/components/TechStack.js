@@ -9,7 +9,7 @@ const TechStack = ({ techStack }) => {
       <h1>Tech stack component</h1>
       <div className={styles.techStack}>
         {techStack.map((tech) => (
-          <div className={styles.singleTech}>
+          <div className={styles.singleTech} key={tech.name}>
             <>{tech.logo}</>
             <p>{tech.name}</p>
           </div>

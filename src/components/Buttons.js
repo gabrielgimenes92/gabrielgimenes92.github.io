@@ -7,7 +7,7 @@ const Buttons = ({ buttons }) => {
     <div className={styles.buttonsWrapper}>
       <div className={styles.buttons}>
         {buttons.map((button) => (
-          <Link href={button.href} className={styles.button}>
+          <Link href={button.href} className={styles.button} key={buttons.text}>
             {button.text}
           </Link>
         ))}

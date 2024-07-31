@@ -100,6 +100,7 @@ const Projects = () => {
         <div className={styles.projectItems}>
           {projects.map((project) => (
             <Project
+              key={project.name}
               easyName={project.easyName}
               name={project.name}
               description={project.description}

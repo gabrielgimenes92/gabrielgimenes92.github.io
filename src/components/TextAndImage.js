@@ -20,7 +20,11 @@ const TextAndImage = ({ title, paragraphs, image, invertSide }) => {
           <div>
             {title ? <h3>{title}</h3> : <></>}
             {paragraphs ? (
-              paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
+              paragraphs.map((item) => (
+                <p id={item.id} key={item.id}>
+                  {item.content}
+                </p>
+              ))
             ) : (
               <></>
             )}
@@ -36,7 +40,11 @@ const TextAndImage = ({ title, paragraphs, image, invertSide }) => {
         <div>
           {title ? <h3>{title}</h3> : <></>}
           {paragraphs ? (
-            paragraphs.map((item) => <p id={item.id}>{item.content}</p>)
+            paragraphs.map((item) => (
+              <p id={item.id} key={item.id}>
+                {item.content}
+              </p>
+            ))
           ) : (
             <></>
           )}
