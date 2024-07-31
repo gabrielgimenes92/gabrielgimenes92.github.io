@@ -145,7 +145,7 @@ const page = () => {
 
   return (
     <div>
-      <SinglePageHero title="Tasks List" subtitle="" />
+      <SinglePageHero title="Task List" subtitle="" />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
