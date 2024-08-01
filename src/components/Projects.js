@@ -4,30 +4,30 @@ import styles from './Projects.module.scss';
 
 const Projects = () => {
   let projects = [
-    {
-      easyName: 'bullet-journal',
-      name: 'Bullet Journal',
-      description:
-        'Organize your life with Bullet Journal, a versatile platform for tracking daily tasks, setting goals, and journaling',
-      imagePath: '/pictures/BlankThumb.png',
-      alt: '',
-      link: 'https://github.com/orgs/Team-Ditto/repositories',
-      stack: ['NEXT.JS, SASS'],
-      projectLink: '/projects/bullet-journal',
-      webpage: 'https://everypage.ca/',
-    },
-    {
-      easyName: 'task-list',
-      name: 'Task List',
-      description:
-        'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
-      imagePath: '/pictures/TaskListThumb.png',
-      alt: '',
-      link: 'https://github.com/luferupa/adventurebc',
-      stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
-      projectLink: '/projects/task-list',
-      webpage: '',
-    },
+    // {
+    //   easyName: 'bullet-journal',
+    //   name: 'Bullet Journal',
+    //   description:
+    //     'Organize your life with Bullet Journal, a versatile platform for tracking daily tasks, setting goals, and journaling',
+    //   imagePath: '/pictures/BlankThumb.png',
+    //   alt: '',
+    //   link: 'https://github.com/orgs/Team-Ditto/repositories',
+    //   stack: ['NEXT.JS, SASS'],
+    //   projectLink: '/projects/bullet-journal',
+    //   webpage: 'https://everypage.ca/',
+    // },
+    // {
+    //   easyName: 'task-list',
+    //   name: 'Task List',
+    //   description:
+    //     'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
+    //   imagePath: '/pictures/TaskListThumb.png',
+    //   alt: '',
+    //   link: 'https://github.com/luferupa/adventurebc',
+    //   stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
+    //   projectLink: '/projects/task-list',
+    //   webpage: '',
+    // },
     // {
     //   easyName: 'finance-tracker',
     //   name: 'Finance Tracker',
@@ -41,18 +41,18 @@ const Projects = () => {
     //   projectLink: '/projects/finance-tracker',
     //   webpage: '',
     // },
-    {
-      easyName: 'py-game',
-      name: 'PyGame',
-      description:
-        "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
-      imagePath: '/pictures/PlanetSurvivalThumb.png',
-      alt: '',
-      link: 'https://github.com/luferupa/adventurebc',
-      stack: ['Python, PyGame'],
-      projectLink: '/projects/py-game',
-      webpage: '',
-    },
+    // {
+    //   easyName: 'py-game',
+    //   name: 'PyGame',
+    //   description:
+    //     "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
+    //   imagePath: '/pictures/PlanetSurvivalThumb.png',
+    //   alt: '',
+    //   link: 'https://github.com/luferupa/adventurebc',
+    //   stack: ['Python, PyGame'],
+    //   projectLink: '/projects/py-game',
+    //   webpage: '',
+    // },
     {
       easyName: 'everypage',
       name: 'EveryPage',
