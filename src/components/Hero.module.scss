@@ -132,9 +132,12 @@
                     justify-content: center;
                     align-items: center;
                     display: flex;
-                    flex-flow: row nowrap;
-                    
+                    flex-flow: row nowrap;       
                 }
+            }
+
+            .nextJS {
+                align-items: baseline;
             }
 
             .smaller {

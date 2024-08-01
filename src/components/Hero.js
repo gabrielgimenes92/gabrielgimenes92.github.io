@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
             <div>
               <p>{nextJSLogoSmall}</p>
-              <p>
+              <p className={styles.nextJS}>
                 NEXT.<spam className={styles.smaller}>JS</spam>
               </p>
             </div>
