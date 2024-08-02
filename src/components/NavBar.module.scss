@@ -4,11 +4,57 @@
     position: fixed;
     border-bottom: 1px solid rgba(50, 144, 199, 0.5);
     z-index: 100;
+    // position: relative;
+
+    .floatingMenu {
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        left: 0;
+        top: 4rem;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba($color-bg-dark, 0.99);
+        border-radius: 0 0 0 16px;
+        opacity: 1;
+        visibility: visible;
+        transition: height 0.4s, opacity 0.4s, visibility 0.4s;
+        gap: 1.5rem;
+
+
+        ul {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .socialFloat {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            :nth-child(3) {
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+    }
 
     .navBar {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
@@ -22,11 +68,16 @@
             display: block;
             font-size: 1.5rem;
         }
-        
 
         @include sizeDesktop {
+            display: block;
+
             .desktopSizeHeader {
                 display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1200px;
             }
 
             .tabletSizeHeader {
@@ -34,33 +85,12 @@
             }
         }
 
-        
-        // .desktopSizeHeader {
-        //     @include sizeTablet {
-        //         display: none;
-        //     }
-
-        //     @include sizeDesktop {
-        //         display: flex;
-        //     }
-        // }
-
-        // .tabletSizeHeader {
-        //     @include sizeTablet {
-        //         display: block;
-        //         font-size: 1.5rem;
-        //     }
-
-        //     @include sizeDesktop {
-        //         display: none;
-        //     }
-        // }
-
         ul {
             padding: 0;
             margin: 0;
             display: flex;
             flex-flow: row nowrap;
+            align-items: center;
             gap: 1.5rem;
 
             li {
@@ -99,9 +129,11 @@
 
 
 
-    .resumeDownload {
-        background-color: $color-accent;
-        border-radius: 6px;
-        padding: 0.25rem 0.6rem;
-        //border: 1px solid rgba($color-accent, 0.6);
-    }
+.resumeDownload {
+    background-color: $color-accent;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    //border: 1px solid rgba($color-accent, 0.6);
+}
+
+
