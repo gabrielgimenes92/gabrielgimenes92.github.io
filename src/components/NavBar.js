@@ -3,10 +3,12 @@ import React from 'react';
 import styles from './NavBar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   const iconLinkedin = <FontAwesomeIcon icon={faLinkedin} />;
   const iconGithub = <FontAwesomeIcon icon={faGithub} />;
+  const hamburger = <FontAwesomeIcon icon={faBars} />;
 
   return (
     <div className={styles.navBarWrapper}>
@@ -45,7 +47,7 @@ const NavBar = () => {
             </li>
           </ul>
         </ul>
-        <ul>
+        <ul className={styles.desktopSizeHeader}>
           <li>
             <a
               className={styles.icon}
@@ -72,6 +74,7 @@ const NavBar = () => {
             </a>
           </li>
         </ul>
+        <a className={styles.tabletSizeHeader}>{hamburger}</a>
       </div>
     </div>
   );

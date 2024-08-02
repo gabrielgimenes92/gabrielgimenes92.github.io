@@ -9,10 +9,52 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        width: 1200px;
+        align-items: center;
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 1rem 0;
+        padding: 1rem 16px;
+
+        .desktopSizeHeader {
+            display: none;
+        }
+
+        .tabletSizeHeader {
+            display: block;
+            font-size: 1.5rem;
+        }
         
+
+        @include sizeDesktop {
+            .desktopSizeHeader {
+                display: flex;
+            }
+
+            .tabletSizeHeader {
+                display: none;
+            }
+        }
+
+        
+        // .desktopSizeHeader {
+        //     @include sizeTablet {
+        //         display: none;
+        //     }
+
+        //     @include sizeDesktop {
+        //         display: flex;
+        //     }
+        // }
+
+        // .tabletSizeHeader {
+        //     @include sizeTablet {
+        //         display: block;
+        //         font-size: 1.5rem;
+        //     }
+
+        //     @include sizeDesktop {
+        //         display: none;
+        //     }
+        // }
 
         ul {
             padding: 0;

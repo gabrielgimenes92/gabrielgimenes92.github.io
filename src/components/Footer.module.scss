@@ -34,6 +34,7 @@
     list-style-type: none;
     // min-width: 100px;
     margin: 0.75rem 0 0 0;
+    
 
     @include sizeDesktop {
         margin: 0;
@@ -76,7 +77,10 @@
     }
 
     .upperList {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
 
         .resumeDownload {
             background-color: $color-accent;
