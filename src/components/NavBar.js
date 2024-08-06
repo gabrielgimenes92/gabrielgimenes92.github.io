@@ -79,7 +79,11 @@ const NavBar = () => {
               </a>
             </li>
             <li>
-              <a className={styles.resumeDownload} target={'blank'} href="">
+              <a
+                className={styles.resumeDownload}
+                target={'blank'}
+                href="/pdfs/Resume.pdf"
+              >
                 Resume
               </a>
             </li>
