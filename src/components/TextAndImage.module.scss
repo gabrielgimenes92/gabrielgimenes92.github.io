@@ -7,13 +7,21 @@
         max-width: 896px;
         display: flex;
         flex-flow: row nowrap;
-
-        h2 {
+        gap: 2rem;
+        
+        h3 {
             margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            flex-grow: 0.5;
         }
 
         img {
-            width: 100%;
+            flex-grow: 1;
+            width: 380px;
             height: 100%;
         }
     }
