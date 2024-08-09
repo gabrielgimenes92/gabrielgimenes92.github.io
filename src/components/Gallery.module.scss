@@ -1,12 +1,12 @@
 .galleryWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 896px;
-    margin: 0 auto;
-    gap: 1rem;
-    // position: absolute;
+    margin-bottom: 3rem;
     
-    * {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 896px;
+        margin: 0 auto;
+        gap: 1rem;
         
     }
 }

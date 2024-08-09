@@ -11,6 +11,7 @@ import {
   muiLogo,
   mongoDBLogo,
 } from '../../../assets/logos';
+import Carrousel from '@/components/Carrousel';
 
 const page = () => {
   let featuredImage1 = '/pictures/Billy-Feature01.png';
@@ -121,6 +122,69 @@ const page = () => {
     },
   };
 
+  let gallery = {
+    style: {
+      // aspectRatio: '9 / 16',
+      width: '100%',
+      // maxHeight: '600px',
+      // overflow: 'hidden',
+      objectFit: 'cover',
+      // border: '1px solid black',
+      // borderRadius: '6px',
+    },
+    images: [
+      {
+        id: 1,
+        source: '/pictures/EveryPageGallery/everypageGallery01 - Splash.png',
+        altText: 'Splash Screen',
+      },
+      {
+        id: 2,
+        source: '/pictures/EveryPageGallery/everypageGallery02 - Login.png',
+        altText: 'Login',
+      },
+      {
+        id: 3,
+        source:
+          '/pictures/EveryPageGallery/everypageGallery03 - My library.png',
+        altText: 'My Library',
+      },
+      {
+        id: 4,
+        source:
+          '/pictures/EveryPageGallery/everypageGallery04 - Single view - Not Shared.png',
+        altText: 'Book Single View',
+      },
+      {
+        id: 5,
+        source:
+          '/pictures/EveryPageGallery/everypageGallery05 - Wishlist- For Later.png',
+        altText: 'Wishlist',
+      },
+      {
+        id: 6,
+        source: '/pictures/EveryPageGallery/everypageGallery06 - Discover.png',
+        altText: 'Discover',
+      },
+      {
+        id: 7,
+        source: '/pictures/EveryPageGallery/everypageGallery07 - Community.png',
+        altText: 'Community',
+      },
+      {
+        id: 8,
+        source: '/pictures/EveryPageGallery/everypageGallery08 - Profile.png',
+        altText: 'Profile',
+      },
+      {
+        id: 9,
+        source:
+          '/pictures/EveryPageGallery/everypageGallery09 - Notification.png',
+        altText: 'Notification',
+      },
+    ],
+  };
+
   return (
     <div>
       <SinglePageHero title="Billy" subtitle="Your Smart Invoicing Friend" />
@@ -148,6 +212,7 @@ const page = () => {
         paragraphs={textAndImage03.paragraphs}
         image={textAndImage03.image}
       />
+      <Carrousel gallery={gallery} />
     </div>
   );
 };

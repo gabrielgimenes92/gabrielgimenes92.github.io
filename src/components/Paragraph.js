@@ -7,7 +7,7 @@ const Paragraph = ({ title, paragraphs }) => {
   return (
     <div className={styles.paragraphWrapper}>
       <div className={styles.paragraph}>
-        {title ? <h1>{title}</h1> : <></>}
+        {title ? <h1 style={{ marginTop: '1rem' }}>{title}</h1> : <></>}
         {paragraphs ? (
           paragraphs.map((item) => (
             <p id={item.id} key={item.id}>

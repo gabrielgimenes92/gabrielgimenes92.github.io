@@ -6,9 +6,12 @@ const Gallery = ({ gallery }) => {
 
   return (
     <div className={styles.galleryWrapper}>
-      {gallery.images.map((image) => (
-        <img src={image.source} alt={image.altText} style={style} />
-      ))}
+      <h1 style={{ margin: '1rem 0' }}>Gallery</h1>
+      <div className={styles.gallery}>
+        {gallery.images.map((image) => (
+          <img src={image.source} alt={image.altText} style={style} />
+        ))}
+      </div>
     </div>
   );
 };
