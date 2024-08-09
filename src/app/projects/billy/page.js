@@ -135,52 +135,43 @@ const page = () => {
     images: [
       {
         id: 1,
-        source: '/pictures/EveryPageGallery/everypageGallery01 - Splash.png',
+        source: '/pictures/BillyGallery/SS1.png',
         altText: 'Splash Screen',
       },
       {
         id: 2,
-        source: '/pictures/EveryPageGallery/everypageGallery02 - Login.png',
+        source: '/pictures/BillyGallery/SS2.png',
         altText: 'Login',
       },
       {
         id: 3,
-        source:
-          '/pictures/EveryPageGallery/everypageGallery03 - My library.png',
+        source: '/pictures/BillyGallery/SS3.png',
         altText: 'My Library',
       },
       {
         id: 4,
-        source:
-          '/pictures/EveryPageGallery/everypageGallery04 - Single view - Not Shared.png',
+        source: '/pictures/BillyGallery/SS4.png',
         altText: 'Book Single View',
       },
       {
         id: 5,
-        source:
-          '/pictures/EveryPageGallery/everypageGallery05 - Wishlist- For Later.png',
+        source: '/pictures/BillyGallery/SS5.png',
         altText: 'Wishlist',
       },
       {
         id: 6,
-        source: '/pictures/EveryPageGallery/everypageGallery06 - Discover.png',
+        source: '/pictures/BillyGallery/SS6.png',
         altText: 'Discover',
       },
       {
         id: 7,
-        source: '/pictures/EveryPageGallery/everypageGallery07 - Community.png',
+        source: '/pictures/BillyGallery/SS7.png',
         altText: 'Community',
       },
       {
         id: 8,
-        source: '/pictures/EveryPageGallery/everypageGallery08 - Profile.png',
+        source: '/pictures/BillyGallery/SS8.png',
         altText: 'Profile',
-      },
-      {
-        id: 9,
-        source:
-          '/pictures/EveryPageGallery/everypageGallery09 - Notification.png',
-        altText: 'Notification',
       },
     ],
   };

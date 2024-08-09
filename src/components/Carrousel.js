@@ -29,7 +29,7 @@ const Carrousel = ({ gallery }) => {
 
       case 'plus':
         finalValue = selectedImage + 1;
-        if (finalValue > 8) {
+        if (finalValue > gallerySize) {
           finalValue = 0;
         }
         setSelectedImage(finalValue);
@@ -39,7 +39,6 @@ const Carrousel = ({ gallery }) => {
 
   const setImages = () => {
     if (selectedImage == 0) {
-      console.log(`Gallery Lenght = ${gallerySize}`);
       setPreviousImage(gallerySize);
       setNextImage(selectedImage + 1);
     } else if (selectedImage == gallerySize) {
