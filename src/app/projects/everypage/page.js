@@ -12,6 +12,7 @@ import {
   firebaseLogo,
 } from '../../../assets/logos';
 import Gallery from '@/components/Gallery';
+import Carrousel from '@/components/Carrousel';
 
 const page = () => {
   let featuredImage1 = '/pictures/EveryPage-Feature01.png';
@@ -216,7 +217,8 @@ const page = () => {
         paragraphs={textAndImage03.paragraphs}
         image={textAndImage03.image}
       />
-      <Gallery gallery={gallery} />
+      {/* <Gallery gallery={gallery} /> */}
+      <Carrousel gallery={gallery} />
     </div>
   );
 };

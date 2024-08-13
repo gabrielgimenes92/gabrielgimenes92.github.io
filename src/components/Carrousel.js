@@ -2,8 +2,16 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './Carrousel.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 
-const Carrousel = ({ gallery }) => {
+const Carrousel = ({ gallery, height }) => {
+  const leftArrow = <FontAwesomeIcon icon={faChevronLeft} />;
+  const rightArrow = <FontAwesomeIcon icon={faChevronRight} />;
+
   let [previousImage, setPreviousImage] = useState(0);
   let [selectedImage, setSelectedImage] = useState(1);
   let [nextImage, setNextImage] = useState(2);
@@ -18,7 +26,7 @@ const Carrousel = ({ gallery }) => {
     let finalValue;
 
     switch (event.target.id) {
-      case 'minus':
+      case 'previous':
         finalValue = selectedImage - 1;
         if (finalValue < 0) {
           setSelectedImage(gallerySize);
@@ -27,7 +35,7 @@ const Carrousel = ({ gallery }) => {
         }
         break;
 
-      case 'plus':
+      case 'next':
         finalValue = selectedImage + 1;
         if (finalValue > gallerySize) {
           finalValue = 0;
@@ -53,9 +61,13 @@ const Carrousel = ({ gallery }) => {
   return (
     <div>
       <h1 style={{ margin: '1rem 0' }}>Gallery</h1>
-      <div className={styles.gallery}>
-        <button id="minus" onClick={handleChangeImage}>
-          &lt;
+      <div className={styles.gallery} style={gallery.style}>
+        <button
+          className={styles.previousImageArrow}
+          id="previous"
+          onClick={handleChangeImage}
+        >
+          {leftArrow}
         </button>
         <img
           className={styles.previousImage}
@@ -66,8 +78,12 @@ const Carrousel = ({ gallery }) => {
           className={styles.nextImage}
           src={gallery.images[nextImage].source}
         />
-        <button id="plus" onClick={handleChangeImage}>
-          &gt;
+        <button
+          className={styles.nextImageArrow}
+          id="next"
+          onClick={handleChangeImage}
+        >
+          {rightArrow}
         </button>
       </div>
     </div>

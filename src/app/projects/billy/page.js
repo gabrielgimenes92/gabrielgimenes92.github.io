@@ -18,6 +18,8 @@ const page = () => {
   let featuredImage2 = '/pictures/Billy-Feature02.png';
   let featuredImage3 = '/pictures/Billy-Feature03.png';
 
+  // let height = ;
+
   let buttons = [
     {
       text: 'GitHub',
@@ -124,13 +126,7 @@ const page = () => {
 
   let gallery = {
     style: {
-      // aspectRatio: '9 / 16',
-      width: '100%',
-      // maxHeight: '600px',
-      // overflow: 'hidden',
-      objectFit: 'cover',
-      // border: '1px solid black',
-      // borderRadius: '6px',
+      height: '50vh',
     },
     images: [
       {
