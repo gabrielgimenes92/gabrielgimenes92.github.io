@@ -4,6 +4,7 @@ import SinglePageHero from '@/components/SinglePageHero';
 import TechStack from '@/components/TechStack';
 import TextAndImage from '@/components/TextAndImage';
 import Buttons from '@/components/Buttons';
+import styles from './page.module.scss';
 
 import {
   reactLogo,
@@ -29,6 +30,18 @@ const page = () => {
       href: '/pdfs/EveryPageProposal_Fin.pdf',
     },
   ];
+
+  let everyPageVideo = (
+    <iframe
+      title="Everypage Video"
+      src="https://player.vimeo.com/video/777963265?h=b9658d9483"
+      width="640"
+      height="360"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  );
 
   let introContent = [
     {
@@ -194,6 +207,8 @@ const page = () => {
     <div>
       <SinglePageHero title="Everypage" />
       <Buttons buttons={buttons} />
+      <div className={styles.video}>{everyPageVideo}</div>
+
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
       <Paragraph
