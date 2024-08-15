@@ -4,6 +4,7 @@ import SinglePageHero from '@/components/SinglePageHero';
 import TechStack from '@/components/TechStack';
 import TextAndImage from '@/components/TextAndImage';
 import Buttons from '@/components/Buttons';
+import styles from './page.module.scss';
 
 import {
   reactLogo,
@@ -11,13 +12,19 @@ import {
   muiLogo,
   mongoDBLogo,
 } from '../../../assets/logos';
+import Image from 'next/image';
 
 const page = () => {
+  let introGIF = '/pictures/listApp.gif';
   let featuredImage1 = '/pictures/Billy-Feature01.png';
   let featuredImage2 = '/pictures/Billy-Feature02.png';
   let featuredImage3 = '/pictures/Billy-Feature03.png';
 
   let buttons = [
+    {
+      text: 'Test the App',
+      href: 'https://gabrielgimenes92.github.io/list_frontend/',
+    },
     {
       text: 'GitHub - Frontend',
       href: 'https://github.com/gabrielgimenes92/list_frontend',
@@ -54,10 +61,6 @@ const page = () => {
     {
       name: 'NodeJS',
       logo: nodeJSLogo,
-    },
-    {
-      name: 'MUI',
-      logo: muiLogo,
     },
     {
       name: 'mongoDB',
@@ -147,6 +150,15 @@ const page = () => {
     <div>
       <SinglePageHero title="Task List" subtitle="" />
       <Buttons buttons={buttons} />
+      <div className={styles.imageWrapper}>
+        <Image
+          className={styles.image}
+          src={introGIF}
+          width={765}
+          height={600}
+          style={{ margin: '0 auto', maxWidth: '100%' }}
+        />
+      </div>
       <Paragraph paragraphs={introContent} />
       <TechStack techStack={techStack} />
       <Paragraph

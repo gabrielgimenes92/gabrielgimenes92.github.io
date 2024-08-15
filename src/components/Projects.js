@@ -16,18 +16,18 @@ const Projects = () => {
     //   projectLink: '/projects/bullet-journal',
     //   webpage: 'https://everypage.ca/',
     // },
-    // {
-    //   easyName: 'task-list',
-    //   name: 'Task List',
-    //   description:
-    //     'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
-    //   imagePath: '/pictures/TaskListThumb.png',
-    //   alt: '',
-    //   link: 'https://github.com/luferupa/adventurebc',
-    //   stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
-    //   projectLink: '/projects/task-list',
-    //   webpage: '',
-    // },
+    {
+      easyName: 'task-list',
+      name: 'Task List',
+      description:
+        'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
+      imagePath: '/pictures/TaskListThumb.png',
+      alt: '',
+      link: 'https://github.com/luferupa/adventurebc',
+      stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
+      projectLink: '/projects/task-list',
+      webpage: '',
+    },
     // {
     //   easyName: 'finance-tracker',
     //   name: 'Finance Tracker',
