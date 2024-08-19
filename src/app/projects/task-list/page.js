@@ -203,6 +203,7 @@ const page = () => {
           width={765}
           height={600}
           style={{ margin: '0 auto', maxWidth: '100%' }}
+          alt="Task App running in a GIF"
         />
       </div>
     </div>

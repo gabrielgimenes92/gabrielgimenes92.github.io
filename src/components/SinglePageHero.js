@@ -9,14 +9,18 @@ const SinglePageHero = ({ title, subtitle, techStack }) => {
       <div className={styles.ball3} />
       <h1>{title}</h1>
       <h2>{subtitle}</h2>
-      <div className={styles.techStack}>
-        {techStack.map((tech) => (
-          <div className={styles.singleTech} key={tech.name}>
-            <div>{tech.logo}</div>
-            {/* <p>{tech.name}</p> */}
-          </div>
-        ))}
-      </div>
+      {techStack ? (
+        <div className={styles.techStack}>
+          {techStack.map((tech) => (
+            <div className={styles.singleTech} key={tech.name}>
+              <div>{tech.logo}</div>
+              {/* <p>{tech.name}</p> */}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
