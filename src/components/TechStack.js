@@ -6,7 +6,7 @@ import styles from './TechStack.module.scss';
 const TechStack = ({ techStack }) => {
   return (
     <div className={styles.techStackWrapper}>
-      <h1>Tech stack component</h1>
+      <h1>Tech stack</h1>
       <div className={styles.techStack}>
         {techStack.map((tech) => (
           <div className={styles.singleTech} key={tech.name}>

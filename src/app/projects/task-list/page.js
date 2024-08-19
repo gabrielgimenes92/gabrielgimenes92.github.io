@@ -10,7 +10,10 @@ import {
   reactLogo,
   nodeJSLogo,
   muiLogo,
-  mongoDBLogo,
+  mongoDBWhiteLogo,
+  expressJSWhiteLogo,
+  expressJSLogo,
+  nodeJSWhiteLogo,
 } from '../../../assets/logos';
 import Image from 'next/image';
 
@@ -39,7 +42,7 @@ const page = () => {
     {
       id: '01',
       content:
-        'Task List is a web application designed to help users manage their daily tasks efficiently. It provides an intuitive interface for adding, editing, completing, and deleting tasks, making it an ideal tool for individuals looking to stay organized and on top of their to-dos.',
+        'Task list is a web app designed to help users track and manage their daily tasks. It provides a simple and straigh-forward interface for adding, editing, completing and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
     },
     // {
     //   id: '02',
@@ -60,21 +63,36 @@ const page = () => {
     },
     {
       name: 'NodeJS',
-      logo: nodeJSLogo,
+      logo: nodeJSWhiteLogo,
+    },
+    {
+      name: 'ExpressJS',
+      logo: expressJSWhiteLogo,
     },
     {
       name: 'mongoDB',
-      logo: mongoDBLogo,
+      logo: mongoDBWhiteLogo,
     },
   ];
 
   let theApplicationParagraph = {
-    title: 'The Application',
+    // title: 'The Application',
     paragraphs: [
       {
         id: '01',
         content:
-          'Task List is a web application that simplifies the process of managing daily tasks. Users can easily add new tasks, mark them as complete, edit details, or delete them when they are no longer needed.',
+          'The app was developed so I had a way to display some of my skills as a fullstack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the later on Render.',
+      },
+    ],
+  };
+
+  let nextStepsParagraph = {
+    // title: 'The Application',
+    paragraphs: [
+      {
+        id: '01',
+        content:
+          'As next steps I plan to add the edit functionality and the ability reorder those tasks within the list.',
       },
     ],
   };
@@ -148,8 +166,36 @@ const page = () => {
 
   return (
     <div>
-      <SinglePageHero title="Task List" subtitle="" />
+      <SinglePageHero title="Task List" subtitle="" techStack={techStack} />
       <Buttons buttons={buttons} />
+      <Paragraph paragraphs={introContent} />
+      {/* <TechStack techStack={techStack} /> */}
+      <Paragraph
+        // title={theApplicationParagraph.title}
+        paragraphs={theApplicationParagraph.paragraphs}
+      />
+      <Paragraph
+        // title={nextStepsParagraph.title}
+        paragraphs={nextStepsParagraph.paragraphs}
+      />
+      {/* <h2>Main Features</h2> */}
+      {/* <TextAndImage
+        title={textAndImage01.title}
+        paragraphs={textAndImage01.paragraphs}
+        image={textAndImage01.image}
+        />
+        <TextAndImage
+        title={textAndImage02.title}
+        paragraphs={textAndImage02.paragraphs}
+        image={textAndImage02.image}
+        invertSide={true}
+        />
+        <TextAndImage
+        title={textAndImage03.title}
+        paragraphs={textAndImage03.paragraphs}
+        image={textAndImage03.image}
+        /> */}
+      {/* <Paragraph paragraphs={finalParagraph} /> */}
       <div className={styles.imageWrapper}>
         <Image
           className={styles.image}
@@ -159,30 +205,6 @@ const page = () => {
           style={{ margin: '0 auto', maxWidth: '100%' }}
         />
       </div>
-      <Paragraph paragraphs={introContent} />
-      <TechStack techStack={techStack} />
-      <Paragraph
-        title={theApplicationParagraph.title}
-        paragraphs={theApplicationParagraph.paragraphs}
-      />
-      <h2>Main Features</h2>
-      <TextAndImage
-        title={textAndImage01.title}
-        paragraphs={textAndImage01.paragraphs}
-        image={textAndImage01.image}
-      />
-      <TextAndImage
-        title={textAndImage02.title}
-        paragraphs={textAndImage02.paragraphs}
-        image={textAndImage02.image}
-        invertSide={true}
-      />
-      <TextAndImage
-        title={textAndImage03.title}
-        paragraphs={textAndImage03.paragraphs}
-        image={textAndImage03.image}
-      />
-      <Paragraph paragraphs={finalParagraph} />
     </div>
   );
 };

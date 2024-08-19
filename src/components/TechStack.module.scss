@@ -9,21 +9,26 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
+        gap: 1rem;
 
         .singleTech {
             display: flex;
             flex-flow: column;
+            margin: 0 0;
             align-items: center;
+            justify-content: space-between;
             gap: 0.5rem;
-
+            
             p {
+                
                 font-size: 0.75rem;
             }
-
+            
             img {
+                flex-grow: 1;
                 max-width: 160px;
-                height: 100px
+                height: 100%;
             }
         }
 
