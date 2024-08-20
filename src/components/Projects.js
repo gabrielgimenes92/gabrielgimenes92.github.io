@@ -27,6 +27,7 @@ const Projects = () => {
       stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
       projectLink: '/projects/task-list',
       webpage: '',
+      position: '0 -15px',
     },
     // {
     //   easyName: 'finance-tracker',

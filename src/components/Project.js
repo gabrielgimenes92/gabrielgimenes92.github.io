@@ -42,17 +42,17 @@ const Project = ({
           className="tempWrapper"
           style={{ display: 'flex', flexFlow: 'row nowrap', gap: '1rem' }}
         >
-          <Link className={styles.customButton} href={projectLink}>
-            Learn More
-          </Link>
           <a
-            className={styles.customButton}
+            className={styles.customSecondaryButton}
             rel="noreferrer"
             href={link}
             target="_blank"
           >
             GitHub Repo
           </a>
+          <Link className={styles.customButton} href={projectLink}>
+            Learn More
+          </Link>
         </div>
       </div>
     </div>

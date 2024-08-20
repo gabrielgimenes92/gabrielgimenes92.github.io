@@ -60,7 +60,7 @@ const Carrousel = ({ gallery, height }) => {
 
   return (
     <div>
-      <h1 style={{ margin: '1rem 0' }}>Gallery</h1>
+      <h2 style={{ margin: '1rem 0' }}>Gallery</h2>
       <div className={styles.gallery} style={gallery.style}>
         <button
           className={styles.previousImageArrow}

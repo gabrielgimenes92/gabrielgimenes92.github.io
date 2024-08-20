@@ -16,6 +16,12 @@
                 display: block;
                 max-width: 100%;
                 object-fit: contain;
+                transition: transform 0.3s;
+            }
+
+            img:hover {
+                transform: scale(1.03);
+                transition: transform 0.4s;
             }
             
             .titleContainer {
@@ -27,6 +33,7 @@
                 color: $color-main-light;
                 background-color: $color-bg-dark-transparent;
                 padding: 1rem;
+                letter-spacing: 0.1rem;
             }
         }
         
@@ -50,8 +57,14 @@
             width: 100%;
             font-size: 1rem;
             padding: 0.5rem 0;
-            
         };
+
+        .customSecondaryButton {
+            align-self: center;
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
     }
 
 }
@@ -73,6 +86,27 @@ a.customButton {
 
     &:hover {
         color: rgb(152, 201, 230);
+        transition: color 0.25s;
+    }
+}
+
+a.customSecondaryButton {
+    font-family: $font-sans;
+
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.25rem;
+    border: $color-accent 2px solid;
+
+    color: $color-accent;
+
+    background-color: white;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    transition: color 0.25s;
+
+    &:hover {
+        color: rgb(116, 154, 175);
         transition: color 0.25s;
     }
 }

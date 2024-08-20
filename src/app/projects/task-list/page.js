@@ -36,14 +36,6 @@ const page = () => {
     },
   ];
 
-  let introContent = [
-    {
-      id: '01',
-      content:
-        'Task list is a web app designed to help users track and manage their daily tasks. It provides a simple and straigh-forward interface for adding, editing, completing and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
-    },
-  ];
-
   let techStack = [
     {
       name: 'React',
@@ -68,15 +60,15 @@ const page = () => {
       {
         id: '01',
         content:
+          'Task list is a web app designed to help users track and manage their daily tasks. It provides a simple and straigh-forward interface for adding, editing, completing and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
+      },
+      {
+        id: '02',
+        content:
           'The app was developed so I had a way to display some of my skills as a fullstack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the later on Render.',
       },
-    ],
-  };
-
-  let nextStepsParagraph = {
-    paragraphs: [
       {
-        id: '01',
+        id: '03',
         content:
           'As next steps I plan to add the edit functionality and the ability reorder those tasks within the list.',
       },
@@ -154,9 +146,7 @@ const page = () => {
     <div>
       <SinglePageHero title="Task List" subtitle="" techStack={techStack} />
       <Buttons buttons={buttons} />
-      <Paragraph paragraphs={introContent} />
       <Paragraph paragraphs={theApplicationParagraph.paragraphs} />
-      <Paragraph paragraphs={nextStepsParagraph.paragraphs} />
       <div className={styles.imageWrapper}>
         <Image
           className={styles.image}

@@ -1,14 +1,12 @@
 .projectsWrapper {
     padding: 4rem 1rem;
-    background-color: $color-bg-lighter;
+    background-color: #ECF0F2;
 
     .projects {
     
         .projectItems {
             display: block;     
             
-            
-
             @include sizeTablet {
                 margin: 0 auto;
                 max-width: 800px;
