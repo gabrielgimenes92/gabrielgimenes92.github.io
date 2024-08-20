@@ -15,7 +15,7 @@ const SinglePageHero = ({ title, subtitle, techStack }) => {
       {techStack ? (
         <div className={styles.techStack}>
           {techStack.map((tech) => (
-            <SingleTech name={tech.name} logo={tech.logo} />
+            <SingleTech name={tech.name} logo={tech.logo} key={tech.name} />
           ))}
         </div>
       ) : (
