@@ -10,6 +10,8 @@ import {
   nodeJSLogo,
   muiLogo,
   mongoDBLogo,
+  mongoDBWhiteLogo,
+  nodeJSWhiteLogo,
 } from '../../../assets/logos';
 import Carrousel from '@/components/Carrousel';
 
@@ -56,15 +58,15 @@ const page = () => {
     },
     {
       name: 'NodeJS',
-      logo: nodeJSLogo,
+      logo: nodeJSWhiteLogo,
     },
     {
       name: 'MUI',
       logo: muiLogo,
     },
     {
-      name: 'mongoDB',
-      logo: mongoDBLogo,
+      name: 'MongoDB',
+      logo: mongoDBWhiteLogo,
     },
   ];
 
@@ -174,10 +176,13 @@ const page = () => {
 
   return (
     <div>
-      <SinglePageHero title="Billy" subtitle="Your Smart Invoicing Friend" />
+      <SinglePageHero
+        title="Billy"
+        subtitle="Your Smart Invoicing Friend"
+        techStack={techStack}
+      />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
-      <TechStack techStack={techStack} />
       <Paragraph
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}

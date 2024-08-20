@@ -56,6 +56,14 @@ export const nativeBaseLogo = (
     alt="Native Base"
   />
 );
+export const nativeBaseWhiteLogo = (
+  <Image
+    src="https://nativebase.io/img/nativebase-logo-dark.svg"
+    width={112}
+    height={500}
+    alt="Native Base"
+  />
+);
 export const mongoDBLogo = (
   <Image
     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
@@ -83,6 +91,14 @@ export const scssLogo = (
 export const firebaseLogo = (
   <Image
     src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+    width={112}
+    height={500}
+    alt="Firebase"
+  />
+);
+export const firebaseWhiteLogo = (
+  <Image
+    src="/pictures/firebase-logo-white-png_124521.png"
     width={112}
     height={500}
     alt="Firebase"

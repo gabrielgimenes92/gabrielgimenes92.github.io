@@ -9,8 +9,8 @@ import styles from './page.module.scss';
 import {
   reactLogo,
   nestJSLogo,
-  nativeBaseLogo,
-  firebaseLogo,
+  nativeBaseWhiteLogo,
+  firebaseWhiteLogo,
 } from '../../../assets/logos';
 import Gallery from '@/components/Gallery';
 import Carrousel from '@/components/Carrousel';
@@ -72,11 +72,11 @@ const page = () => {
     },
     {
       name: 'NativeBase',
-      logo: nativeBaseLogo,
+      logo: nativeBaseWhiteLogo,
     },
     {
       name: 'Firebase',
-      logo: firebaseLogo,
+      logo: firebaseWhiteLogo,
     },
   ];
 
@@ -205,12 +205,11 @@ const page = () => {
 
   return (
     <div>
-      <SinglePageHero title="Everypage" />
+      <SinglePageHero title="Everypage" techStack={techStack} />
       <Buttons buttons={buttons} />
       <div className={styles.video}>{everyPageVideo}</div>
 
       <Paragraph paragraphs={introContent} />
-      <TechStack techStack={techStack} />
       <Paragraph
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}
@@ -232,7 +231,6 @@ const page = () => {
         paragraphs={textAndImage03.paragraphs}
         image={textAndImage03.image}
       />
-      {/* <Gallery gallery={gallery} /> */}
       <Carrousel gallery={gallery} />
     </div>
   );
