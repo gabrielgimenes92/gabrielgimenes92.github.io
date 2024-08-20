@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import styles from './SinglePageHero.module.scss';
+import SingleTech from './SingleTech';
 
 const SinglePageHero = ({ title, subtitle, techStack }) => {
   return (
@@ -12,10 +15,16 @@ const SinglePageHero = ({ title, subtitle, techStack }) => {
       {techStack ? (
         <div className={styles.techStack}>
           {techStack.map((tech) => (
-            <div className={styles.singleTech} key={tech.name}>
-              <div>{tech.logo}</div>
-              {/* <p>{tech.name}</p> */}
-            </div>
+            <SingleTech name={tech.name} logo={tech.logo} />
+            // <div className={styles.singleTech} key={tech.name}>
+            //   <div
+            //     onMouseEnter={() => handleHover('true')}
+            //     onMouseLeave={() => handleHover('false')}
+            //   >
+            //     {tech.logo}
+            //   </div>
+            //   <p style={theStyle}>{tech.name}</p>
+            // </div>
           ))}
         </div>
       ) : (

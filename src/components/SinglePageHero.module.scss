@@ -89,26 +89,6 @@
         align-items: center;
         gap: 1rem;        
         
-        .singleTech {
-            display: flex;
-            flex-flow: column;
-            margin: 0 0;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0.5rem;
-            
-            p {
-                
-                font-size: 0.75rem;
-            }
 
-            img, svg {
-                flex-grow: 1;
-                max-width: 100px;
-                max-height: 50px;
-                height: 100%;
-                width: 100%
-            }
-        }
     }
 }
