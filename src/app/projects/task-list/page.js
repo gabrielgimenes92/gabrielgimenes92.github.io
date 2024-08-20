@@ -1,8 +1,6 @@
 import React from 'react';
 import Paragraph from '@/components/Paragraph';
 import SinglePageHero from '@/components/SinglePageHero';
-import TechStack from '@/components/TechStack';
-import TextAndImage from '@/components/TextAndImage';
 import Buttons from '@/components/Buttons';
 import styles from './page.module.scss';
 
@@ -44,16 +42,6 @@ const page = () => {
       content:
         'Task list is a web app designed to help users track and manage their daily tasks. It provides a simple and straigh-forward interface for adding, editing, completing and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
     },
-    // {
-    //   id: '02',
-    //   content:
-    //     'As both the project manager and a developer in the team, I was actively involved in various crucial aspects of the project, including design decisions, data model creation, and technology stack selection. My primary focus was on the back-end, where I utilized NodeJS and Express to create robust and efficient APIs, while also working on the front-end with NextJS and CSS to ensure a seamless user experience.',
-    // },
-    // {
-    //   id: '03',
-    //   content:
-    //     "Even though the project is no longer online, you can still access the source code in the project's GitHub repository. I primarily focused on making significant contributions to the 'dashboard' and invoice generation screens, alongside developing the promotional website.",
-    // },
   ];
 
   let techStack = [
@@ -76,7 +64,6 @@ const page = () => {
   ];
 
   let theApplicationParagraph = {
-    // title: 'The Application',
     paragraphs: [
       {
         id: '01',
@@ -87,7 +74,6 @@ const page = () => {
   };
 
   let nextStepsParagraph = {
-    // title: 'The Application',
     paragraphs: [
       {
         id: '01',
@@ -169,33 +155,8 @@ const page = () => {
       <SinglePageHero title="Task List" subtitle="" techStack={techStack} />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
-      {/* <TechStack techStack={techStack} /> */}
-      <Paragraph
-        // title={theApplicationParagraph.title}
-        paragraphs={theApplicationParagraph.paragraphs}
-      />
-      <Paragraph
-        // title={nextStepsParagraph.title}
-        paragraphs={nextStepsParagraph.paragraphs}
-      />
-      {/* <h2>Main Features</h2> */}
-      {/* <TextAndImage
-        title={textAndImage01.title}
-        paragraphs={textAndImage01.paragraphs}
-        image={textAndImage01.image}
-        />
-        <TextAndImage
-        title={textAndImage02.title}
-        paragraphs={textAndImage02.paragraphs}
-        image={textAndImage02.image}
-        invertSide={true}
-        />
-        <TextAndImage
-        title={textAndImage03.title}
-        paragraphs={textAndImage03.paragraphs}
-        image={textAndImage03.image}
-        /> */}
-      {/* <Paragraph paragraphs={finalParagraph} /> */}
+      <Paragraph paragraphs={theApplicationParagraph.paragraphs} />
+      <Paragraph paragraphs={nextStepsParagraph.paragraphs} />
       <div className={styles.imageWrapper}>
         <Image
           className={styles.image}

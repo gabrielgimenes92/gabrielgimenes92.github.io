@@ -21,7 +21,6 @@ const SingleTech = ({ name, logo }) => {
         width: '100%',
         display: 'block',
         position: 'absolute',
-        // backgroundColor: 'blue',
         textAlign: 'center',
         left: '0%',
         top: '110%',

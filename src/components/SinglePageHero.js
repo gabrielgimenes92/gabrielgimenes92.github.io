@@ -16,15 +16,6 @@ const SinglePageHero = ({ title, subtitle, techStack }) => {
         <div className={styles.techStack}>
           {techStack.map((tech) => (
             <SingleTech name={tech.name} logo={tech.logo} />
-            // <div className={styles.singleTech} key={tech.name}>
-            //   <div
-            //     onMouseEnter={() => handleHover('true')}
-            //     onMouseLeave={() => handleHover('false')}
-            //   >
-            //     {tech.logo}
-            //   </div>
-            //   <p style={theStyle}>{tech.name}</p>
-            // </div>
           ))}
         </div>
       ) : (

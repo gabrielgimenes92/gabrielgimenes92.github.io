@@ -1,10 +1,7 @@
 .singleTech {
-    // display: flex;
-    // flex-flow: column;
     margin: 0 0;
     align-items: center;
     justify-content: space-between;
-    // gap: 0.5rem;
     position: relative;
     
     p {
@@ -24,13 +21,5 @@
             width: 100%;        
             transition: background-color 0.4s;
         }
-    
-        // img:hover, svg:hover {
-        //     background-color: rgba(0,0,0,0.2);
-        //     padding: 0.5rem 1rem;
-        //     border-radius: 0.4rem;
-        //     transition: background-color 0.4s;
-        // }
     }
-
 }
