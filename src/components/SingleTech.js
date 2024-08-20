@@ -3,7 +3,10 @@ import styles from './SingleTech.module.scss';
 
 const SingleTech = ({ name, logo }) => {
   const [hover, setHover] = useState(null);
-  const [theStyle, setTheStyle] = useState({});
+  const [hoverStyle, setHoverStyle] = useState({
+    height: '0',
+    overflow: 'hidden',
+  });
 
   const handleHover = (value) => {
     setHover(value);
@@ -12,25 +15,44 @@ const SingleTech = ({ name, logo }) => {
   useEffect(() => {
     console.log('inside useEffect');
     if (hover == 'true') {
-      setTheStyle({
+      setHoverStyle({
+        color: 'white',
+        height: '1rem',
+        width: '100%',
         display: 'block',
+        position: 'absolute',
+        // backgroundColor: 'blue',
+        textAlign: 'center',
+        left: '0%',
+        top: '110%',
+        transition: 'height 0.5s',
+        overflow: 'show',
       });
     } else {
-      setTheStyle({
-        display: 'none',
+      setHoverStyle({
+        height: '0',
+        overflow: 'hidden',
+        textAlign: 'center',
+        width: '100%',
+        color: 'white',
+        display: 'block',
+        position: 'absolute',
+        left: '0%',
+        top: '110%',
+        transition: 'height 0.5s',
       });
     }
   }, [hover]);
 
   return (
     <div className={styles.singleTech} key={name}>
-      <div
+      <span
         onMouseEnter={() => handleHover('true')}
         onMouseLeave={() => handleHover('false')}
       >
         {logo}
-      </div>
-      <p style={theStyle}>{name}</p>
+      </span>
+      <p style={hoverStyle}>{name}</p>
     </div>
   );
 };

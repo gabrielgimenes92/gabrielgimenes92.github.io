@@ -70,7 +70,7 @@ const page = () => {
       logo: expressJSWhiteLogo,
     },
     {
-      name: 'mongoDB',
+      name: 'MongoDB',
       logo: mongoDBWhiteLogo,
     },
   ];

@@ -1,20 +1,36 @@
 .singleTech {
-    display: flex;
-    flex-flow: column;
+    // display: flex;
+    // flex-flow: column;
     margin: 0 0;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
+    // gap: 0.5rem;
+    position: relative;
     
     p {
         font-size: 0.75rem;
     }
-
-    img, svg {
-        flex-grow: 1;
-        max-width: 100px;
-        max-height: 50px;
-        height: 100%;
-        width: 100%
+    span {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        img, svg {
+            flex-grow: 1;
+            max-width: 100px;
+            max-height: 50px;
+            height: 100%;
+            width: 100%;        
+            transition: background-color 0.4s;
+        }
+    
+        // img:hover, svg:hover {
+        //     background-color: rgba(0,0,0,0.2);
+        //     padding: 0.5rem 1rem;
+        //     border-radius: 0.4rem;
+        //     transition: background-color 0.4s;
+        // }
     }
+
 }
