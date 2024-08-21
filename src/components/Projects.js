@@ -23,7 +23,7 @@ const Projects = () => {
         'Simplify your to-do management with Task List, an intuitive app for adding, editing, completing, and deleting tasks effortlessly.',
       imagePath: '/pictures/TaskListThumb.png',
       alt: '',
-      link: 'https://github.com/luferupa/adventurebc',
+      link: 'https://github.com/gabrielgimenes92/list_frontend',
       stack: ['NEXT.JS, Node.JS, Express, MongoDB'],
       projectLink: '/projects/task-list',
       webpage: '',
