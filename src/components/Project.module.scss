@@ -103,10 +103,10 @@ a.customSecondaryButton {
     background-color: white;
     border-radius: 6px;
     padding: 0.25rem 0.6rem;
-    transition: color 0.25s;
+    transition: background-color 0.25s;
 
     &:hover {
-        color: rgb(116, 154, 175);
-        transition: color 0.25s;
+        background-color: #ECF0F2;
+        transition: background-color 0.25s;
     }
 }
