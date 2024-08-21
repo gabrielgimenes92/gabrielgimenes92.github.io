@@ -60,17 +60,17 @@ const page = () => {
       {
         id: '01',
         content:
-          'Task list is a web app designed to help users track and manage their daily tasks. It provides a simple and straigh-forward interface for adding, editing, completing and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
+          'Task list is a web app designed to help users track and manage their daily tasks. It provides a straightforward interface for adding, editing, completing, and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
       },
       {
         id: '02',
         content:
-          'The app was developed so I had a way to display some of my skills as a fullstack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the later on Render.',
+          'The app was developed so I could display some of my skills as a full-stack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the latter on Render.',
       },
       {
         id: '03',
         content:
-          'As next steps I plan to add the edit functionality and the ability reorder those tasks within the list.',
+          'As the next step, I plan to add edit functionality and the ability to reorder tasks from the list.',
       },
     ],
   };

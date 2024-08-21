@@ -49,10 +49,11 @@ const Projects = () => {
     //     "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
     //   imagePath: '/pictures/PlanetSurvivalThumb.png',
     //   alt: '',
-    //   link: 'https://github.com/luferupa/adventurebc',
+    //   link: 'https://github.com/gabrielgimenes92/planet_survivor',
     //   stack: ['Python, PyGame'],
     //   projectLink: '/projects/py-game',
     //   webpage: '',
+    //   position: '0 -15px',
     // },
     {
       easyName: 'everypage',
