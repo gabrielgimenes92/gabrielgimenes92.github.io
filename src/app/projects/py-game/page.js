@@ -36,47 +36,43 @@ const page = () => {
     },
   ];
 
-  let projectOne = {
-    title: 'Title',
-    paragraphs: [
-      {
-        id: '01',
-        content:
-          'Task list is a web app designed to help users track and manage their daily tasks. It provides a straightforward interface for adding, editing, completing, and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
-      },
-      {
-        id: '02',
-        content:
-          'The app was developed so I could display some of my skills as a full-stack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the latter on Render.',
-      },
-      {
-        id: '03',
-        content:
-          'As the next step, I plan to add edit functionality and the ability to reorder tasks from the list.',
-      },
-    ],
-  };
+  let projectOneTitle = 'PyGame Tutorial';
 
-  let projectTwo = {
-    title: 'Title',
-    paragraphs: [
-      {
-        id: '01',
-        content:
-          'Task list is a web app designed to help users track and manage their daily tasks. It provides a straightforward interface for adding, editing, completing, and deleting tasks. The list is persistent as the application has a frontend created on React, a backend on NodeJS with Express, and a database on MongoDB.',
-      },
-      {
-        id: '02',
-        content:
-          'The app was developed so I could display some of my skills as a full-stack developer. Both front and backend are hosted and live, the former hosted on GitHub pages and the latter on Render.',
-      },
-      {
-        id: '03',
-        content:
-          'As the next step, I plan to add edit functionality and the ability to reorder tasks from the list.',
-      },
-    ],
-  };
+  let projectOneParagraphsJSX = (
+    <>
+      <p>
+        This first game was developed following a tutorial by Clear Code -{' '}
+        <a href="https://www.youtube.com/watch?v=AY9MnQ4x3zk" target="blank">
+          The ultimate introduction to Pygame.
+        </a>{' '}
+        It was a great opportunity to further develop my skills with Python 3
+        and object-oriented languages.
+      </p>
+      <p>
+        The game can be downloaded and only run locally, for more information on
+        how to download and run the game, please check the code below.
+      </p>
+    </>
+  );
+
+  let projectTwoTitle = 'Planet Survivor';
+
+  let projectTwoParagraphsJSX = (
+    <>
+      <p>
+        After finishing the tutorial above I wished to test my skills in
+        developing my own game. Planet Survivor is a shoot-them-up style game,
+        the player controls the angle in which the base fires to destroy the
+        targets before they reach the planet. As the time progresses the
+        target's speed increases, making the game more and more challenging.
+      </p>
+      <p>
+        I designed and developed the game, which can be downloaded and run
+        locally. Click the button below for the repository with instructions on
+        how to run it.
+      </p>
+    </>
+  );
 
   return (
     <div>
@@ -86,7 +82,10 @@ const page = () => {
         techStack={techStack}
         stackWidth={'300px'}
       />
-      <Paragraph paragraphs={projectOne.paragraphs} title={projectOne.title} />
+      <Paragraph
+        title={projectOneTitle}
+        paragraphsJSX={projectOneParagraphsJSX}
+      />
       <Buttons buttons={buttonFirstProject} />
       <div className={styles.imageWrapper}>
         <Image
@@ -98,8 +97,10 @@ const page = () => {
           alt="Task App running in a GIF"
         />
       </div>
-
-      <Paragraph paragraphs={projectTwo.paragraphs} title={projectTwo.title} />
+      <Paragraph
+        title={projectTwoTitle}
+        paragraphsJSX={projectTwoParagraphsJSX}
+      />
       <Buttons buttons={buttonSecondProject} />
       <div className={styles.imageWrapper}>
         <Image
