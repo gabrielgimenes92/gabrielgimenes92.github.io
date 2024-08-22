@@ -29,7 +29,7 @@ export const githubLogo = (
     src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
     width={112}
     height={500}
-    alt="Typescript Logo"
+    alt="GitHub Logo"
   />
 );
 export const typescriptLogo = (
@@ -45,7 +45,7 @@ export const nestJSLogo = (
     src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
     width={112}
     height={500}
-    alt="NestJS"
+    alt="NestJS logo"
   />
 );
 export const nativeBaseLogo = (
@@ -53,7 +53,7 @@ export const nativeBaseLogo = (
     src="https://nativebase.io/img/nativebase-logo-light.svg"
     width={112}
     height={500}
-    alt="Native Base"
+    alt="Native Base logo"
   />
 );
 export const nativeBaseWhiteLogo = (
@@ -61,7 +61,7 @@ export const nativeBaseWhiteLogo = (
     src="https://nativebase.io/img/nativebase-logo-dark.svg"
     width={112}
     height={500}
-    alt="Native Base"
+    alt="Native Base logo"
   />
 );
 export const mongoDBLogo = (
@@ -69,7 +69,7 @@ export const mongoDBLogo = (
     src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
     width={112}
     height={500}
-    alt="MongoDB"
+    alt="MongoDB logo"
   />
 );
 export const muiLogo = (
@@ -77,7 +77,7 @@ export const muiLogo = (
     width={112}
     height={500}
     src="https://mui.com/static/logo.png"
-    alt="MUI"
+    alt="MUI logo"
   />
 );
 export const scssLogo = (
@@ -85,7 +85,7 @@ export const scssLogo = (
     src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
     width={112}
     height={500}
-    alt="SCSS"
+    alt="SASS logo"
   />
 );
 export const firebaseLogo = (
@@ -93,26 +93,49 @@ export const firebaseLogo = (
     src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
     width={112}
     height={500}
-    alt="Firebase"
+    alt="Firebase logo"
   />
 );
+export const pygameLogo = (
+  <Image
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pygame_logo.svg/512px-Pygame_logo.svg.png"
+    width={112}
+    height={500}
+    alt="PyGame logo"
+  />
+);
+export const pythonLogo = (
+  <Image
+    src="/pictures/pythonLogo.png"
+    width={112}
+    height={500}
+    alt="Firebase logo"
+  />
+);
+
 export const firebaseWhiteLogo = (
   <Image
     src="/pictures/firebase-logo-white-png_124521.png"
     width={112}
     height={500}
-    alt="Firebase"
+    alt="Firebase logo"
   />
 );
 export const nextJSLogo = (
-  <Image src="/pictures/nextjsLogo.png" width={112} height={500} alt="NextJS" />
+  <Image
+    src="/pictures/nextjsLogo.png"
+    width={112}
+    height={500}
+    alt="NextJS logo"
+  />
 );
+
 export const nextJSLogoSmall = (
   <Image
     src="/pictures/nextjsLogoSmall.png"
     width={16}
     height={16}
-    alt="NextJS"
+    alt="NextJS logo"
   />
 );
 
@@ -121,7 +144,7 @@ export const expressJSLogo = (
     src="/pictures/expressJSLogo.png"
     width={465}
     height={141}
-    alt="expressJSLogo"
+    alt="ExpressJS logo"
   />
 );
 
@@ -130,7 +153,7 @@ export const mongoDBWhiteLogo = (
     src="/pictures/mongodb-logo-white.png"
     width={465}
     height={141}
-    alt="expressJSLogo"
+    alt="MongoDB logo"
   />
 );
 
@@ -139,7 +162,7 @@ export const nodeJSWhiteLogo = (
     src="/pictures/nodejs-new-pantone-white.png"
     width={465}
     height={141}
-    alt="expressJSLogo"
+    alt="NodeJS logo"
   />
 );
 

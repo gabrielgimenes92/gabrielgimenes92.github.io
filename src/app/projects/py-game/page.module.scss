@@ -1,0 +1,14 @@
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+
+    .image {
+        box-shadow: 4px 4px 24px -5px rgba(0,0,0,0.4);
+        border-radius: 16px;
+        height: 100%;
+        max-width: 500px;
+    }
+}
