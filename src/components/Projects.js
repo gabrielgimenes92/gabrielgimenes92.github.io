@@ -42,19 +42,19 @@ const Projects = () => {
     //   projectLink: '/projects/finance-tracker',
     //   webpage: '',
     // },
-    // {
-    //   easyName: 'py-game',
-    //   name: 'PyGame',
-    //   description:
-    //     "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
-    //   imagePath: '/pictures/PlanetSurvivalThumb.png',
-    //   alt: '',
-    //   link: 'https://github.com/gabrielgimenes92/planet_survivor',
-    //   stack: ['Python, PyGame'],
-    //   projectLink: '/projects/py-game',
-    //   webpage: '',
-    //   position: '0 -15px',
-    // },
+    {
+      easyName: 'py-game',
+      name: 'PyGame',
+      description:
+        "A couple projects for learning the Python library PyGame - This project started by following a very comprehensive tutorial and afterwards I've developed my own mini-game.",
+      imagePath: '/pictures/PlanetSurvivalThumb.png',
+      alt: '',
+      link: 'https://github.com/gabrielgimenes92/planet_survivor',
+      stack: ['Python, PyGame'],
+      projectLink: '/projects/py-game',
+      webpage: '',
+      position: '0 -15px',
+    },
     {
       easyName: 'everypage',
       name: 'EveryPage',

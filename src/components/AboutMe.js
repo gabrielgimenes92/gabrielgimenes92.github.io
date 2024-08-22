@@ -3,8 +3,8 @@ import styles from './AboutMe.module.scss';
 
 const AboutMe = () => {
   return (
-    <section className={styles.aboutMe}>
-      <spam id="about"></spam>
+    <section className={styles.aboutMe} id="about">
+      <spam></spam>
       <h2>About me</h2>
       <p>
         Graduated from Langara College - Web & Mobile App Development
