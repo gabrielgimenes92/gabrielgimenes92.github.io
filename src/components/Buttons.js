@@ -7,7 +7,12 @@ const Buttons = ({ buttons }) => {
     <div className={styles.buttonsWrapper}>
       <div className={styles.buttons}>
         {buttons.map((button) => (
-          <Link href={button.href} className={styles.button} key={buttons.text}>
+          <Link
+            href={button.href}
+            className={styles.button}
+            key={buttons.text}
+            target="blank"
+          >
             {button.text}
           </Link>
         ))}
