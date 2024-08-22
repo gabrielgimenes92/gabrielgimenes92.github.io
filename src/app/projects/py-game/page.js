@@ -64,7 +64,8 @@ const page = () => {
         developing my own game. Planet Survivor is a shoot-them-up style game,
         the player controls the angle in which the base fires to destroy the
         targets before they reach the planet. As the time progresses the
-        target's speed increases, making the game more and more challenging.
+        target&apos;s speed increases, making the game more and more
+        challenging.
       </p>
       <p>
         I designed and developed the game, which can be downloaded and run
