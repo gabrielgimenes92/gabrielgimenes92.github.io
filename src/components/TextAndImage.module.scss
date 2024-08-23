@@ -4,13 +4,19 @@
     .textAndImage {
         margin: 0 auto;
         margin-bottom: 80px;
+        padding: 0 3%;
         max-width: 896px;
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         gap: 2rem;
 
         @include sizeTablet {
             flex-flow: row nowrap;
+        }
+
+        @include sizeDesktop {
+            padding: 0;
         }
         
         h3 {
