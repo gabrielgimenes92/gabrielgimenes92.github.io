@@ -27,11 +27,11 @@ const page = () => {
       href: 'https://gabrielgimenes92.github.io/list_frontend/',
     },
     {
-      text: 'GitHub - Frontend',
+      text: 'Frontend Code',
       href: 'https://github.com/gabrielgimenes92/list_frontend',
     },
     {
-      text: 'GitHub - Backend',
+      text: 'Backend Code',
       href: 'https://github.com/gabrielgimenes92/list_backend',
     },
   ];

@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    @include sizeTablet {
+        gap: 1.5rem;
+    }
     
     p {
         font-size: 0.75rem;

@@ -84,9 +84,13 @@
         max-width: 696px;
         margin: 0 auto;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;        
+        gap: 4rem;
+
+        @include sizeTablet {
+            gap: 7rem;
+        }
     }
 }

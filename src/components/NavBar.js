@@ -97,13 +97,22 @@ const NavBar = () => {
         <div className={styles.floatingMenu}>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={() => setShowHamburgerMenu(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/#about">About</Link>
+              <Link href="/#about" onClick={() => setShowHamburgerMenu(false)}>
+                About
+              </Link>
             </li>
             <li>
-              <Link href="/#projects">Projects</Link>
+              <Link
+                href="/#projects"
+                onClick={() => setShowHamburgerMenu(false)}
+              >
+                Projects
+              </Link>
             </li>
             {/* <ul className={styles.navBarSubMenu}>
               <li>
@@ -120,6 +129,7 @@ const NavBar = () => {
                 className={styles.icon}
                 href="https://www.linkedin.com/in/gabrielcgimenes/"
                 target={'blank'}
+                onClick={() => setShowHamburgerMenu(false)}
               >
                 {iconLinkedin}
                 <spam className="hidden">LinkedIn</spam>
@@ -130,6 +140,7 @@ const NavBar = () => {
                 className={styles.icon}
                 href="https://github.com/gabrielgimenes92"
                 target={'blank'}
+                onClick={() => setShowHamburgerMenu(false)}
               >
                 {iconGithub}
                 <spam className="hidden">GitHub</spam>
@@ -140,6 +151,7 @@ const NavBar = () => {
                 className={styles.resumeDownload}
                 target={'blank'}
                 href="/pdfs/Resume.pdf"
+                onClick={() => setShowHamburgerMenu(false)}
               >
                 Resume
               </a>
