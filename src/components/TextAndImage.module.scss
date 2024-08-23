@@ -6,8 +6,12 @@
         margin-bottom: 80px;
         max-width: 896px;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         gap: 2rem;
+
+        @include sizeTablet {
+            flex-flow: row nowrap;
+        }
         
         h3 {
             margin-top: 2rem;
