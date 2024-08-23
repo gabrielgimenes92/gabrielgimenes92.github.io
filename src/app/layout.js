@@ -17,8 +17,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta title="Gabriel Gimenes - Software Developer" />
-        <meta description="Check my portfolio" />
+        <meta
+          name="title"
+          property="og:title"
+          content="Gabriel Gimenes - Software Developer"
+        />
+        <meta
+          name="description"
+          property="og:description"
+          content="Check my portfolio"
+        />
+        <meta name="author" content="Gabriel Gimenes" />
 
         <meta
           name="google-site-verification"
