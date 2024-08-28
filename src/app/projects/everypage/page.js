@@ -22,7 +22,7 @@ const page = () => {
 
   let buttons = [
     {
-      text: 'GitHub',
+      text: 'Check the Code',
       href: 'https://github.com/orgs/Team-Ditto/repositories',
     },
     {
