@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMailBulk,
   faPhone,
-  faLocationPin,
+  faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const phone = <FontAwesomeIcon icon={faPhone} />;
   const mail = <FontAwesomeIcon icon={faMailBulk} />;
-  const pin = <FontAwesomeIcon icon={faLocationPin} />;
+  const pin = <FontAwesomeIcon icon={faLocationDot} />;
   const iconLinkedin = <FontAwesomeIcon icon={faLinkedin} />;
   const iconGithub = <FontAwesomeIcon icon={faGithub} />;
 
