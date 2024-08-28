@@ -95,8 +95,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles.projectsWrapper}>
-      <spam id="projects"></spam>
+    <div className={styles.projectsWrapper} id="projects">
       <section className={styles.projects}>
         <h2>Projects</h2>
         <div className={styles.projectItems}>
