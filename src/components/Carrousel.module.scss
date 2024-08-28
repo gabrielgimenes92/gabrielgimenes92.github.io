@@ -34,24 +34,40 @@
 
     .previousImageArrow {
         position: absolute;
-        left: 0px;
-        
+        left: 10px;
+
+        @include sizeDesktop {
+            left: 0px;
+        }
     }
 
     .nextImageArrow {
         position: absolute;
-        right: 0px;
-        
+        right: 10px;
+
+        @include sizeDesktop {
+            right: 0px;
+        }
     }
 
     img {
         max-height: 100%;
-        max-width: 896px * 2 / 3;
+        padding: 0 1rem;
+        max-width: 100%;
+
+        @include sizeTablet {
+            max-width: 896px * 2 / 3;
+        }
     }
 
     .previousImage, .nextImage {
         height: auto;
         width: 16%;
         opacity: 50%;
+        display: none;
+
+        @include sizeTablet {
+            display: block;
+        }
     }
 }
