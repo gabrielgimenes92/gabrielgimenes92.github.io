@@ -14,6 +14,7 @@ import {
   nodeJSWhiteLogo,
 } from '../../../assets/logos';
 import Carrousel from '@/components/Carrousel';
+import Spacer from '@/components/Spacer';
 
 const page = () => {
   let featuredImage1 = '/pictures/Billy-Feature01.png';
@@ -128,7 +129,7 @@ const page = () => {
 
   let gallery = {
     style: {
-      height: '50vh',
+      // height: '50vh',
     },
     images: [
       {
@@ -181,13 +182,14 @@ const page = () => {
         subtitle="Your Smart Invoicing Friend"
         techStack={techStack}
       />
+      <Spacer />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={introContent} />
       <Paragraph
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}
       />
-      <h2>Main Features</h2>
+      <h2 style={{ padding: '0' }}>Main Features</h2>
       <TextAndImage
         title={textAndImage01.title}
         paragraphs={textAndImage01.paragraphs}

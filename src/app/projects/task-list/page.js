@@ -14,6 +14,7 @@ import {
   nodeJSWhiteLogo,
 } from '../../../assets/logos';
 import Image from 'next/image';
+import Spacer from '@/components/Spacer';
 
 const page = () => {
   let introGIF = '/pictures/listApp.gif';
@@ -145,6 +146,7 @@ const page = () => {
   return (
     <div>
       <SinglePageHero title="Task List" subtitle="" techStack={techStack} />
+      <Spacer />
       <Buttons buttons={buttons} />
       <Paragraph paragraphs={theApplicationParagraph.paragraphs} />
       <div className={styles.imageWrapper}>

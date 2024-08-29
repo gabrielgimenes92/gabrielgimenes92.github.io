@@ -1,6 +1,6 @@
 .paragraphWrapper {
     padding-bottom: 2rem;
-    padding: 0 3% 2rem 3%;
+    padding: 0 3% 3rem 3%;
     
     .paragraph {
         margin: 0 auto;
@@ -8,6 +8,10 @@
 
         p {
             margin-top: 1rem;
+        }
+        
+        p:first-of-type {
+            margin-top: 0;
         }
     }
 }

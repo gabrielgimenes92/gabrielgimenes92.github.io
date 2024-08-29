@@ -14,6 +14,7 @@ import {
 } from '../../../assets/logos';
 import Gallery from '@/components/Gallery';
 import Carrousel from '@/components/Carrousel';
+import Spacer from '@/components/Spacer';
 
 const page = () => {
   let featuredImage1 = '/pictures/EveryPage-Feature01.png';
@@ -206,6 +207,7 @@ const page = () => {
   return (
     <div>
       <SinglePageHero title="Everypage" techStack={techStack} />
+      <Spacer />
       <Buttons buttons={buttons} />
       <div className={styles.video}>{everyPageVideo}</div>
 
@@ -214,7 +216,7 @@ const page = () => {
         title={theApplicationParagraph.title}
         paragraphs={theApplicationParagraph.paragraphs}
       />
-      <h2>Main Features</h2>
+      <h2 style={{ padding: '0' }}>Main Features</h2>
       <TextAndImage
         title={textAndImage01.title}
         paragraphs={textAndImage01.paragraphs}

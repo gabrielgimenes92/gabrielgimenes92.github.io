@@ -6,6 +6,7 @@ import styles from './page.module.scss';
 import { pygameLogo, pythonLogo } from '../../../assets/logos';
 import Image from 'next/image';
 import Paragraph from '@/components/Paragraph';
+import Spacer from '@/components/Spacer';
 
 const page = () => {
   let pygameTutorialGIF = '/pictures/pygame_tutorial.gif';
@@ -83,6 +84,7 @@ const page = () => {
         techStack={techStack}
         stackWidth={'300px'}
       />
+      <Spacer />
       <Paragraph
         title={projectOneTitle}
         paragraphsJSX={projectOneParagraphsJSX}
