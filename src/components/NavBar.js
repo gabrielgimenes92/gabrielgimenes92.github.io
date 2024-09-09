@@ -62,7 +62,7 @@ const NavBar = () => {
               <a
                 className={styles.icon}
                 href="https://www.linkedin.com/in/gabrielcgimenes/"
-                target={'blank'}
+                target={'_blank'}
               >
                 {iconLinkedin}
                 <spam className="hidden">LinkedIn</spam>
@@ -72,7 +72,7 @@ const NavBar = () => {
               <a
                 className={styles.icon}
                 href="https://github.com/gabrielgimenes92"
-                target={'blank'}
+                target={'_blank'}
               >
                 {iconGithub}
                 <spam className="hidden">GitHub</spam>
@@ -81,7 +81,7 @@ const NavBar = () => {
             <li>
               <a
                 className={styles.resumeDownload}
-                target={'blank'}
+                target={'_blank'}
                 href="/pdfs/Resume.pdf"
               >
                 Resume
@@ -128,7 +128,7 @@ const NavBar = () => {
               <a
                 className={styles.icon}
                 href="https://www.linkedin.com/in/gabrielcgimenes/"
-                target={'blank'}
+                target={'_blank'}
                 onClick={() => setShowHamburgerMenu(false)}
               >
                 {iconLinkedin}
@@ -139,7 +139,7 @@ const NavBar = () => {
               <a
                 className={styles.icon}
                 href="https://github.com/gabrielgimenes92"
-                target={'blank'}
+                target={'_blank'}
                 onClick={() => setShowHamburgerMenu(false)}
               >
                 {iconGithub}
@@ -149,7 +149,7 @@ const NavBar = () => {
             <li>
               <a
                 className={styles.resumeDownload}
-                target={'blank'}
+                target={'_blank'}
                 href="/pdfs/Resume.pdf"
                 onClick={() => setShowHamburgerMenu(false)}
               >

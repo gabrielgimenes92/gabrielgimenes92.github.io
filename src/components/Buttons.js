@@ -11,7 +11,7 @@ const Buttons = ({ buttons }) => {
             href={button.href}
             className={styles.button}
             key={buttons.text}
-            target="blank"
+            target="_blank"
           >
             {button.text}
           </Link>

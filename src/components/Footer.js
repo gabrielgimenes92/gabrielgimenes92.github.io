@@ -31,7 +31,7 @@ const Footer = () => {
               <a
                 className={styles.icon}
                 href="https://www.linkedin.com/in/gabrielcgimenes/"
-                target={'blank'}
+                target={'_blank'}
               >
                 {iconLinkedin}
                 <spam className="hidden">LinkedIn</spam>
@@ -41,14 +41,18 @@ const Footer = () => {
               <a
                 className={styles.icon}
                 href="https://github.com/gabrielgimenes92"
-                target={'blank'}
+                target={'_blank'}
               >
                 {iconGithub}
                 <spam className="hidden">GitHub</spam>
               </a>
             </li>
             <li>
-              <a className={styles.resumeDownload} target={'blank'} href="">
+              <a
+                className={styles.resumeDownload}
+                target={'_blank'}
+                href="/pdfs/Resume.pdf"
+              >
                 Resume
               </a>
             </li>
